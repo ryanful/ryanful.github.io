@@ -3,21 +3,28 @@ body, html{
   margin:0;
   font-family: "Lato",sans-serif;
   font-weight: 300;
-  line-height: 1.8em;
+  /* line-height: 1vh; */
   overflow: auto;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background-color: black;
+  color:  #f7f6d8;
 }
  
 h1{
-  font-weight: 300;
+  font-weight: 600;
+  font-size: 5vh;
+  line-height: 4.5vh;
 }
 h2{
-  font-size: 1.1em;
+  font-size: 3vh;
+  line-height: 3.5vh;
+  color:  #f7f6d8;
 
-  font-weight: 250;
+  font-weight: 100;
 }
 p{
-  font-size: .9em;
+  font-size: 2vh;
+  line-height: 3vh;
   font-weight: 300;
 }
 
@@ -26,10 +33,9 @@ ul {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-weight: 50;
     top: 0;
     color: #fcf9ad;
-  font-family: monospace;
+  /* font-family: monospace; */
     /*border: 1px solid black;*/
     overflow: hidden;
     position: relative; /* Make it stick, even on scroll */
@@ -37,7 +43,7 @@ ul {
 
 li{
   display: inline-block;
-  padding: 1% 10px;
+  padding: 1% 1%;
 }
 
 /*ul {
@@ -53,17 +59,18 @@ li {
 }*/
 
 .work{
-  padding-top: 10%;
+  padding: 7% 7%;
 }
 
 .container {
-    margin-top:10%;
+    /* margin-top:10%; */
     display: inline-block;
-    position: relative;
-    color: white;
-    width: 60%;
-    padding: 2%;
-    border: 1px solid black;
+    /* position: relative; */
+    color: black;
+    width: 40%;
+    /* border: 1px solid black; */
+    padding: 0% 2%;
+    margin-top: 2%;
 }
 
 .container2 img{
@@ -74,29 +81,30 @@ li {
 .container2{
   display: inline-block;
   border: 1px solid black;
-  position: relative;
+  /* position: relative; */
   color: white;
   text-align: center;
-  padding: 1%;
-  width: 50%;
+  width: 40%;
 }
 
 .container3{
   display: inline-block;
   border: 1px solid black;
-  position: relative;
+  /* position: relative; */
   color: white;
   text-align: center;
-  width: 50%;
-  padding: 2%;
+  width: 40%;
   margin-top: 10%;
 }
 
-.centered {
-    position: absolute;
-    top: 45%;
-    left: 20%;
-    font-size:2em;
+.worktext {
+    font-size: 3vh;
+    padding: 2% 0%;
+    /* color: black; */
+    height: 5%;
+    /* border: 1px solid black; */
+
+
 }
 
 .container:hover, .container2:hover, .container3:hover{
@@ -104,7 +112,7 @@ li {
 }
 
 .container img:hover, .container2 img:hover, .container3 img:hover{
-  opacity: .5;
+  /* opacity: .5; */
   color: black;
 }
 
@@ -113,7 +121,7 @@ li a {
     text-align: center;
     text-decoration: none;
     /*font-variant: small-caps;*/
-    font-size: 1em;
+    /* font-size: 1em; */
 }
 
 li a:hover {
@@ -135,58 +143,75 @@ a p:hover {
 .nav{
   position: fixed;
   width: 100%;
-  height:7%;
-  overflow: hidden;
+  height:10%;
+  /* overflow: hidden; */
   background-color: rgba(20, 3, 3, 0.911);
-  border: 1px solid black;
+  border: 1% solid black;
 }
 
 .tabs{
   display: inline-block;
   position: relative;
   text-align: right;
-  padding-right: 100px;
-  width: 61%;
+  padding-right: 10%;
+  width: 51%;
   color: #fcfaba;
+  font-family: monospace;
+  font-weight: 50;
+  font-size: 1.75vh;
+  /* background-color: blue; */
   height:100%;
-  border: 1px solid black;
+  /* border: 1% solid black; */
 
+}
+
+.tabs li {
+  padding-top: 5%; 
 }
 
 .logo{
   position: relative;
   display: inline-block;
-  width: 30%;
+  width: 15%;
   height: 100%;
   font-weight: bold;
-  font-size: 3em;
-  padding-top: 1%; 
+  font-size: 2.5em;
+  /* padding-top: 1%;  */
   text-align: center;
   overflow: hidden;
-  border: 1px solid black;*/
+  /* background-color: red; */
+  /* border: 1% solid black; */
 }
 
 .intro{
   text-align: center;
   border: solid black;
-  margin: 7.5%;
-  padding: 22% 0%;
-  width: 85%;
+  margin: 7% 10%;
+  padding: 20% 0%;
+  width: 80%;
   font-size: 3vh;
-  font-weight: 600;
+  line-height: 3.5vh;
+  font-weight: 300;
   color:  #fffc99;
-  background-image: url("images/movement/_MG_0782.jpg");
+  /* background-image: url("images/movement/_MG_0782.jpg"); */
+  /* background-image: url("images/_OON4498.jpg"); */
+  background-image: url("images/_OON4517.jpg");
   background-size: 100%;
 }
 
 .intro a{ 
   color:  #f7f6d8;
-  font-family: monospace;
+  /* font-family: monospace; */
   text-decoration: none;
 }
 
 .intro a:hover{ 
   color:  #fffc99;
+}
+
+.intro img {
+  width: 15%;
+  margin: -5%;
 }
 
 .px, .px1, .px2, .px3, .px4, #about-text, #about-pic{
@@ -249,7 +274,8 @@ a p:hover {
 
 #about-pic {
     /* The image used*/
-    background-image: url("images/IMG_1852.jpg");
+    /* background-image: url("images/IMG_1852.jpg"); */
+    background-image: url("images/_OON2282.jpg");
 
     /* Set a specific height */
     min-height:100%;
@@ -333,16 +359,40 @@ a p:hover {
 
 }
 
-.gallery{
-  display: inline-block;
-  margin-top: 90px;
+.gallery {
+  margin-top: 5%;
+}
+
+.gallery-col {
+  display: flex;
 }
 
 .gallery img {
   width: 50%;
+  margin-top: -10px;
 }
 
-img{
-  margin-left: -5px;
-  margin-top: -10px;
+.half {
+  width: 50%;
+}
+
+ 
+#projects {
+  width: 100%;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 2%;
+  background-color: #f7f6d8;
+}
+
+#albums {
+  width: 100%;
+  padding-top: 7%;
+  display: flex;
+  
+}
+
+.album-pic {
+  width: 49%;
+  padding: 0% .5%;
 }
