@@ -1,14 +1,21 @@
-.gallery-row {
-  
+.proj-gallery {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .image img {
-  width: 49%;
-  margin-top: -1vh;
+  margin:auto;
+  max-height: 75%;
+  max-width: 95%;
 }
 
 .image {
-  padding: 3px;
+  display: inline-grid;
+  width: 50%;
+  height: 90vh;
+  /* text-align: center; */
+  /* padding: 3px; */
   margin: 0;
-  display: inline;
+  /* border: 3px solid #8d5e21; */
 }

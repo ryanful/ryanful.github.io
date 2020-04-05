@@ -184,9 +184,7 @@ export const PHOTOGROUPS: PhotoGroup[] = [
       { name: "chi862.jpg", date: "", title: "", desc: "" },
       { name: "chi849.jpg", date: "", title: "", desc: "" },
       { name: "chi860.jpg", date: "", title: "", desc: "" },
-      { name: "chi856.jpg", date: "", title: "", desc: "" },
-      { name: "syd29.jpg", date: "", title: "", desc: "" },
-      { name: "syd30.jpg", date: "", title: "", desc: "" }
+      { name: "chi856.jpg", date: "", title: "", desc: "" }
     ]
   },
   {

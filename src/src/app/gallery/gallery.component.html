@@ -1,6 +1,13 @@
-<div class="gallery-row">
-  <div *ngFor="let pic of images" class="image">
-    <img src="{{path + pic.name}}">
+<div class="page">
+  <div *ngIf="isProj; else regularGallery" class="proj-gallery">
+    <div *ngFor="let pic of images" class="image">
+      <img src="{{path + pic.name}}">
+    </div>
   </div>
 
+  <ng-template #regularGallery>
+    <div *ngFor="let pic of images" class="image">
+      <img src="{{path + pic.name}}">
+    </div>
+  </ng-template>
 </div>
