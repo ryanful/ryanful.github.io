@@ -78,6 +78,14 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     ]
   },
   {
+    id: "grad-alex",
+    title: "Sofya's Graduation",
+    path: "../assets/images/work/grad/alex/",
+    images: [
+      { name: "../alex295.jpg", date: "May 2019", title: "", desc: "" }
+    ]
+  },
+  {
     id: "grad-lyd",
     title: "Sofya's Graduation",
     path: "../assets/images/work/grad/",
@@ -264,7 +272,7 @@ export const WORKPANELS: Panel[] = [
         id: "grad-ric"
       },
       {
-        cover: { name: "alex1295.jpg", date: "May 2019", title: "Alexandria", desc: "" },
+        cover: { name: "alex295.jpg", date: "May 2019", title: "Alexandria", desc: "" },
         id: "grad-alex"
       },
       {

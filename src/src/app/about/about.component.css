@@ -30,6 +30,10 @@
   background-size: 100%;
 }
 
+#about-text a {
+  color: #e8d8c3;
+}
+
 #about-fav {
   /* The image used*/
   /* Set a specific height */

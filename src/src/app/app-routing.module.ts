@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'portfolio', component: GalleryPageComponent },
   { path: 'gallery/:id', component: GalleryComponent },
   { path: 'panel/:id', component: PanelComponent },
+  { path: 'resume', redirectTo: '../assets/RaheelYanful-Resume.pdf' },
   { path: '**', redirectTo: '' }
 ];
 
