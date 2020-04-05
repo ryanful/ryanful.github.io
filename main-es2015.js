@@ -224,8 +224,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./gallery/gallery.component */ "./src/app/gallery/gallery.component.ts");
 /* harmony import */ var _images_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images.service */ "./src/app/images.service.ts");
 /* harmony import */ var _panel_panel_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./panel/panel.component */ "./src/app/panel/panel.component.ts");
-/* harmony import */ var _proj_gallery_proj_gallery_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./proj-gallery/proj-gallery.component */ "./src/app/proj-gallery/proj-gallery.component.ts");
-
 
 
 
@@ -255,8 +253,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _about_about_component__WEBPACK_IMPORTED_MODULE_8__["AboutComponent"],
         _gallery_page_gallery_page_component__WEBPACK_IMPORTED_MODULE_9__["GalleryPageComponent"],
         _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_10__["GalleryComponent"],
-        _panel_panel_component__WEBPACK_IMPORTED_MODULE_12__["PanelComponent"],
-        _proj_gallery_proj_gallery_component__WEBPACK_IMPORTED_MODULE_13__["ProjGalleryComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _panel_panel_component__WEBPACK_IMPORTED_MODULE_12__["PanelComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
@@ -270,8 +267,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _about_about_component__WEBPACK_IMPORTED_MODULE_8__["AboutComponent"],
                     _gallery_page_gallery_page_component__WEBPACK_IMPORTED_MODULE_9__["GalleryPageComponent"],
                     _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_10__["GalleryComponent"],
-                    _panel_panel_component__WEBPACK_IMPORTED_MODULE_12__["PanelComponent"],
-                    _proj_gallery_proj_gallery_component__WEBPACK_IMPORTED_MODULE_13__["ProjGalleryComponent"]
+                    _panel_panel_component__WEBPACK_IMPORTED_MODULE_12__["PanelComponent"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1083,42 +1079,6 @@ const PROJECTPANELS = [
         ]
     }
 ];
-
-
-/***/ }),
-
-/***/ "./src/app/proj-gallery/proj-gallery.component.ts":
-/*!********************************************************!*\
-  !*** ./src/app/proj-gallery/proj-gallery.component.ts ***!
-  \********************************************************/
-/*! exports provided: ProjGalleryComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjGalleryComponent", function() { return ProjGalleryComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _gallery_gallery_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../gallery/gallery.component */ "./src/app/gallery/gallery.component.ts");
-
-
-
-class ProjGalleryComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-}
-ProjGalleryComponent.ɵfac = function ProjGalleryComponent_Factory(t) { return new (t || ProjGalleryComponent)(); };
-ProjGalleryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProjGalleryComponent, selectors: [["app-proj-gallery"]], decls: 1, vars: 0, template: function ProjGalleryComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "gallery");
-    } }, directives: [_gallery_gallery_component__WEBPACK_IMPORTED_MODULE_1__["GalleryComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2otZ2FsbGVyeS9wcm9qLWdhbGxlcnkuY29tcG9uZW50LmNzcyJ9 */"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ProjGalleryComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'app-proj-gallery',
-                templateUrl: './proj-gallery.component.html',
-                styleUrls: ['./proj-gallery.component.css']
-            }]
-    }], function () { return []; }, null); })();
 
 
 /***/ }),
