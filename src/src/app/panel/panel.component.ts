@@ -27,9 +27,9 @@ export class PanelComponent implements OnInit {
     this.images = photos.images;*/
     this.route.paramMap
       .subscribe(params => {
-
-        if (this.panel === undefined) {
-          let id = params.get("id");
+        let id = params.get("id");
+        if (id !== null) {
+          console.log("PANEEL SWITCH");
           this.panel = this.imagesService.getWorkPanels().find(d => d.id === id);
         }
 

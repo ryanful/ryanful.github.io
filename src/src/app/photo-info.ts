@@ -310,26 +310,26 @@ export const PROJECTPANELS: Panel[] = [
     path: "../assets/images/projects/",
     members: [
       {
-        cover: { name: "risk832.jpg", date: "Jun 2019", title: "", desc: "" },
+        cover: { name: "risk832.jpg", date: "Jun 2019", title: "Reem", desc: "" },
         id: "proj-risk"
       },
       {
         cover: {
-          name: "bak.png", date: "Jun 2019", title: "",
+          name: "bak.png", date: "Jun 2019", title: "One Love (Albums Rahmastered)",
           desc: ""
         },
         id: "proj-albums"
       },
       {
-        cover: { name: "flick.png", date: "Feb 2020", title: "", desc: "" },
+        cover: { name: "flick.png", date: "Feb 2020", title: "Uncanny Vibrations", desc: "" },
         id: "proj-uncanny"
       },
       {
-        cover: { name: "THEONE.jpg", date: "Nov 2019", title: "", desc: "" },
+        cover: { name: "THEONE.jpg", date: "Nov 2019", title: "Chioma", desc: "" },
         id: "proj-chi"
       },
       {
-        cover: { name: "syd629.jpg", date: "Jan 2020", title: "", desc: "" },
+        cover: { name: "syd629.jpg", date: "Jan 2020", title: "Sydney", desc: "" },
         id: "proj-syd"
       }
     ]
