@@ -9,7 +9,14 @@
 
     <div class="nav-tabs">
       <a class="tab" routerLink="portfolio" routerLinkActive="active">gallery</a>
-      <a class="tab" routerLink="work" routerLinkActive="active">work</a>
+      <div class="dropdown">
+        <a class="tab" routerLink="work" routerLinkActive="active">work</a>
+        <div class="dropdown-content">
+          <a [routerLink]="['/gallery', 'grad-ab']">Graduations</a>
+          <a [routerLink]="['/gallery', 'event-pep']">Events</a>
+          <a [routerLink]="['/gallery', 'proj-syd']">Headshots</a>
+        </div>
+      </div>
       <div class="dropdown">
         <a class="tab" routerLink="projects" routerLinkActive="active">
           projects
