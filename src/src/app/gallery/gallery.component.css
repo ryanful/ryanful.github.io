@@ -1,0 +1,14 @@
+.gallery-row {
+  
+}
+
+.image img {
+  width: 49%;
+  margin-top: -1vh;
+}
+
+.image {
+  padding: 3px;
+  margin: 0;
+  display: inline;
+}

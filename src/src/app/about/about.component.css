@@ -1,0 +1,47 @@
+
+.about{
+  height: 100%;
+}
+#about-pic {
+  /* The image used*/
+  /* background-image: url("images/IMG_1852.jpg"); */
+  background-image: url('/../assets/images/self/OON2282.jpg'); 
+
+  /* Set a specific height */
+  height:100%;
+  width: 100%;
+  float: left;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+#about-text {
+  /* The image used*/
+  /* Set a specific height */
+  min-height:80%;
+  width: 49%;
+  float: left;
+  /*border: 1px solid black;*/
+  padding-left: 5%;
+  padding-top: 10%;
+  background-size: 100%;
+}
+
+#about-fav {
+  /* The image used*/
+  /* Set a specific height */
+  max-height:60%;
+  width: 35%;
+  float: left;
+  /*border: 1px solid black;*/
+  padding-left: 5%;
+  padding-top: 10%;
+  background-size: 100%;
+}
+
+#about-fav img{
+width: 90%;
+}
