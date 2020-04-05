@@ -6,6 +6,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PanelComponent } from './panel/panel.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -13,7 +14,9 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'portfolio', component: GalleryPageComponent },
-  { path: 'gallery/:id', component: GalleryComponent }
+  { path: 'gallery/:id', component: GalleryComponent },
+  { path: 'panel/:id', component: PanelComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
