@@ -123,6 +123,51 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     ]
   },
   {
+    id: "event-ae19",
+    title: "Events",
+    path: "../assets/images/work/events/AE19/",
+    images: [
+      { name: "ae19-1.jpg", date: "", title: "", desc: "" },
+      { name: "ae19-3.jpg", date: "", title: "", desc: "" },
+      { name: "ae19-4.jpg", date: "", title: "", desc: "" },
+      { name: "ae19-5.jpg", date: "", title: "", desc: "" },
+      { name: "ae19-6.jpg", date: "", title: "", desc: "" },
+      { name: "ae19-7.jpg", date: "", title: "", desc: "" }
+    ]
+  },
+  {
+    id: "event-urmcbbq",
+    title: "Events",
+    path: "../assets/images/work/events/urmcbbq/",
+    images: [
+      { name: "urmcbbq2.jpg", date: "", title: "", desc: "" },
+      { name: "urmcbbq3.jpg", date: "", title: "", desc: "" },
+      { name: "urmcbbq4.jpg", date: "", title: "", desc: "" },
+      { name: "urmcbbq5.jpg", date: "", title: "", desc: "" },
+      { name: "urmcbbq6.jpg", date: "", title: "", desc: "" },
+      { name: "urmcbbq7.jpg", date: "", title: "", desc: "" },
+      { name: "urmcbbq8.jpg", date: "", title: "", desc: "" },
+      { name: "urmcbbq9.jpg", date: "", title: "", desc: "" },
+      { name: "urmcbbq10.jpg", date: "", title: "", desc: "" }
+    ]
+  },
+  {
+    id: "event-bloth19",
+    title: "Events",
+    path: "../assets/images/work/events/bloth/",
+    images: [
+      { name: "bloth19-2.jpg", date: "", title: "", desc: "" },
+      { name: "bloth19-3.jpg", date: "", title: "", desc: "" },
+      { name: "bloth19-4.jpg", date: "", title: "", desc: "" },
+      { name: "bloth19-5.jpg", date: "", title: "", desc: "" },
+      { name: "bloth19-6.jpg", date: "", title: "", desc: "" },
+      { name: "bloth19-7.jpg", date: "", title: "", desc: "" },
+      { name: "bloth19-8.jpg", date: "", title: "", desc: "" },
+      { name: "bloth19-9.jpg", date: "", title: "", desc: "" },
+      { name: "bloth19-10.jpg", date: "", title: "", desc: "" }
+    ]
+  },
+  {
     id: "event-pep",
     title: "Events",
     path: "../assets/images/work/events/pepnc/",
@@ -145,12 +190,46 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     ]
   },
   {
-    id: "work-hs",
-    title: "Headshots",
-    path: "../assets/images/work/headshots/",
+    id: "hs-urmc",
+    title: "URMC Headshots",
+    path: "../assets/images/work/headshots/urmc/",
     images: [
-      { name: "vap913.jpg", date: "", title: "", desc: "" },
-      { name: "pepnc992.jpg", date: "", title: "", desc: "" }
+      { name: "../urmc-mar.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-hanan3.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-gio.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-albina.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-ian.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-esu.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-mo.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-chike.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-alexei4.jpg", date: "", title: "", desc: "" },
+      { name: "urmc-danyeh.jpg", date: "", title: "", desc: "" }
+    ]
+  },
+  {
+    id: "hs-raas",
+    title: "RAAS Headshots",
+    path: "../assets/images/work/headshots/raas/",
+    images: [
+      { name: "raas2.jpg", date: "", title: "", desc: "" },
+      { name: "raas3.jpg", date: "", title: "", desc: "" },
+      { name: "raas4.jpg", date: "", title: "", desc: "" },
+      { name: "raas5.jpg", date: "", title: "", desc: "" },
+      { name: "raas6.jpg", date: "", title: "", desc: "" },
+      { name: "../raas1.jpg", date: "", title: "", desc: "" }
+    ]
+  },
+  {
+    id: "hs-anj",
+    title: "Anjali Headshots",
+    path: "../assets/images/work/headshots/anjali/",
+    images: [
+      { name: "anj2.jpg", date: "", title: "", desc: "" },
+      { name: "anj3.jpg", date: "", title: "", desc: "" },
+      { name: "anj4.jpg", date: "", title: "", desc: "" },
+      { name: "anj5.jpg", date: "", title: "", desc: "" },
+      { name: "anj6.jpg", date: "", title: "", desc: "" },
+      { name: "anj7.jpg", date: "", title: "", desc: "" }
     ]
   },
   {
@@ -288,13 +367,42 @@ export const WORKPANELS: Panel[] = [
         id: "event-vap"
       },
       {
+        cover: { name: "ae19-2.jpg", date: "Oct 2019", title: "Autumn Evening", desc: "" },
+        id: "event-ae19"
+      },
+      {
+        cover: { name: "urmcbbq1.jpg", date: "Aug 2019", title: "URMC x NSBE x SHPE BBQ", desc: "" },
+        id: "event-urmcbbq"
+      },
+      {
+        cover: { name: "bloth19-1.jpg", date: "Aug 2019", title: "Black Life on The Hill", desc: "" },
+        id: "event-bloth19"
+      },
+      {
         cover: { name: "pepnc992.jpg", date: "May 2018", title: "Peprah Naming Ceremony", desc: "" },
         id: "event-pep"
       }
     ]
+  },
+  {
+    id: "work-hs",
+    title: "Headshots + Portraits",
+    path: "../assets/images/work/headshots/",
+    members: [
+      {
+        cover: { name: "urmc-mar.jpg", date: "Feb 2020", title: "URMC Cornell Headshots", desc: "" },
+        id: "hs-urmc"
+      },
+      {
+        cover: { name: "raas1.jpg", date: "Oct 2019", title: "Cornell RAAS Headshots", desc: "" },
+        id: "hs-raas"
+      },
+      {
+        cover: { name: "anj1.jpg", date: "Oct 2019", title: "Cornell Anjali Headshots", desc: "" },
+        id: "hs-anj"
+      }
+    ]
   }
-  // "work-events", 
-  // "work-hs"
   //, "work-orgs", "work-brands", "work-mags"
 ];
 

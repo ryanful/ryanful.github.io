@@ -48,6 +48,7 @@
   display: none;
   position: absolute;
   min-width: 160px;
+  padding-top: 1vh;
   z-index: 1;
   background-color:rgba(20, 3, 3, 0.5);
 }

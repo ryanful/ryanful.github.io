@@ -10,5 +10,8 @@ export class AppComponent {
 
   constructor() { }
 
+  scrollTop(event: any) {
+    document.body.scrollTop = 0;
+  }
 }
 
