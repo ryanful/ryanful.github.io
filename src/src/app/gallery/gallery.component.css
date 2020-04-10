@@ -12,10 +12,11 @@
 
 .image {
   display: inline-grid;
+  vertical-align: middle;
   width: 50%;
   height: 90vh;
   /* text-align: center; */
   /* padding: 3px; */
-  margin: 0;
+  /* margin: auto; */
   /* border: 3px solid #8d5e21; */
 }

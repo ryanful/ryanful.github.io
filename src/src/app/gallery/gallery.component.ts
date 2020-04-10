@@ -38,5 +38,11 @@ export class GalleryComponent implements OnInit {
     //this.images = photos.images;
   }
 
+  setBackground(isOdd) {
+    console.log("we tried");
+    // document.querySelector("div.image").setAttribute("background-color", "#e8d8c3");
+    return isOdd ? "#e8d8c3" : "none";
+  }
+
 
 }

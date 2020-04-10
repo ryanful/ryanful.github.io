@@ -12,6 +12,7 @@ export class AppComponent {
 
   scrollTop(event: any) {
     document.body.scrollTop = 0;
+    document.body.scrollLeft = 0;
   }
 }
 

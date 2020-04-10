@@ -239,8 +239,8 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     images: [
       { name: "risk842.jpg", date: "Jun 2019", title: "", desc: "" },
       { name: "risk841.jpg", date: "Jun 2019", title: "", desc: "" },
-      { name: "risk825.jpg", date: "", title: "", desc: "" },
-      { name: "risk823.jpg", date: "", title: "", desc: "" }
+      { name: "../risk832.jpg", date: "", title: "", desc: "" },
+      { name: "risk825.jpg", date: "", title: "", desc: "" }
     ]
   },
   {

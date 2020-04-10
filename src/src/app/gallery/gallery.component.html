@@ -1,6 +1,6 @@
 <div class="page">
   <div *ngIf="isProj; else regularGallery" class="proj-gallery">
-    <div *ngFor="let pic of images" class="image">
+    <div *ngFor="let pic of images; let odd=odd" class="image" [style.background-color]="setBackground(odd)">
       <img src="{{path + pic.name}}">
     </div>
   </div>
