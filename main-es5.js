@@ -391,6 +391,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "scrollTop",
         value: function scrollTop(event) {
           document.body.scrollTop = 0;
+          document.body.scrollLeft = 0;
         }
       }]);
 
@@ -715,8 +716,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       if (rf & 2) {
         var pic_r8 = ctx.$implicit;
+        var odd_r9 = ctx.odd;
 
         var ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("background-color", ctx_r7.setBackground(odd_r9));
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
@@ -728,7 +732,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, GalleryComponent_div_1_div_1_Template, 2, 1, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, GalleryComponent_div_1_div_1_Template, 2, 3, "div", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -752,19 +756,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var pic_r10 = ctx.$implicit;
+        var pic_r11 = ctx.$implicit;
 
-        var ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+        var ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r9.path + pic_r10.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r10.path + pic_r11.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
       }
     }
 
     function GalleryComponent_ng_template_2_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, GalleryComponent_ng_template_2_div_0_Template, 2, 1, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, GalleryComponent_ng_template_2_div_0_Template, 2, 1, "div", 7);
       }
 
       if (rf & 2) {
@@ -807,6 +811,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           //this.path = photos.path;
           //this.images = photos.images;
         }
+      }, {
+        key: "setBackground",
+        value: function setBackground(isOdd) {
+          console.log("we tried"); // document.querySelector("div.image").setAttribute("background-color", "#e8d8c3");
+
+          return isOdd ? "#e8d8c3" : "none";
+        }
       }]);
 
       return GalleryComponent;
@@ -824,7 +835,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       },
       decls: 4,
       vars: 2,
-      consts: [[1, "page"], ["class", "proj-gallery", 4, "ngIf", "ngIfElse"], ["regularGallery", ""], [1, "proj-gallery"], ["class", "image", 4, "ngFor", "ngForOf"], [1, "image"], [3, "src"]],
+      consts: [[1, "page"], ["class", "proj-gallery", 4, "ngIf", "ngIfElse"], ["regularGallery", ""], [1, "proj-gallery"], ["class", "image", 3, "background-color", 4, "ngFor", "ngForOf"], [1, "image"], [3, "src"], ["class", "image", 4, "ngFor", "ngForOf"]],
       template: function GalleryComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -845,7 +856,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
-      styles: [".proj-gallery[_ngcontent-%COMP%] {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n}\n\n.image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  margin:auto;\n  max-height: 75%;\n  max-width: 95%;\n}\n\n.image[_ngcontent-%COMP%] {\n  display: inline-grid;\n  width: 50%;\n  height: 90vh;\n  \n  \n  margin: 0;\n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxlQUFlO0VBQ2YsY0FBYztBQUNoQjs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixVQUFVO0VBQ1YsWUFBWTtFQUNaLHdCQUF3QjtFQUN4QixrQkFBa0I7RUFDbEIsU0FBUztFQUNULCtCQUErQjtBQUNqQyIsImZpbGUiOiJzcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByb2otZ2FsbGVyeSB7XG4gIG92ZXJmbG93LXg6IHNjcm9sbDtcbiAgb3ZlcmZsb3cteTogaGlkZGVuO1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xufVxuXG4uaW1hZ2UgaW1nIHtcbiAgbWFyZ2luOmF1dG87XG4gIG1heC1oZWlnaHQ6IDc1JTtcbiAgbWF4LXdpZHRoOiA5NSU7XG59XG5cbi5pbWFnZSB7XG4gIGRpc3BsYXk6IGlubGluZS1ncmlkO1xuICB3aWR0aDogNTAlO1xuICBoZWlnaHQ6IDkwdmg7XG4gIC8qIHRleHQtYWxpZ246IGNlbnRlcjsgKi9cbiAgLyogcGFkZGluZzogM3B4OyAqL1xuICBtYXJnaW46IDA7XG4gIC8qIGJvcmRlcjogM3B4IHNvbGlkICM4ZDVlMjE7ICovXG59XG4iXX0= */"]
+      styles: [".proj-gallery[_ngcontent-%COMP%] {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n}\n\n.image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  margin:auto;\n  max-height: 75%;\n  max-width: 95%;\n}\n\n.image[_ngcontent-%COMP%] {\n  display: inline-grid;\n  vertical-align: middle;\n  width: 50%;\n  height: 90vh;\n  \n  \n  \n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxlQUFlO0VBQ2YsY0FBYztBQUNoQjs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixzQkFBc0I7RUFDdEIsVUFBVTtFQUNWLFlBQVk7RUFDWix3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQiwrQkFBK0I7QUFDakMiLCJmaWxlIjoic3JjL2FwcC9nYWxsZXJ5L2dhbGxlcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9qLWdhbGxlcnkge1xuICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gIG92ZXJmbG93LXk6IGhpZGRlbjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbn1cblxuLmltYWdlIGltZyB7XG4gIG1hcmdpbjphdXRvO1xuICBtYXgtaGVpZ2h0OiA3NSU7XG4gIG1heC13aWR0aDogOTUlO1xufVxuXG4uaW1hZ2Uge1xuICBkaXNwbGF5OiBpbmxpbmUtZ3JpZDtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgd2lkdGg6IDUwJTtcbiAgaGVpZ2h0OiA5MHZoO1xuICAvKiB0ZXh0LWFsaWduOiBjZW50ZXI7ICovXG4gIC8qIHBhZGRpbmc6IDNweDsgKi9cbiAgLyogbWFyZ2luOiBhdXRvOyAqL1xuICAvKiBib3JkZXI6IDNweCBzb2xpZCAjOGQ1ZTIxOyAqL1xufVxuIl19 */"]
     });
     /*@__PURE__*/
 
@@ -1455,29 +1466,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var member_r12 = ctx.$implicit;
+        var member_r13 = ctx.$implicit;
 
-        var ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](5, _c0, member_r12.id));
+        var ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r11.panel.path + member_r12.cover.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](5, _c0, member_r13.id));
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r12.panel.path + member_r13.cover.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", member_r12.cover.title, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", member_r13.cover.title, " ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", member_r12.cover.date, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", member_r13.cover.date, "");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](member_r12.cover.desc);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](member_r13.cover.desc);
       }
     }
 
@@ -2358,12 +2369,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         title: "",
         desc: ""
       }, {
-        name: "risk825.jpg",
+        name: "../risk832.jpg",
         date: "",
         title: "",
         desc: ""
       }, {
-        name: "risk823.jpg",
+        name: "risk825.jpg",
         date: "",
         title: "",
         desc: ""
