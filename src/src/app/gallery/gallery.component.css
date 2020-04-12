@@ -37,6 +37,7 @@
 
   /* Set a specific height */
   max-width:50%;
+  overflow-x: scroll;
   /* width: 30%; */
   /* background-repeat: no-repeat;
   background-size: cover; */
