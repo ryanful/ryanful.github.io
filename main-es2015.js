@@ -477,6 +477,7 @@ class GalleryComponent {
             this.images = photos.images;
             this.isProj = id.substr(0, 4) === 'proj';
         });
+        // document.body.scrollTop = 0;
         //let photos = this.imagesService.getPhotos(this.id);
         //this.path = photos.path;
         //this.images = photos.images;
@@ -503,20 +504,9 @@ class GalleryComponent {
     }
     checkArrows() {
         let gallery = document.querySelector("div#proj-gallery");
-        let bodyWidth = document.documentElement.clientWidth;
-        let galleryEnd = (this.images.length - 2) * .5 * bodyWidth;
-        if (gallery.scrollLeft < .5 * bodyWidth) {
-            this.showLeft = false;
-        }
-        else {
-            this.showLeft = true;
-        }
-        if (gallery.scrollLeft >= galleryEnd) {
-            this.showRight = false;
-        }
-        else {
-            this.showRight = true;
-        }
+        let galleryEnd = (this.images.length - 2) * .5 * gallery.clientWidth;
+        this.showLeft = !(gallery.scrollLeft === 0);
+        this.showRight = !(gallery.scrollLeft >= galleryEnd);
     }
     elementVisible(isVis) {
         return isVis ? 'visible' : 'hidden';
@@ -532,7 +522,7 @@ GalleryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isProj)("ngIfElse", _r5);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]], styles: [".image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  margin:auto;\n  max-height: 75%;\n  max-width: 95%;\n}\n\n.image[_ngcontent-%COMP%] {\n  display: inline-grid;\n  vertical-align: middle;\n  width: 50%;\n  height: 90vh;\n  \n  \n  \n  \n}\n\n#proj-gallery[_ngcontent-%COMP%] {\n  position: relative;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  width:100%;\n  height: 90vh;\n  scroll-behavior: smooth;\n}\n\n.details[_ngcontent-%COMP%]{\n  height: 90vh;\n  width: 100vw;\n  display: inline-flex;\n  overflow-x: scroll;\n}\n\n#detail-image[_ngcontent-%COMP%] {\n  \n  \n\n  \n  max-width:50%;\n  overflow-x: scroll;\n  \n  \n\n}\n\n#detail-image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height:100%;\n  flex-grow: 1;\n  \n}\n\n#detail-text[_ngcontent-%COMP%] {\n  \n  \n  min-height: 70vh;\n  width: 90%;\n  \n  padding-top: 10vh; \n  padding-left: 10%;\n}\n\np[_ngcontent-%COMP%], h2[_ngcontent-%COMP%] {\n  margin: 0;\n}\n\nh2[_ngcontent-%COMP%] {\n  font-weight: 400;\n}\n\n.link[_ngcontent-%COMP%] {\n  text-decoration: underline;\n}\n\n.link[_ngcontent-%COMP%]:hover {\n  font-weight: bold;\n  cursor: pointer;\n}\n\n.down[_ngcontent-%COMP%] {\n  \n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: 10vh;\n  margin:auto;\n}\n\n.controls[_ngcontent-%COMP%] {\n  display: flex;\n  margin-top: -90vh;\n  height: 90vh;\n  width: 100%;\n}\n\n.expand-more[_ngcontent-%COMP%]:hover, .right-chevron[_ngcontent-%COMP%]:hover, .left-chevron[_ngcontent-%COMP%]:hover{\n  opacity: 1;\n  cursor: pointer;\n}\n\n.expand-more[_ngcontent-%COMP%] {\n  font-size: 10vh;\n  opacity: .5;\n}\n\n.right-chevron[_ngcontent-%COMP%], .left-chevron[_ngcontent-%COMP%] {\n  font-size: 8vw;\n  opacity: .5;\n}\n\n.right-chevron[_ngcontent-%COMP%]{\n  position: -webkit-sticky;\n  position: sticky;\n  margin: auto 0vw;\n  left: 1vw;\n}\n\n.left-chevron[_ngcontent-%COMP%]{\n  position: -webkit-sticky;\n  position: sticky;\n  margin: auto 0vw;\n}\n\n.filler[_ngcontent-%COMP%] {\n  width: 84vw;\n  z-index: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsZUFBZTtFQUNmLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsc0JBQXNCO0VBQ3RCLFVBQVU7RUFDVixZQUFZO0VBQ1osd0JBQXdCO0VBQ3hCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLFVBQVU7RUFDVixZQUFZO0VBQ1osdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixvQkFBb0I7RUFDcEIsa0JBQWtCO0FBQ3BCOztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLHNFQUFzRTs7RUFFdEUsMEJBQTBCO0VBQzFCLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCOzJCQUN5Qjs7QUFFM0I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQiwwQkFBMEI7RUFDMUIsZ0JBQWdCO0VBQ2hCLFVBQVU7RUFDViwyQkFBMkI7RUFDM0IsaUJBQWlCO0VBQ2pCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLFdBQVc7RUFDWCxZQUFZO0VBQ1osV0FBVztBQUNiOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osV0FBVztBQUNiOztBQUNBO0VBQ0UsVUFBVTtFQUNWLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsV0FBVztBQUNiOztBQUVBO0VBQ0UsY0FBYztFQUNkLFdBQVc7QUFDYjs7QUFFQTtFQUNFLHdCQUFnQjtFQUFoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFNBQVM7QUFDWDs7QUFFQTtFQUNFLHdCQUFnQjtFQUFoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFVBQVU7QUFDWiIsImZpbGUiOiJzcmMvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmltYWdlIGltZyB7XG4gIG1hcmdpbjphdXRvO1xuICBtYXgtaGVpZ2h0OiA3NSU7XG4gIG1heC13aWR0aDogOTUlO1xufVxuXG4uaW1hZ2Uge1xuICBkaXNwbGF5OiBpbmxpbmUtZ3JpZDtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgd2lkdGg6IDUwJTtcbiAgaGVpZ2h0OiA5MHZoO1xuICAvKiB0ZXh0LWFsaWduOiBjZW50ZXI7ICovXG4gIC8qIHBhZGRpbmc6IDNweDsgKi9cbiAgLyogbWFyZ2luOiBhdXRvOyAqL1xuICAvKiBib3JkZXI6IDNweCBzb2xpZCAjOGQ1ZTIxOyAqL1xufVxuXG4jcHJvai1nYWxsZXJ5IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gIG92ZXJmbG93LXk6IGhpZGRlbjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgd2lkdGg6MTAwJTtcbiAgaGVpZ2h0OiA5MHZoO1xuICBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDtcbn1cblxuLmRldGFpbHN7XG4gIGhlaWdodDogOTB2aDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgb3ZlcmZsb3cteDogc2Nyb2xsO1xufVxuI2RldGFpbC1pbWFnZSB7XG4gIC8qIFRoZSBpbWFnZSB1c2VkKi9cbiAgLyogYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvLi4vYXNzZXRzL2ltYWdlcy9wcm9qZWN0cy9yaXNrODMyLmpwZycpOyAgKi9cblxuICAvKiBTZXQgYSBzcGVjaWZpYyBoZWlnaHQgKi9cbiAgbWF4LXdpZHRoOjUwJTtcbiAgb3ZlcmZsb3cteDogc2Nyb2xsO1xuICAvKiB3aWR0aDogMzAlOyAqL1xuICAvKiBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyOyAqL1xuXG59XG5cbiNkZXRhaWwtaW1hZ2UgaW1nIHtcbiAgaGVpZ2h0OjEwMCU7XG4gIGZsZXgtZ3JvdzogMTtcbiAgLyogd2lkdGg6IDMwJTsgKi9cbn1cblxuI2RldGFpbC10ZXh0IHtcbiAgLyogVGhlIGltYWdlIHVzZWQqL1xuICAvKiBTZXQgYSBzcGVjaWZpYyBoZWlnaHQgKi9cbiAgbWluLWhlaWdodDogNzB2aDtcbiAgd2lkdGg6IDkwJTtcbiAgLypib3JkZXI6IDFweCBzb2xpZCBibGFjazsqL1xuICBwYWRkaW5nLXRvcDogMTB2aDsgXG4gIHBhZGRpbmctbGVmdDogMTAlO1xufVxuXG5wLGgyIHtcbiAgbWFyZ2luOiAwO1xufVxuaDIge1xuICBmb250LXdlaWdodDogNDAwO1xufVxuXG4ubGluayB7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG4ubGluazpob3ZlciB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5kb3duIHtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTB2aDtcbiAgbWFyZ2luOmF1dG87XG59XG5cbi5jb250cm9scyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIG1hcmdpbi10b3A6IC05MHZoO1xuICBoZWlnaHQ6IDkwdmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmV4cGFuZC1tb3JlOmhvdmVyLCAucmlnaHQtY2hldnJvbjpob3ZlciwgLmxlZnQtY2hldnJvbjpob3ZlcntcbiAgb3BhY2l0eTogMTtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4uZXhwYW5kLW1vcmUge1xuICBmb250LXNpemU6IDEwdmg7XG4gIG9wYWNpdHk6IC41O1xufVxuXG4ucmlnaHQtY2hldnJvbiwgLmxlZnQtY2hldnJvbiB7XG4gIGZvbnQtc2l6ZTogOHZ3O1xuICBvcGFjaXR5OiAuNTtcbn1cblxuLnJpZ2h0LWNoZXZyb257XG4gIHBvc2l0aW9uOiBzdGlja3k7XG4gIG1hcmdpbjogYXV0byAwdnc7XG4gIGxlZnQ6IDF2dztcbn1cblxuLmxlZnQtY2hldnJvbntcbiAgcG9zaXRpb246IHN0aWNreTtcbiAgbWFyZ2luOiBhdXRvIDB2dztcbn1cblxuLmZpbGxlciB7XG4gIHdpZHRoOiA4NHZ3O1xuICB6LWluZGV4OiAwO1xufVxuXG5cblxuXG4iXX0= */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]], styles: [".image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  margin:auto;\n  max-height: 75%;\n  max-width: 95%;\n}\n\n.image[_ngcontent-%COMP%] {\n  display: inline-grid;\n  vertical-align: middle;\n  width: 50%;\n  height: 90vh;\n  \n  \n  \n  \n}\n\n#proj-gallery[_ngcontent-%COMP%] {\n  position: relative;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  width:100%;\n  height: 90vh;\n  scroll-behavior: smooth;\n}\n\n.details[_ngcontent-%COMP%]{\n  height: 90vh;\n  width: 100vw;\n  display: inline-flex;\n  overflow-x: scroll;\n}\n\n#detail-image[_ngcontent-%COMP%] {\n  \n  \n\n  \n  max-width:50%;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  \n  \n\n}\n\n#detail-image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height:100%;\n  flex-grow: 1;\n  \n}\n\n#detail-text[_ngcontent-%COMP%] {\n  \n  \n  min-height: 70vh;\n  width: 90%;\n  \n  padding-top: 10vh; \n  padding-left: 10%;\n}\n\np[_ngcontent-%COMP%], h2[_ngcontent-%COMP%] {\n  margin: 0;\n}\n\nh2[_ngcontent-%COMP%] {\n  font-weight: 400;\n}\n\n.link[_ngcontent-%COMP%] {\n  text-decoration: underline;\n}\n\n.link[_ngcontent-%COMP%]:hover {\n  font-weight: bold;\n  cursor: pointer;\n}\n\n.down[_ngcontent-%COMP%] {\n  \n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: 10vh;\n  margin:auto;\n}\n\n.controls[_ngcontent-%COMP%] {\n  display: flex;\n  margin-top: -90vh;\n  height: 90vh;\n  width: 100%;\n}\n\n.expand-more[_ngcontent-%COMP%]:hover, .right-chevron[_ngcontent-%COMP%]:hover, .left-chevron[_ngcontent-%COMP%]:hover{\n  opacity: 1;\n  cursor: pointer;\n}\n\n.expand-more[_ngcontent-%COMP%] {\n  font-size: 10vh;\n  opacity: .5;\n}\n\n.right-chevron[_ngcontent-%COMP%], .left-chevron[_ngcontent-%COMP%] {\n  font-size: 8vw;\n  opacity: .5;\n}\n\n.right-chevron[_ngcontent-%COMP%]{\n  position: -webkit-sticky;\n  position: sticky;\n  margin: auto 0vw;\n  left: 1vw;\n}\n\n.left-chevron[_ngcontent-%COMP%]{\n  position: -webkit-sticky;\n  position: sticky;\n  margin: auto 0vw;\n}\n\n.filler[_ngcontent-%COMP%] {\n  width: 84vw;\n  z-index: -1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsZUFBZTtFQUNmLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsc0JBQXNCO0VBQ3RCLFVBQVU7RUFDVixZQUFZO0VBQ1osd0JBQXdCO0VBQ3hCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLFVBQVU7RUFDVixZQUFZO0VBQ1osdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixvQkFBb0I7RUFDcEIsa0JBQWtCO0FBQ3BCOztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLHNFQUFzRTs7RUFFdEUsMEJBQTBCO0VBQzFCLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQjsyQkFDeUI7O0FBRTNCOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsMEJBQTBCO0VBQzFCLGdCQUFnQjtFQUNoQixVQUFVO0VBQ1YsMkJBQTJCO0VBQzNCLGlCQUFpQjtFQUNqQixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxTQUFTO0FBQ1g7O0FBQ0E7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLHdCQUF3QjtFQUN4QixhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixXQUFXO0VBQ1gsWUFBWTtFQUNaLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsWUFBWTtFQUNaLFdBQVc7QUFDYjs7QUFDQTtFQUNFLFVBQVU7RUFDVixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxXQUFXO0FBQ2I7O0FBRUE7RUFDRSx3QkFBZ0I7RUFBaEIsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSx3QkFBZ0I7RUFBaEIsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxXQUFXO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9nYWxsZXJ5L2dhbGxlcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbWFnZSBpbWcge1xuICBtYXJnaW46YXV0bztcbiAgbWF4LWhlaWdodDogNzUlO1xuICBtYXgtd2lkdGg6IDk1JTtcbn1cblxuLmltYWdlIHtcbiAgZGlzcGxheTogaW5saW5lLWdyaWQ7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gIHdpZHRoOiA1MCU7XG4gIGhlaWdodDogOTB2aDtcbiAgLyogdGV4dC1hbGlnbjogY2VudGVyOyAqL1xuICAvKiBwYWRkaW5nOiAzcHg7ICovXG4gIC8qIG1hcmdpbjogYXV0bzsgKi9cbiAgLyogYm9yZGVyOiAzcHggc29saWQgIzhkNWUyMTsgKi9cbn1cblxuI3Byb2otZ2FsbGVyeSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgb3ZlcmZsb3cteDogc2Nyb2xsO1xuICBvdmVyZmxvdy15OiBoaWRkZW47XG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gIHdpZHRoOjEwMCU7XG4gIGhlaWdodDogOTB2aDtcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG59XG5cbi5kZXRhaWxze1xuICBoZWlnaHQ6IDkwdmg7XG4gIHdpZHRoOiAxMDB2dztcbiAgZGlzcGxheTogaW5saW5lLWZsZXg7XG4gIG92ZXJmbG93LXg6IHNjcm9sbDtcbn1cbiNkZXRhaWwtaW1hZ2Uge1xuICAvKiBUaGUgaW1hZ2UgdXNlZCovXG4gIC8qIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLy4uL2Fzc2V0cy9pbWFnZXMvcHJvamVjdHMvcmlzazgzMi5qcGcnKTsgICovXG5cbiAgLyogU2V0IGEgc3BlY2lmaWMgaGVpZ2h0ICovXG4gIG1heC13aWR0aDo1MCU7XG4gIG92ZXJmbG93LXg6IHNjcm9sbDtcbiAgb3ZlcmZsb3cteTogaGlkZGVuO1xuICAvKiB3aWR0aDogMzAlOyAqL1xuICAvKiBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyOyAqL1xuXG59XG5cbiNkZXRhaWwtaW1hZ2UgaW1nIHtcbiAgaGVpZ2h0OjEwMCU7XG4gIGZsZXgtZ3JvdzogMTtcbiAgLyogd2lkdGg6IDMwJTsgKi9cbn1cblxuI2RldGFpbC10ZXh0IHtcbiAgLyogVGhlIGltYWdlIHVzZWQqL1xuICAvKiBTZXQgYSBzcGVjaWZpYyBoZWlnaHQgKi9cbiAgbWluLWhlaWdodDogNzB2aDtcbiAgd2lkdGg6IDkwJTtcbiAgLypib3JkZXI6IDFweCBzb2xpZCBibGFjazsqL1xuICBwYWRkaW5nLXRvcDogMTB2aDsgXG4gIHBhZGRpbmctbGVmdDogMTAlO1xufVxuXG5wLGgyIHtcbiAgbWFyZ2luOiAwO1xufVxuaDIge1xuICBmb250LXdlaWdodDogNDAwO1xufVxuXG4ubGluayB7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG4ubGluazpob3ZlciB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5kb3duIHtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTB2aDtcbiAgbWFyZ2luOmF1dG87XG59XG5cbi5jb250cm9scyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIG1hcmdpbi10b3A6IC05MHZoO1xuICBoZWlnaHQ6IDkwdmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmV4cGFuZC1tb3JlOmhvdmVyLCAucmlnaHQtY2hldnJvbjpob3ZlciwgLmxlZnQtY2hldnJvbjpob3ZlcntcbiAgb3BhY2l0eTogMTtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4uZXhwYW5kLW1vcmUge1xuICBmb250LXNpemU6IDEwdmg7XG4gIG9wYWNpdHk6IC41O1xufVxuXG4ucmlnaHQtY2hldnJvbiwgLmxlZnQtY2hldnJvbiB7XG4gIGZvbnQtc2l6ZTogOHZ3O1xuICBvcGFjaXR5OiAuNTtcbn1cblxuLnJpZ2h0LWNoZXZyb257XG4gIHBvc2l0aW9uOiBzdGlja3k7XG4gIG1hcmdpbjogYXV0byAwdnc7XG4gIGxlZnQ6IDF2dztcbn1cblxuLmxlZnQtY2hldnJvbntcbiAgcG9zaXRpb246IHN0aWNreTtcbiAgbWFyZ2luOiBhdXRvIDB2dztcbn1cblxuLmZpbGxlciB7XG4gIHdpZHRoOiA4NHZ3O1xuICB6LWluZGV4OiAtMTtcbn1cblxuXG5cblxuIl19 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](GalleryComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -848,15 +838,15 @@ class PanelComponent {
             .subscribe(params => {
             let id = params.get("id");
             if (id !== null) {
-                console.log("PANEEL SWITCH");
+                // console.log("PANEEL SWITCH");
                 this.panel = this.imagesService.getWorkPanels().find(d => d.id === id);
             }
         });
     }
     scroll(dir) {
-        let panel = document.querySelector("div.panel-images");
-        let bodyWidth = document.documentElement.clientWidth;
-        let moveAmt = .5 * bodyWidth;
+        let panel = document.querySelector("div#" + this.panel.id + " div.panel-images");
+        let viewWidth = panel.clientWidth;
+        let moveAmt = .5 * viewWidth;
         if (dir === 'l') {
             panel.scrollLeft -= panel.scrollLeft % moveAmt + moveAmt;
         }
@@ -865,24 +855,20 @@ class PanelComponent {
         }
     }
     checkArrows() {
-        let panel = document.querySelector("div.panel-images");
-        let bodyWidth = document.documentElement.clientWidth;
-        let panelEnd = (this.panel.members.length - 2) * .5 * bodyWidth;
-        if (panel.scrollLeft < .5 * bodyWidth) {
-            this.showLeft = false;
-        }
-        else {
-            this.showLeft = true;
-        }
-        if (panel.scrollLeft >= panelEnd) {
-            this.showRight = false;
-        }
-        else {
-            this.showRight = true;
-        }
+        let panel = document.querySelector("div#" + this.panel.id + " div.panel-images");
+        let panelEnd = panel.scrollWidth - panel.clientWidth;
+        this.showLeft = !(panel.scrollLeft === 0);
+        this.showRight = !(panel.scrollLeft >= panelEnd);
+        console.log("id", this.panel.id, "left", panel.scrollLeft, "scrollend", panelEnd);
     }
-    elementVisible(isVis) {
-        return isVis ? 'visible' : 'hidden';
+    elementVisible(chev) {
+        this.checkArrows();
+        if (chev === 'r') {
+            return this.showRight ? 'visible' : 'hidden';
+        }
+        else if (chev === 'l') {
+            return this.showLeft ? 'visible' : 'hidden';
+        }
     }
 }
 PanelComponent.ɵfac = function PanelComponent_Factory(t) { return new (t || PanelComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_images_service__WEBPACK_IMPORTED_MODULE_1__["ImagesService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"])); };
@@ -891,7 +877,7 @@ PanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.elements = _t);
-    } }, inputs: { panel: "panel" }, decls: 12, vars: 6, consts: [[1, "panel", "page"], [1, "prev"], ["id", "left-chevron", "role", "button", "data-slide", "prev", "aria-hidden", "true", 1, "material-icons", 3, "click"], [1, "panel-images", 3, "scroll"], ["class", "image", 4, "ngFor", "ngForOf"], [1, "next"], ["id", "right-chevron", "role", "button", "data-slide", "next", "aria-hidden", "true", 1, "material-icons", 3, "click"], [1, "image"], [3, "routerLink"], ["image", ""], [3, "src"], [1, "panel-text"]], template: function PanelComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { panel: "panel" }, decls: 12, vars: 7, consts: [[1, "panel", "page", 3, "id"], [1, "prev"], ["id", "left-chevron", "role", "button", "data-slide", "prev", "aria-hidden", "true", 1, "material-icons", 3, "click"], [1, "panel-images", 3, "scroll"], ["class", "image", 4, "ngFor", "ngForOf"], [1, "next"], ["id", "right-chevron", "role", "button", "data-slide", "next", "aria-hidden", "true", 1, "material-icons", 3, "click"], [1, "image"], [3, "routerLink"], ["image", ""], [3, "src"], [1, "panel-text"]], template: function PanelComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "i", 2);
@@ -916,15 +902,16 @@ PanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("id", ctx.panel.id);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx.elementVisible(ctx.showLeft));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx.elementVisible("l"));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.panel.title);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.panel.members);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx.elementVisible(ctx.showRight));
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]], styles: [".panel[_ngcontent-%COMP%] {\n  position: relative;\n  display: inline-flex;\n  padding: 1vh 0%;\n}\n.panel-images[_ngcontent-%COMP%]{\n  position: relative;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  \n  min-height: 80vh;\n  max-width: 90vw;\n  scroll-behavior: smooth;\n}\n.panel-images[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #e8d8c3;\n  text-decoration: none;\n}\n.panel-text[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 10%;\n}\n.image[_ngcontent-%COMP%] {\n  display: inline-block;\n  \n  height: 100%;\n  margin-right: 1vw;\n}\n.image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 90%;\n  max-height: 72vh;\n  margin: 0;\n}\n.next[_ngcontent-%COMP%], .prev[_ngcontent-%COMP%] {\n  \n  top: 0;\n  bottom: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 5%;\n}\n#left-chevron[_ngcontent-%COMP%]:hover, #right-chevron[_ngcontent-%COMP%]:hover {\n  opacity: 1;\n  cursor: pointer;\n}\n.left[_ngcontent-%COMP%] {\n  left:0;\n}\n.right[_ngcontent-%COMP%] {\n  right:0;\n}\n#left-chevron[_ngcontent-%COMP%], #right-chevron[_ngcontent-%COMP%] {\n  font-size: 8vw;\n  opacity: .5;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFuZWwvcGFuZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLDZCQUE2QjtFQUM3QixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLHVCQUF1QjtBQUN6QjtBQUNBO0VBQ0UsY0FBYztFQUNkLHFCQUFxQjtBQUN2QjtBQUVBO0VBQ0UsV0FBVztFQUNYLFdBQVc7QUFDYjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLFNBQVM7QUFDWDtBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLE1BQU07RUFDTixTQUFTO0VBQ1QsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsU0FBUztBQUNYO0FBRUE7RUFDRSxVQUFVO0VBQ1YsZUFBZTtBQUNqQjtBQUVBO0VBQ0UsTUFBTTtBQUNSO0FBRUE7RUFDRSxPQUFPO0FBQ1Q7QUFFQTtFQUNFLGNBQWM7RUFDZCxXQUFXO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9wYW5lbC9wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBhbmVsIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgcGFkZGluZzogMXZoIDAlO1xufVxuLnBhbmVsLWltYWdlc3tcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gIG92ZXJmbG93LXk6IGhpZGRlbjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgLyogYm9yZGVyOiAycHggc29saWQgYmxhY2s7ICovXG4gIG1pbi1oZWlnaHQ6IDgwdmg7XG4gIG1heC13aWR0aDogOTB2dztcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG59XG4ucGFuZWwtaW1hZ2VzIGEge1xuICBjb2xvcjogI2U4ZDhjMztcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG4ucGFuZWwtdGV4dCB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwJTtcbn1cbi5pbWFnZSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgLyogY29sb3I6IHdoaXRlOyAqL1xuICBoZWlnaHQ6IDEwMCU7XG4gIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuLmltYWdlIGltZyB7XG4gIGhlaWdodDogOTAlO1xuICBtYXgtaGVpZ2h0OiA3MnZoO1xuICBtYXJnaW46IDA7XG59XG5cbi5uZXh0LCAucHJldiB7XG4gIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgdG9wOiAwO1xuICBib3R0b206IDA7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB3aWR0aDogNSU7XG59XG5cbiNsZWZ0LWNoZXZyb246aG92ZXIsICNyaWdodC1jaGV2cm9uOmhvdmVyIHtcbiAgb3BhY2l0eTogMTtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4ubGVmdCB7XG4gIGxlZnQ6MDtcbn1cblxuLnJpZ2h0IHtcbiAgcmlnaHQ6MDtcbn1cblxuI2xlZnQtY2hldnJvbiwgI3JpZ2h0LWNoZXZyb24ge1xuICBmb250LXNpemU6IDh2dztcbiAgb3BhY2l0eTogLjU7XG59XG4iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx.elementVisible("r"));
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]], styles: [".panel[_ngcontent-%COMP%] {\n  position: relative;\n  display: inline-flex;\n  padding: 1vh 0%;\n}\n.panel-images[_ngcontent-%COMP%]{\n  position: relative;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  \n  min-height: 80vh;\n  width: 90vw;\n  scroll-behavior: smooth;\n}\n.panel-images[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #e8d8c3;\n  text-decoration: none;\n}\n.panel-text[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 10%;\n}\n.image[_ngcontent-%COMP%] {\n  display: inline-block;\n  \n  height: 100%;\n  margin-right: 1vw;\n}\n.image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 90%;\n  max-height: 72vh;\n  margin: 0;\n}\n.next[_ngcontent-%COMP%], .prev[_ngcontent-%COMP%] {\n  \n  top: 0;\n  bottom: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 5%;\n}\n#left-chevron[_ngcontent-%COMP%]:hover, #right-chevron[_ngcontent-%COMP%]:hover {\n  opacity: 1;\n  cursor: pointer;\n}\n.left[_ngcontent-%COMP%] {\n  left:0;\n}\n.right[_ngcontent-%COMP%] {\n  right:0;\n}\n#left-chevron[_ngcontent-%COMP%], #right-chevron[_ngcontent-%COMP%] {\n  font-size: 8vw;\n  opacity: .5;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFuZWwvcGFuZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLDZCQUE2QjtFQUM3QixnQkFBZ0I7RUFDaEIsV0FBVztFQUNYLHVCQUF1QjtBQUN6QjtBQUNBO0VBQ0UsY0FBYztFQUNkLHFCQUFxQjtBQUN2QjtBQUVBO0VBQ0UsV0FBVztFQUNYLFdBQVc7QUFDYjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLFNBQVM7QUFDWDtBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLE1BQU07RUFDTixTQUFTO0VBQ1QsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsU0FBUztBQUNYO0FBRUE7RUFDRSxVQUFVO0VBQ1YsZUFBZTtBQUNqQjtBQUVBO0VBQ0UsTUFBTTtBQUNSO0FBRUE7RUFDRSxPQUFPO0FBQ1Q7QUFFQTtFQUNFLGNBQWM7RUFDZCxXQUFXO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9wYW5lbC9wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBhbmVsIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgcGFkZGluZzogMXZoIDAlO1xufVxuLnBhbmVsLWltYWdlc3tcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gIG92ZXJmbG93LXk6IGhpZGRlbjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgLyogYm9yZGVyOiAycHggc29saWQgYmxhY2s7ICovXG4gIG1pbi1oZWlnaHQ6IDgwdmg7XG4gIHdpZHRoOiA5MHZ3O1xuICBzY3JvbGwtYmVoYXZpb3I6IHNtb290aDtcbn1cbi5wYW5lbC1pbWFnZXMgYSB7XG4gIGNvbG9yOiAjZThkOGMzO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59XG5cbi5wYW5lbC10ZXh0IHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAlO1xufVxuLmltYWdlIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAvKiBjb2xvcjogd2hpdGU7ICovXG4gIGhlaWdodDogMTAwJTtcbiAgbWFyZ2luLXJpZ2h0OiAxdnc7XG59XG4uaW1hZ2UgaW1nIHtcbiAgaGVpZ2h0OiA5MCU7XG4gIG1heC1oZWlnaHQ6IDcydmg7XG4gIG1hcmdpbjogMDtcbn1cblxuLm5leHQsIC5wcmV2IHtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICB0b3A6IDA7XG4gIGJvdHRvbTogMDtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHdpZHRoOiA1JTtcbn1cblxuI2xlZnQtY2hldnJvbjpob3ZlciwgI3JpZ2h0LWNoZXZyb246aG92ZXIge1xuICBvcGFjaXR5OiAxO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5sZWZ0IHtcbiAgbGVmdDowO1xufVxuXG4ucmlnaHQge1xuICByaWdodDowO1xufVxuXG4jbGVmdC1jaGV2cm9uLCAjcmlnaHQtY2hldnJvbiB7XG4gIGZvbnQtc2l6ZTogOHZ3O1xuICBvcGFjaXR5OiAuNTtcbn1cbiJdfQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PanelComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -978,7 +965,8 @@ const PHOTOGROUPS = [
             { name: "285.jpg", date: "", title: "", desc: "", models: [] },
             { name: "93.jpg", date: "", title: "", desc: "", models: [] },
             { name: "97.jpg", date: "", title: "", desc: "", models: [] },
-            { name: "53.jpg", date: "", title: "", desc: "", models: [] }
+            { name: "53.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "1.jpg", date: "", title: "", desc: "", models: [] }
         ]
     },
     {
@@ -1038,7 +1026,16 @@ const PHOTOGROUPS = [
         title: "Sofya's Graduation",
         path: "../assets/images/work/grad/alex/",
         images: [
-            { name: "../alex295.jpg", date: "May 2019", title: "", desc: "", models: [] }
+            { name: "../alex295.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex6.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex3.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex4.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex2.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex7.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex8.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex9.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex10.jpg", date: "May 2019", title: "", desc: "", models: [] },
+            { name: "alex1.jpg", date: "May 2019", title: "", desc: "", models: [] }
         ]
     },
     {
@@ -1082,6 +1079,7 @@ const PHOTOGROUPS = [
         title: "Events",
         path: "../assets/images/work/events/AE19/",
         images: [
+            { name: "ae19-8.jpg", date: "", title: "", desc: "", models: [] },
             { name: "ae19-1.jpg", date: "", title: "", desc: "", models: [] },
             { name: "ae19-3.jpg", date: "", title: "", desc: "", models: [] },
             { name: "ae19-4.jpg", date: "", title: "", desc: "", models: [] },
@@ -1188,6 +1186,23 @@ const PHOTOGROUPS = [
         ]
     },
     {
+        id: "iao-bday",
+        title: "Iyaniwura's 21st Bday",
+        path: "../assets/images/work/other/iao-bday/",
+        images: [
+            { name: "iao479.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao530.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao1.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao2.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao3.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao4.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao5.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao6.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao7.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "iao8.jpg", date: "", title: "", desc: "", models: [] }
+        ]
+    },
+    {
         id: "proj-risk",
         title: "Photoseries",
         path: "../assets/images/projects/proj-risk/",
@@ -1247,8 +1262,6 @@ const PHOTOGROUPS = [
         path: "../assets/images/projects/proj-uncanny/",
         images: [
             { name: "uncanny753-2.jpg", date: "", title: "", desc: "", models: [] },
-            { name: "uncanny753-2.jpg", date: "", title: "", desc: "", models: [] },
-            { name: "uncanny750-2.jpg", date: "", title: "", desc: "", models: [] },
             { name: "uncanny750-2.jpg", date: "", title: "", desc: "", models: [] },
             { name: "uncanny758.jpg", date: "", title: "", desc: "", models: [] },
             { name: "uncanny762.jpg", date: "", title: "", desc: "", models: [] },
@@ -1340,6 +1353,17 @@ const WORKPANELS = [
             {
                 cover: { name: "anj1.jpg", date: "Oct 2019", title: "Cornell Anjali Headshots", desc: "", models: [] },
                 id: "hs-anj"
+            }
+        ]
+    },
+    {
+        id: "work-other",
+        title: "Other",
+        path: "../assets/images/work/other/",
+        members: [
+            {
+                cover: { name: "iao521.jpg", date: "Jun 2019", title: "Iyaniwura's 21st Bday", desc: "", models: [] },
+                id: "iao-bday"
             }
         ]
     }
