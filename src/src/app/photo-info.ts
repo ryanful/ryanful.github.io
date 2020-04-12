@@ -84,10 +84,10 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     path: "../assets/images/work/grad/alex/",
     images: [
       { name: "../alex295.jpg", date: "May 2019", title: "", desc: "", models: [] },
-      { name: "alex2.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex6.jpg", date: "May 2019", title: "", desc: "", models: [] },
       { name: "alex3.jpg", date: "May 2019", title: "", desc: "", models: [] },
       { name: "alex4.jpg", date: "May 2019", title: "", desc: "", models: [] },
-      { name: "alex6.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex2.jpg", date: "May 2019", title: "", desc: "", models: [] },
       { name: "alex7.jpg", date: "May 2019", title: "", desc: "", models: [] },
       { name: "alex8.jpg", date: "May 2019", title: "", desc: "", models: [] },
       { name: "alex9.jpg", date: "May 2019", title: "", desc: "", models: [] },
