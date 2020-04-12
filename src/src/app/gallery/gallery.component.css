@@ -1,9 +1,3 @@
-.proj-gallery {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
 .image img {
   margin:auto;
   max-height: 75%;
@@ -20,3 +14,114 @@
   /* margin: auto; */
   /* border: 3px solid #8d5e21; */
 }
+
+#proj-gallery {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width:100%;
+  height: 90vh;
+  scroll-behavior: smooth;
+}
+
+.details{
+  height: 90vh;
+  width: 100vw;
+  display: inline-flex;
+  overflow-x: scroll;
+}
+#detail-image {
+  /* The image used*/
+  /* background-image: url('/../assets/images/projects/risk832.jpg');  */
+
+  /* Set a specific height */
+  max-width:50%;
+  /* width: 30%; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+
+#detail-image img {
+  height:100%;
+  flex-grow: 1;
+  /* width: 30%; */
+}
+
+#detail-text {
+  /* The image used*/
+  /* Set a specific height */
+  min-height: 70vh;
+  width: 90%;
+  /*border: 1px solid black;*/
+  padding-top: 10vh; 
+  padding-left: 10%;
+}
+
+p,h2 {
+  margin: 0;
+}
+h2 {
+  font-weight: 400;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.link:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.down {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  margin:auto;
+}
+
+.controls {
+  display: flex;
+  margin-top: -90vh;
+  height: 90vh;
+  width: 100%;
+}
+.expand-more:hover, .right-chevron:hover, .left-chevron:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.expand-more {
+  font-size: 10vh;
+  opacity: .5;
+}
+
+.right-chevron, .left-chevron {
+  font-size: 8vw;
+  opacity: .5;
+}
+
+.right-chevron{
+  position: sticky;
+  margin: auto 0vw;
+  left: 1vw;
+}
+
+.left-chevron{
+  position: sticky;
+  margin: auto 0vw;
+}
+
+.filler {
+  width: 84vw;
+  z-index: 0;
+}
+
+
+
+

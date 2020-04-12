@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { ImagesService } from '../images.service';
 import { Image } from '../photogroup';
 import { Panel } from '../photo-info';
@@ -15,6 +15,12 @@ export class PanelComponent implements OnInit {
   title = "Graduation"; //add to photo-info.ts
   path: string;
   images: Image[];
+
+  //for scrolling
+  @ViewChildren('image') elements: QueryList<ElementRef>;
+  index = 0;
+  showLeft = false;
+  showRight = true;
 
   constructor(private imagesService: ImagesService, private route: ActivatedRoute) { }
 
@@ -34,6 +40,39 @@ export class PanelComponent implements OnInit {
         }
 
       });
+  }
+
+
+
+  scroll(dir) {
+    let panel = document.querySelector("div.panel-images");
+    let bodyWidth = document.documentElement.clientWidth;
+    let moveAmt = .5 * bodyWidth;
+
+    if (dir === 'l') {
+      panel.scrollLeft -= panel.scrollLeft % moveAmt + moveAmt;
+    }
+    else if (dir === 'r') {
+      panel.scrollLeft += moveAmt - panel.scrollLeft % moveAmt;
+    }
+  }
+
+  checkArrows() {
+    let panel = document.querySelector("div.panel-images");
+    let bodyWidth = document.documentElement.clientWidth;
+    let panelEnd = (this.panel.members.length - 2) * .5 * bodyWidth;
+
+    if (panel.scrollLeft < .5 * bodyWidth) { this.showLeft = false; }
+    else { this.showLeft = true; }
+
+    if (panel.scrollLeft >= panelEnd) {
+      this.showRight = false;
+    }
+    else { this.showRight = true }
+  }
+
+  elementVisible(isVis: boolean) {
+    return isVis ? 'visible' : 'hidden';
   }
 
 }

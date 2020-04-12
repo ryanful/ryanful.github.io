@@ -1,12 +1,17 @@
 .panel {
-  padding: 1vh 5%;
+  position: relative;
+  display: inline-flex;
+  padding: 1vh 0%;
 }
 .panel-images{
+  position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   /* border: 2px solid black; */
   min-height: 80vh;
+  max-width: 90vw;
+  scroll-behavior: smooth;
 }
 .panel-images a {
   color: #e8d8c3;
@@ -27,4 +32,32 @@
   height: 90%;
   max-height: 72vh;
   margin: 0;
+}
+
+.next, .prev {
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+}
+
+#left-chevron:hover, #right-chevron:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.left {
+  left:0;
+}
+
+.right {
+  right:0;
+}
+
+#left-chevron, #right-chevron {
+  font-size: 8vw;
+  opacity: .5;
 }

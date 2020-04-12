@@ -11,4 +11,5 @@ export class Image {
   date: string;
   title: string;
   desc: string;
+  models: string[];
 }
