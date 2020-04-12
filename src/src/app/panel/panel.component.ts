@@ -45,9 +45,9 @@ export class PanelComponent implements OnInit {
 
 
   scroll(dir) {
-    let panel = document.querySelector("div.panel-images");
-    let bodyWidth = document.documentElement.clientWidth;
-    let moveAmt = .5 * bodyWidth;
+    let panel = document.querySelector("div#" + this.panel.id + " div.panel-images");
+    let viewWidth = panel.clientWidth;
+    let moveAmt = .5 * viewWidth;
 
     if (dir === 'l') {
       panel.scrollLeft -= panel.scrollLeft % moveAmt + moveAmt;
@@ -58,11 +58,10 @@ export class PanelComponent implements OnInit {
   }
 
   checkArrows() {
-    let panel = document.querySelector("div.panel-images");
-    let bodyWidth = document.documentElement.clientWidth;
-    let panelEnd = (this.panel.members.length - 2) * .5 * bodyWidth;
-
-    if (panel.scrollLeft < .5 * bodyWidth) { this.showLeft = false; }
+    let panel = document.querySelector("div#" + this.panel.id + " div.panel-images");
+    let viewWidth = panel.clientWidth;
+    let panelEnd = panel.scrollWidth - panel.clientWidth;
+    if (panel.scrollLeft === 0) { this.showLeft = false; }
     else { this.showLeft = true; }
 
     if (panel.scrollLeft >= panelEnd) {
