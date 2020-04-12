@@ -26,7 +26,7 @@ export class ImagesService {
 
   getProjectDetails(id: string) {
     let found = PROJECTPANELS[0].members.find(member => member.id === id);
-    return found === null ? null : found.cover;
+    return found === undefined ? null : found.cover;
   }
 
 }
