@@ -705,34 +705,187 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
-    function GalleryComponent_div_1_div_1_Template(rf, ctx) {
+    function GalleryComponent_div_1_p_10_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
 
       if (rf & 2) {
-        var pic_r8 = ctx.$implicit;
-        var odd_r9 = ctx.odd;
-
-        var ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("background-color", ctx_r7.setBackground(odd_r9));
+        var model_r9 = ctx.$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r7.path + pic_r8.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("+ ", model_r9, " +");
+      }
+    }
+
+    function GalleryComponent_div_1_div_26_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var pic_r10 = ctx.$implicit;
+
+        var ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("background-color", ctx_r8.setBackground(false));
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r8.path + pic_r10.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
       }
     }
 
     function GalleryComponent_div_1_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+        var _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, GalleryComponent_div_1_div_1_Template, 2, 3, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 5);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 6);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 7);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "h1");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "h2");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Models:");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, GalleryComponent_div_1_p_10_Template, 2, 1, "p", 8);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "br");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "br");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "h2");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Story:");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "br");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "br");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "p", 9);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "a", 10);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function GalleryComponent_div_1_Template_a_click_20_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
+
+          var ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r12.scroll("d");
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Click on me to see the full series!");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 11);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "a", 12);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function GalleryComponent_div_1_Template_a_click_23_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
+
+          var ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r14.scroll("d");
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, " expand_more ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 13);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("scroll", function GalleryComponent_div_1_Template_div_scroll_25_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
+
+          var ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r15.checkArrows();
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](26, GalleryComponent_div_1_div_26_Template, 2, 3, "div", 14);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "div", 15);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "i", 16);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function GalleryComponent_div_1_Template_i_click_28_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
+
+          var ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r16.scroll("l");
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " chevron_left ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "span", 17);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "i", 18);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function GalleryComponent_div_1_Template_i_click_31_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13);
+
+          var ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r17.scroll("r");
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " chevron_right ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -740,35 +893,59 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       if (rf & 2) {
         var ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("src", "/../assets/images/projects/", ctx_r4.details.name, "", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r4.details.title);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r4.details.models);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", ctx_r4.details.desc, " ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r4.images);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx_r4.elementVisible(ctx_r4.showLeft));
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx_r4.elementVisible(ctx_r4.showRight));
       }
     }
 
     function GalleryComponent_ng_template_2_div_0_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 19);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 5);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
 
       if (rf & 2) {
-        var pic_r11 = ctx.$implicit;
+        var pic_r19 = ctx.$implicit;
 
-        var ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+        var ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r10.path + pic_r11.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r18.path + pic_r19.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
       }
     }
 
     function GalleryComponent_ng_template_2_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, GalleryComponent_ng_template_2_div_0_Template, 2, 1, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, GalleryComponent_ng_template_2_div_0_Template, 2, 1, "div", 20);
       }
 
       if (rf & 2) {
@@ -783,7 +960,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, GalleryComponent);
 
         this.imagesService = imagesService;
-        this.route = route;
+        this.route = route; //images controls
+
+        this.showLeft = false;
+        this.showRight = true;
       }
 
       _createClass(GalleryComponent, [{
@@ -804,6 +984,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
             var photos = _this.imagesService.getPhotos(id);
 
+            _this.details = _this.imagesService.getProjectDetails(id);
             _this.path = photos.path;
             _this.images = photos.images;
             _this.isProj = id.substr(0, 4) === 'proj';
@@ -814,9 +995,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "setBackground",
         value: function setBackground(isOdd) {
-          console.log("we tried"); // document.querySelector("div.image").setAttribute("background-color", "#e8d8c3");
-
+          // console.log("we tried");
+          // document.querySelector("div.image").setAttribute("background-color", "#e8d8c3");
           return isOdd ? "#e8d8c3" : "none";
+        }
+      }, {
+        key: "scroll",
+        value: function scroll(dir) {
+          var gallery = document.querySelector("div#proj-gallery");
+          var bodyWidth = document.documentElement.clientWidth;
+          var moveAmt = .5 * bodyWidth;
+
+          if (dir === 'd') {
+            gallery.scrollIntoView({
+              behavior: 'smooth'
+            });
+          } else if (dir === 'l') {
+            //accounts for resizing off window with mod offset
+            gallery.scrollLeft -= gallery.scrollLeft % moveAmt + moveAmt;
+          } else if (dir === 'r') {
+            gallery.scrollLeft += moveAmt - gallery.scrollLeft % moveAmt;
+          }
+        }
+      }, {
+        key: "checkArrows",
+        value: function checkArrows() {
+          var gallery = document.querySelector("div#proj-gallery");
+          var bodyWidth = document.documentElement.clientWidth;
+          var galleryEnd = (this.images.length - 2) * .5 * bodyWidth;
+
+          if (gallery.scrollLeft < .5 * bodyWidth) {
+            this.showLeft = false;
+          } else {
+            this.showLeft = true;
+          }
+
+          if (gallery.scrollLeft >= galleryEnd) {
+            this.showRight = false;
+          } else {
+            this.showRight = true;
+          }
+        }
+      }, {
+        key: "elementVisible",
+        value: function elementVisible(isVis) {
+          return isVis ? 'visible' : 'hidden';
         }
       }]);
 
@@ -835,12 +1058,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       },
       decls: 4,
       vars: 2,
-      consts: [[1, "page"], ["class", "proj-gallery", 4, "ngIf", "ngIfElse"], ["regularGallery", ""], [1, "proj-gallery"], ["class", "image", 3, "background-color", 4, "ngFor", "ngForOf"], [1, "image"], [3, "src"], ["class", "image", 4, "ngFor", "ngForOf"]],
+      consts: [[1, "page"], [4, "ngIf", "ngIfElse"], ["regularGallery", ""], [1, "details"], ["id", "detail-image"], [3, "src"], [2, "width", "50%", "flex-grow", "1", "background-color", "rgba(12, 4, 4, .8)"], ["id", "detail-text"], [4, "ngFor", "ngForOf"], [1, "link"], [3, "click"], [1, "down"], ["role", "button", "data-slide", "next", "aria-hidden", "true", 1, "material-icons", "expand-more", 3, "click"], ["id", "proj-gallery", 1, "page", 3, "scroll"], ["class", "image", 3, "background-color", 4, "ngFor", "ngForOf"], [1, "controls"], ["role", "button", "data-slide", "next", "aria-hidden", "true", 1, "material-icons", "left-chevron", 3, "click"], [1, "filler"], ["role", "button", "data-slide", "next", "aria-hidden", "true", 1, "material-icons", "right-chevron", 3, "click"], [1, "image"], ["class", "image", 4, "ngFor", "ngForOf"]],
       template: function GalleryComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, GalleryComponent_div_1_Template, 2, 1, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, GalleryComponent_div_1_Template, 33, 9, "div", 1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, GalleryComponent_ng_template_2_Template, 1, 1, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
 
@@ -856,7 +1079,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
-      styles: [".proj-gallery[_ngcontent-%COMP%] {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n}\n\n.image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  margin:auto;\n  max-height: 75%;\n  max-width: 95%;\n}\n\n.image[_ngcontent-%COMP%] {\n  display: inline-grid;\n  vertical-align: middle;\n  width: 50%;\n  height: 90vh;\n  \n  \n  \n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxlQUFlO0VBQ2YsY0FBYztBQUNoQjs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixzQkFBc0I7RUFDdEIsVUFBVTtFQUNWLFlBQVk7RUFDWix3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQiwrQkFBK0I7QUFDakMiLCJmaWxlIjoic3JjL2FwcC9nYWxsZXJ5L2dhbGxlcnkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9qLWdhbGxlcnkge1xuICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gIG92ZXJmbG93LXk6IGhpZGRlbjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbn1cblxuLmltYWdlIGltZyB7XG4gIG1hcmdpbjphdXRvO1xuICBtYXgtaGVpZ2h0OiA3NSU7XG4gIG1heC13aWR0aDogOTUlO1xufVxuXG4uaW1hZ2Uge1xuICBkaXNwbGF5OiBpbmxpbmUtZ3JpZDtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgd2lkdGg6IDUwJTtcbiAgaGVpZ2h0OiA5MHZoO1xuICAvKiB0ZXh0LWFsaWduOiBjZW50ZXI7ICovXG4gIC8qIHBhZGRpbmc6IDNweDsgKi9cbiAgLyogbWFyZ2luOiBhdXRvOyAqL1xuICAvKiBib3JkZXI6IDNweCBzb2xpZCAjOGQ1ZTIxOyAqL1xufVxuIl19 */"]
+      styles: [".image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  margin:auto;\n  max-height: 75%;\n  max-width: 95%;\n}\n\n.image[_ngcontent-%COMP%] {\n  display: inline-grid;\n  vertical-align: middle;\n  width: 50%;\n  height: 90vh;\n  \n  \n  \n  \n}\n\n#proj-gallery[_ngcontent-%COMP%] {\n  position: relative;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  width:100%;\n  height: 90vh;\n  scroll-behavior: smooth;\n}\n\n.details[_ngcontent-%COMP%]{\n  height: 90vh;\n  width: 100vw;\n  display: inline-flex;\n  overflow-x: scroll;\n}\n\n#detail-image[_ngcontent-%COMP%] {\n  \n  \n\n  \n  max-width:50%;\n  \n  \n\n}\n\n#detail-image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height:100%;\n  flex-grow: 1;\n  \n}\n\n#detail-text[_ngcontent-%COMP%] {\n  \n  \n  min-height: 70vh;\n  width: 90%;\n  \n  padding-top: 10vh; \n  padding-left: 10%;\n}\n\np[_ngcontent-%COMP%], h2[_ngcontent-%COMP%] {\n  margin: 0;\n}\n\nh2[_ngcontent-%COMP%] {\n  font-weight: 400;\n}\n\n.link[_ngcontent-%COMP%] {\n  text-decoration: underline;\n}\n\n.link[_ngcontent-%COMP%]:hover {\n  font-weight: bold;\n  cursor: pointer;\n}\n\n.down[_ngcontent-%COMP%] {\n  \n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: 10vh;\n  margin:auto;\n}\n\n.controls[_ngcontent-%COMP%] {\n  display: flex;\n  margin-top: -90vh;\n  height: 90vh;\n  width: 100%;\n}\n\n.expand-more[_ngcontent-%COMP%]:hover, .right-chevron[_ngcontent-%COMP%]:hover, .left-chevron[_ngcontent-%COMP%]:hover{\n  opacity: 1;\n  cursor: pointer;\n}\n\n.expand-more[_ngcontent-%COMP%] {\n  font-size: 10vh;\n  opacity: .5;\n}\n\n.right-chevron[_ngcontent-%COMP%], .left-chevron[_ngcontent-%COMP%] {\n  font-size: 8vw;\n  opacity: .5;\n}\n\n.right-chevron[_ngcontent-%COMP%]{\n  position: -webkit-sticky;\n  position: sticky;\n  margin: auto 0vw;\n  left: 1vw;\n}\n\n.left-chevron[_ngcontent-%COMP%]{\n  position: -webkit-sticky;\n  position: sticky;\n  margin: auto 0vw;\n}\n\n.filler[_ngcontent-%COMP%] {\n  width: 84vw;\n  z-index: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsZUFBZTtFQUNmLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsc0JBQXNCO0VBQ3RCLFVBQVU7RUFDVixZQUFZO0VBQ1osd0JBQXdCO0VBQ3hCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLFVBQVU7RUFDVixZQUFZO0VBQ1osdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixvQkFBb0I7RUFDcEIsa0JBQWtCO0FBQ3BCOztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLHNFQUFzRTs7RUFFdEUsMEJBQTBCO0VBQzFCLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEI7MkJBQ3lCOztBQUUzQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLDBCQUEwQjtFQUMxQixnQkFBZ0I7RUFDaEIsVUFBVTtFQUNWLDJCQUEyQjtFQUMzQixpQkFBaUI7RUFDakIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsU0FBUztBQUNYOztBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsMEJBQTBCO0FBQzVCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSx3QkFBd0I7RUFDeEIsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsV0FBVztFQUNYLFlBQVk7RUFDWixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLFlBQVk7RUFDWixXQUFXO0FBQ2I7O0FBQ0E7RUFDRSxVQUFVO0VBQ1YsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxjQUFjO0VBQ2QsV0FBVztBQUNiOztBQUVBO0VBQ0Usd0JBQWdCO0VBQWhCLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsU0FBUztBQUNYOztBQUVBO0VBQ0Usd0JBQWdCO0VBQWhCLGdCQUFnQjtFQUNoQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsVUFBVTtBQUNaIiwiZmlsZSI6InNyYy9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1hZ2UgaW1nIHtcbiAgbWFyZ2luOmF1dG87XG4gIG1heC1oZWlnaHQ6IDc1JTtcbiAgbWF4LXdpZHRoOiA5NSU7XG59XG5cbi5pbWFnZSB7XG4gIGRpc3BsYXk6IGlubGluZS1ncmlkO1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xuICB3aWR0aDogNTAlO1xuICBoZWlnaHQ6IDkwdmg7XG4gIC8qIHRleHQtYWxpZ246IGNlbnRlcjsgKi9cbiAgLyogcGFkZGluZzogM3B4OyAqL1xuICAvKiBtYXJnaW46IGF1dG87ICovXG4gIC8qIGJvcmRlcjogM3B4IHNvbGlkICM4ZDVlMjE7ICovXG59XG5cbiNwcm9qLWdhbGxlcnkge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIG92ZXJmbG93LXg6IHNjcm9sbDtcbiAgb3ZlcmZsb3cteTogaGlkZGVuO1xuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICB3aWR0aDoxMDAlO1xuICBoZWlnaHQ6IDkwdmg7XG4gIHNjcm9sbC1iZWhhdmlvcjogc21vb3RoO1xufVxuXG4uZGV0YWlsc3tcbiAgaGVpZ2h0OiA5MHZoO1xuICB3aWR0aDogMTAwdnc7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICBvdmVyZmxvdy14OiBzY3JvbGw7XG59XG4jZGV0YWlsLWltYWdlIHtcbiAgLyogVGhlIGltYWdlIHVzZWQqL1xuICAvKiBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy8uLi9hc3NldHMvaW1hZ2VzL3Byb2plY3RzL3Jpc2s4MzIuanBnJyk7ICAqL1xuXG4gIC8qIFNldCBhIHNwZWNpZmljIGhlaWdodCAqL1xuICBtYXgtd2lkdGg6NTAlO1xuICAvKiB3aWR0aDogMzAlOyAqL1xuICAvKiBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyOyAqL1xuXG59XG5cbiNkZXRhaWwtaW1hZ2UgaW1nIHtcbiAgaGVpZ2h0OjEwMCU7XG4gIGZsZXgtZ3JvdzogMTtcbiAgLyogd2lkdGg6IDMwJTsgKi9cbn1cblxuI2RldGFpbC10ZXh0IHtcbiAgLyogVGhlIGltYWdlIHVzZWQqL1xuICAvKiBTZXQgYSBzcGVjaWZpYyBoZWlnaHQgKi9cbiAgbWluLWhlaWdodDogNzB2aDtcbiAgd2lkdGg6IDkwJTtcbiAgLypib3JkZXI6IDFweCBzb2xpZCBibGFjazsqL1xuICBwYWRkaW5nLXRvcDogMTB2aDsgXG4gIHBhZGRpbmctbGVmdDogMTAlO1xufVxuXG5wLGgyIHtcbiAgbWFyZ2luOiAwO1xufVxuaDIge1xuICBmb250LXdlaWdodDogNDAwO1xufVxuXG4ubGluayB7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG4ubGluazpob3ZlciB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5kb3duIHtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTB2aDtcbiAgbWFyZ2luOmF1dG87XG59XG5cbi5jb250cm9scyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIG1hcmdpbi10b3A6IC05MHZoO1xuICBoZWlnaHQ6IDkwdmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmV4cGFuZC1tb3JlOmhvdmVyLCAucmlnaHQtY2hldnJvbjpob3ZlciwgLmxlZnQtY2hldnJvbjpob3ZlcntcbiAgb3BhY2l0eTogMTtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4uZXhwYW5kLW1vcmUge1xuICBmb250LXNpemU6IDEwdmg7XG4gIG9wYWNpdHk6IC41O1xufVxuXG4ucmlnaHQtY2hldnJvbiwgLmxlZnQtY2hldnJvbiB7XG4gIGZvbnQtc2l6ZTogOHZ3O1xuICBvcGFjaXR5OiAuNTtcbn1cblxuLnJpZ2h0LWNoZXZyb257XG4gIHBvc2l0aW9uOiBzdGlja3k7XG4gIG1hcmdpbjogYXV0byAwdnc7XG4gIGxlZnQ6IDF2dztcbn1cblxuLmxlZnQtY2hldnJvbntcbiAgcG9zaXRpb246IHN0aWNreTtcbiAgbWFyZ2luOiBhdXRvIDB2dztcbn1cblxuLmZpbGxlciB7XG4gIHdpZHRoOiA4NHZ3O1xuICB6LWluZGV4OiAwO1xufVxuXG5cblxuXG4iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -944,6 +1167,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function getProjectPanels() {
           return _photo_info__WEBPACK_IMPORTED_MODULE_1__["PROJECTPANELS"];
         }
+      }, {
+        key: "getProjectDetails",
+        value: function getProjectDetails(id) {
+          var found = _photo_info__WEBPACK_IMPORTED_MODULE_1__["PROJECTPANELS"][0].members.find(function (member) {
+            return member.id === id;
+          });
+
+          return found === null ? null : found.cover;
+        }
       }]);
 
       return ImagesService;
@@ -1028,7 +1260,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["landing"]],
       decls: 14,
       vars: 0,
-      consts: [[1, "intro"], [1, "intro-nav"], ["src", "../assets/logo/trans.png"], [2, "height", "100%", "margin", "auto"], ["routerLink", "work"], ["routerLink", "portfolio"], ["routerLink", "projects"], [1, "intro-img"]],
+      consts: [[1, "intro"], [1, "intro-nav"], ["src", "../assets/logo/trans-notext.png"], [2, "height", "100%", "margin", "auto"], ["routerLink", "work"], ["routerLink", "portfolio"], ["routerLink", "projects"], [1, "intro-img"]],
       template: function LandingComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -1349,7 +1581,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-nav"]],
       decls: 1,
       vars: 1,
-      consts: [["class", "container", 4, "ngIf"], [1, "container"], [1, "nav", "navtop"], [1, "logo"], ["src", "../assets/logo/trans.png", "routerLink", ""], [1, "nav-tabs"], ["routerLink", "portfolio", "routerLinkActive", "active", 1, "tab"], [1, "dropdown"], ["routerLink", "work", "routerLinkActive", "active", 1, "tab"], [1, "dropdown-content"], [3, "routerLink"], ["routerLink", "/work"], ["routerLink", "projects", "routerLinkActive", "active", 1, "tab"], ["routerLink", "about", "routerLinkActive", "active", 1, "tab"]],
+      consts: [["class", "container", 4, "ngIf"], [1, "container"], [1, "nav", "navtop"], [1, "logo"], ["src", "../assets/logo/trans-notext.png", "routerLink", ""], [1, "nav-tabs"], ["routerLink", "portfolio", "routerLinkActive", "active", 1, "tab"], [1, "dropdown"], ["routerLink", "work", "routerLinkActive", "active", 1, "tab"], [1, "dropdown-content"], [3, "routerLink"], ["routerLink", "/work"], ["routerLink", "projects", "routerLinkActive", "active", 1, "tab"], ["routerLink", "about", "routerLinkActive", "active", 1, "tab"]],
       template: function NavComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NavComponent_div_0_Template, 35, 16, "div", 0);
@@ -1426,35 +1658,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
-    var _c0 = function _c0(a1) {
+    var _c0 = ["image"];
+
+    var _c1 = function _c1(a1) {
       return ["/gallery", a1];
     };
 
-    function PanelComponent_div_4_Template(rf, ctx) {
+    function PanelComponent_div_8_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 7);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 8, 9);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 10);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 11);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "b");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "b");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1466,29 +1694,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var member_r13 = ctx.$implicit;
+        var member_r21 = ctx.$implicit;
 
-        var ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](5, _c0, member_r13.id));
+        var ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r12.panel.path + member_r13.cover.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", member_r13.cover.title, " ");
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", member_r13.cover.date, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](4, _c1, member_r21.id));
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](member_r13.cover.desc);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx_r20.panel.path + member_r21.cover.name, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", member_r21.cover.title, " ");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", member_r21.cover.date, "");
       }
     }
 
@@ -1499,6 +1723,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.imagesService = imagesService;
         this.route = route;
         this.title = "Graduation"; //add to photo-info.ts
+
+        this.index = 0;
+        this.showLeft = false;
+        this.showRight = true;
       }
 
       _createClass(PanelComponent, [{
@@ -1523,6 +1751,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }
           });
         }
+      }, {
+        key: "scroll",
+        value: function scroll(dir) {
+          var panel = document.querySelector("div.panel-images");
+          var bodyWidth = document.documentElement.clientWidth;
+          var moveAmt = .5 * bodyWidth;
+
+          if (dir === 'l') {
+            panel.scrollLeft -= panel.scrollLeft % moveAmt + moveAmt;
+          } else if (dir === 'r') {
+            panel.scrollLeft += moveAmt - panel.scrollLeft % moveAmt;
+          }
+        }
+      }, {
+        key: "checkArrows",
+        value: function checkArrows() {
+          var panel = document.querySelector("div.panel-images");
+          var bodyWidth = document.documentElement.clientWidth;
+          var panelEnd = (this.panel.members.length - 2) * .5 * bodyWidth;
+
+          if (panel.scrollLeft < .5 * bodyWidth) {
+            this.showLeft = false;
+          } else {
+            this.showLeft = true;
+          }
+
+          if (panel.scrollLeft >= panelEnd) {
+            this.showRight = false;
+          } else {
+            this.showRight = true;
+          }
+        }
+      }, {
+        key: "elementVisible",
+        value: function elementVisible(isVis) {
+          return isVis ? 'visible' : 'hidden';
+        }
       }]);
 
       return PanelComponent;
@@ -1535,25 +1800,72 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     PanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: PanelComponent,
       selectors: [["panel"]],
+      viewQuery: function PanelComponent_Query(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
+        }
+
+        if (rf & 2) {
+          var _t;
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.elements = _t);
+        }
+      },
       inputs: {
         panel: "panel"
       },
-      decls: 5,
-      vars: 2,
-      consts: [[1, "panel", "page"], [1, "panel-images"], ["class", "image", 4, "ngFor", "ngForOf"], [1, "image"], [3, "routerLink"], [3, "src"], [1, "panel-text"]],
+      decls: 12,
+      vars: 6,
+      consts: [[1, "panel", "page"], [1, "prev"], ["id", "left-chevron", "role", "button", "data-slide", "prev", "aria-hidden", "true", 1, "material-icons", 3, "click"], [1, "panel-images", 3, "scroll"], ["class", "image", 4, "ngFor", "ngForOf"], [1, "next"], ["id", "right-chevron", "role", "button", "data-slide", "next", "aria-hidden", "true", 1, "material-icons", 3, "click"], [1, "image"], [3, "routerLink"], ["image", ""], [3, "src"], [1, "panel-text"]],
       template: function PanelComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "i", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PanelComponent_Template_i_click_2_listener() {
+            return ctx.scroll("l");
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "chevron_left");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, PanelComponent_div_4_Template, 10, 7, "div", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h1");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("scroll", function PanelComponent_Template_div_scroll_7_listener() {
+            return ctx.checkArrows();
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, PanelComponent_div_8_Template, 9, 6, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "i", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PanelComponent_Template_i_click_10_listener() {
+            return ctx.scroll("r");
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " chevron_right ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1563,15 +1875,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx.elementVisible(ctx.showLeft));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.panel.title);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.panel.members);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("visibility", ctx.elementVisible(ctx.showRight));
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]],
-      styles: [".panel[_ngcontent-%COMP%] {\n  padding: 1vh 5%;\n}\n.panel-images[_ngcontent-%COMP%]{\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  \n  min-height: 80vh;\n}\n.panel-images[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #e8d8c3;\n  text-decoration: none;\n}\n.panel-text[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 10%;\n}\n.image[_ngcontent-%COMP%] {\n  display: inline-block;\n  \n  height: 100%;\n  margin-right: 1vw;\n}\n.image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 90%;\n  max-height: 72vh;\n  margin: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFuZWwvcGFuZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQWU7QUFDakI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLDZCQUE2QjtFQUM3QixnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFFQTtFQUNFLFdBQVc7RUFDWCxXQUFXO0FBQ2I7QUFDQTtFQUNFLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixTQUFTO0FBQ1giLCJmaWxlIjoic3JjL2FwcC9wYW5lbC9wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBhbmVsIHtcbiAgcGFkZGluZzogMXZoIDUlO1xufVxuLnBhbmVsLWltYWdlc3tcbiAgb3ZlcmZsb3cteDogc2Nyb2xsO1xuICBvdmVyZmxvdy15OiBoaWRkZW47XG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gIC8qIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrOyAqL1xuICBtaW4taGVpZ2h0OiA4MHZoO1xufVxuLnBhbmVsLWltYWdlcyBhIHtcbiAgY29sb3I6ICNlOGQ4YzM7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuLnBhbmVsLXRleHQge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMCU7XG59XG4uaW1hZ2Uge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIC8qIGNvbG9yOiB3aGl0ZTsgKi9cbiAgaGVpZ2h0OiAxMDAlO1xuICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cbi5pbWFnZSBpbWcge1xuICBoZWlnaHQ6IDkwJTtcbiAgbWF4LWhlaWdodDogNzJ2aDtcbiAgbWFyZ2luOiAwO1xufSJdfQ== */"]
+      styles: [".panel[_ngcontent-%COMP%] {\n  position: relative;\n  display: inline-flex;\n  padding: 1vh 0%;\n}\n.panel-images[_ngcontent-%COMP%]{\n  position: relative;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  \n  min-height: 80vh;\n  max-width: 90vw;\n  scroll-behavior: smooth;\n}\n.panel-images[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #e8d8c3;\n  text-decoration: none;\n}\n.panel-text[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 10%;\n}\n.image[_ngcontent-%COMP%] {\n  display: inline-block;\n  \n  height: 100%;\n  margin-right: 1vw;\n}\n.image[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  height: 90%;\n  max-height: 72vh;\n  margin: 0;\n}\n.next[_ngcontent-%COMP%], .prev[_ngcontent-%COMP%] {\n  \n  top: 0;\n  bottom: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 5%;\n}\n#left-chevron[_ngcontent-%COMP%]:hover, #right-chevron[_ngcontent-%COMP%]:hover {\n  opacity: 1;\n  cursor: pointer;\n}\n.left[_ngcontent-%COMP%] {\n  left:0;\n}\n.right[_ngcontent-%COMP%] {\n  right:0;\n}\n#left-chevron[_ngcontent-%COMP%], #right-chevron[_ngcontent-%COMP%] {\n  font-size: 8vw;\n  opacity: .5;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFuZWwvcGFuZWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLDZCQUE2QjtFQUM3QixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLHVCQUF1QjtBQUN6QjtBQUNBO0VBQ0UsY0FBYztFQUNkLHFCQUFxQjtBQUN2QjtBQUVBO0VBQ0UsV0FBVztFQUNYLFdBQVc7QUFDYjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLFNBQVM7QUFDWDtBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLE1BQU07RUFDTixTQUFTO0VBQ1QsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsU0FBUztBQUNYO0FBRUE7RUFDRSxVQUFVO0VBQ1YsZUFBZTtBQUNqQjtBQUVBO0VBQ0UsTUFBTTtBQUNSO0FBRUE7RUFDRSxPQUFPO0FBQ1Q7QUFFQTtFQUNFLGNBQWM7RUFDZCxXQUFXO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9wYW5lbC9wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBhbmVsIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgcGFkZGluZzogMXZoIDAlO1xufVxuLnBhbmVsLWltYWdlc3tcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gIG92ZXJmbG93LXk6IGhpZGRlbjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgLyogYm9yZGVyOiAycHggc29saWQgYmxhY2s7ICovXG4gIG1pbi1oZWlnaHQ6IDgwdmg7XG4gIG1heC13aWR0aDogOTB2dztcbiAgc2Nyb2xsLWJlaGF2aW9yOiBzbW9vdGg7XG59XG4ucGFuZWwtaW1hZ2VzIGEge1xuICBjb2xvcjogI2U4ZDhjMztcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG4ucGFuZWwtdGV4dCB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwJTtcbn1cbi5pbWFnZSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgLyogY29sb3I6IHdoaXRlOyAqL1xuICBoZWlnaHQ6IDEwMCU7XG4gIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuLmltYWdlIGltZyB7XG4gIGhlaWdodDogOTAlO1xuICBtYXgtaGVpZ2h0OiA3MnZoO1xuICBtYXJnaW46IDA7XG59XG5cbi5uZXh0LCAucHJldiB7XG4gIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgdG9wOiAwO1xuICBib3R0b206IDA7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB3aWR0aDogNSU7XG59XG5cbiNsZWZ0LWNoZXZyb246aG92ZXIsICNyaWdodC1jaGV2cm9uOmhvdmVyIHtcbiAgb3BhY2l0eTogMTtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4ubGVmdCB7XG4gIGxlZnQ6MDtcbn1cblxuLnJpZ2h0IHtcbiAgcmlnaHQ6MDtcbn1cblxuI2xlZnQtY2hldnJvbiwgI3JpZ2h0LWNoZXZyb24ge1xuICBmb250LXNpemU6IDh2dztcbiAgb3BhY2l0eTogLjU7XG59XG4iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -1593,6 +1913,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         panel: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"],
           args: ['panel']
+        }],
+        elements: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
+          args: ['image']
         }]
       });
     })();
@@ -1659,68 +1983,81 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "rel753.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "rel737.jpg",
         date: "",
         title: "",
-        desc: ""
-      }, // { name: "rel607.jpg", date: "", title: "", desc: "" },
+        desc: "",
+        models: []
+      }, // { name: "rel607.jpg", date: "", title: "", desc: "", models: [] },
       {
         name: "rel619.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "rel624.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "5.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "9.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "57.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "19-2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "291.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "285.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "93.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "97.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "53.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "grad-ab",
@@ -1730,53 +2067,63 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "ab141.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab987.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab142.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab99.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab110.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab805.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab922.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab866.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab916.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ab/ab881.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
-      } // { name: "ab/ab909.jpg", date: "May 2019", title: "", desc: "" },
+        desc: "",
+        models: []
+      } // { name: "ab/ab909.jpg", date: "May 2019", title: "", desc: "", models: [] },
       ]
     }, {
       id: "grad-sof",
@@ -1786,52 +2133,62 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "sof588.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof537.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof612.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof696.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof583.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof594.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof741.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof763.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof604.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sof/sof614.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "grad-ric",
@@ -1841,52 +2198,62 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "ric982.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric111-2.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric26.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric960.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric112.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric963.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric101.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric61.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric106.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ric/ric120.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "grad-alex",
@@ -1896,7 +2263,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "../alex295.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "grad-lyd",
@@ -1906,32 +2274,38 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "lyd/lyd162.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "lyd/lyd194.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "lyd/lyd200.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "lyd/lyd232.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "lyd/lyd236.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "lyd/lyd282.jpg",
         date: "May 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "event-vap",
@@ -1941,82 +2315,98 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "vap915.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap930.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap921.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap988.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap35.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap958.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap967.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap997.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap971.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap989.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap60.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap67.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap71.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap44.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap48.jpg",
         date: "Oct 2019",
         title: "Voices and Perspectives",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "vap973.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "event-ae19",
@@ -2026,32 +2416,38 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "ae19-1.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ae19-3.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ae19-4.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ae19-5.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ae19-6.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "ae19-7.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "event-urmcbbq",
@@ -2061,47 +2457,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "urmcbbq2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmcbbq3.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmcbbq4.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmcbbq5.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmcbbq6.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmcbbq7.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmcbbq8.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmcbbq9.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmcbbq10.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "event-bloth19",
@@ -2111,47 +2516,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "bloth19-2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloth19-3.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloth19-4.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloth19-5.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloth19-6.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloth19-7.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloth19-8.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloth19-9.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloth19-10.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "event-pep",
@@ -2161,73 +2575,87 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "pepnc994.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc424.jpg",
         date: "",
         title: "",
-        desc: ""
-      }, //{ name: "pepnc448.jpg", date: "", title: "", desc: "" },
+        desc: "",
+        models: []
+      }, //{ name: "pepnc448.jpg", date: "", title: "", desc: "", models: [] },
       {
         name: "pepnc157.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc214.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc457.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc445.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc347.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc288.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc486.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc532.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc131.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc242.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc52.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "pepnc81.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "hs-urmc",
@@ -2237,52 +2665,62 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "../urmc-mar.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-hanan3.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-gio.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-albina.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-ian.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-esu.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-mo.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-chike.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-alexei4.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "urmc-danyeh.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "hs-raas",
@@ -2292,32 +2730,38 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "raas2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "raas3.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "raas4.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "raas5.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "raas6.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "../raas1.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "hs-anj",
@@ -2327,32 +2771,38 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "anj2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "anj3.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "anj4.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "anj5.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "anj6.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "anj7.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "proj-risk",
@@ -2362,22 +2812,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "risk842.jpg",
         date: "Jun 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "risk841.jpg",
         date: "Jun 2019",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "../risk832.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "risk825.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "proj-syd",
@@ -2387,22 +2841,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "syd24.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "syd16.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "syd29.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "syd30.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "proj-chi",
@@ -2412,27 +2870,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "../THEONE.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "chi862.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "chi849.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "chi860.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "chi856.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "proj-albums",
@@ -2442,67 +2905,80 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "onelove.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sol3.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "blond.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "4eva.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "szer.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sonder1.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "blkswn.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "CHIEF.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "angeloh.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "sonderinto1.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "MOONSHOES.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "bloodorange.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "../bak.png",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }, {
       id: "proj-uncanny",
@@ -2512,62 +2988,74 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         name: "uncanny753-2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny753-2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny750-2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny750-2.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny758.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny762.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny777.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny650.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny763.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny768.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny775.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }, {
         name: "uncanny766.jpg",
         date: "",
         title: "",
-        desc: ""
+        desc: "",
+        models: []
       }]
     }];
 
@@ -2594,7 +3082,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "ab141.jpg",
           date: "May 2019",
           title: "Abraham",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "grad-ab"
       }, {
@@ -2602,7 +3091,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "sof588.jpg",
           date: "May 2019",
           title: "Sofya",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "grad-sof"
       }, {
@@ -2610,7 +3100,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "ric982.jpg",
           date: "May 2019",
           title: "Ricardo",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "grad-ric"
       }, {
@@ -2618,7 +3109,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "alex295.jpg",
           date: "May 2019",
           title: "Alexandria",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "grad-alex"
       }, {
@@ -2626,7 +3118,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "lyd169.jpg",
           date: "May 2018",
           title: "Lydia",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "grad-lyd"
       }]
@@ -2639,7 +3132,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "vap913.jpg",
           date: "Oct 2019",
           title: "Voices and Perspectives",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "event-vap"
       }, {
@@ -2647,7 +3141,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "ae19-2.jpg",
           date: "Oct 2019",
           title: "Autumn Evening",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "event-ae19"
       }, {
@@ -2655,7 +3150,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "urmcbbq1.jpg",
           date: "Aug 2019",
           title: "URMC x NSBE x SHPE BBQ",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "event-urmcbbq"
       }, {
@@ -2663,7 +3159,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "bloth19-1.jpg",
           date: "Aug 2019",
           title: "Black Life on The Hill",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "event-bloth19"
       }, {
@@ -2671,7 +3168,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "pepnc992.jpg",
           date: "May 2018",
           title: "Peprah Naming Ceremony",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "event-pep"
       }]
@@ -2684,7 +3182,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "urmc-mar.jpg",
           date: "Feb 2020",
           title: "URMC Cornell Headshots",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "hs-urmc"
       }, {
@@ -2692,7 +3191,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "raas1.jpg",
           date: "Oct 2019",
           title: "Cornell RAAS Headshots",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "hs-raas"
       }, {
@@ -2700,7 +3200,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "anj1.jpg",
           date: "Oct 2019",
           title: "Cornell Anjali Headshots",
-          desc: ""
+          desc: "",
+          models: []
         },
         id: "hs-anj"
       }]
@@ -2714,10 +3215,38 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       path: "../assets/images/projects/",
       members: [{
         cover: {
+          name: "flick.png",
+          date: "Feb 2020",
+          title: "Uncanny Vibrations",
+          desc: "Coming Soon!",
+          models: ["Rainer Sainvil", "Hameedah Khadar", "Emily Romero"]
+        },
+        id: "proj-uncanny"
+      }, {
+        cover: {
+          name: "syd629.jpg",
+          date: "Jan 2020",
+          title: "Sydney",
+          desc: "Coming Soon!",
+          models: ["Sydney Gates"]
+        },
+        id: "proj-syd"
+      }, {
+        cover: {
+          name: "THEONE.jpg",
+          date: "Nov 2019",
+          title: "Chioma",
+          desc: "Coming Soon!",
+          models: ["Chioma Iloebunam"]
+        },
+        id: "proj-chi"
+      }, {
+        cover: {
           name: "risk832.jpg",
           date: "Jun 2019",
           title: "Reem",
-          desc: ""
+          desc: "Coming Soon!",
+          models: ["Reem Abdalla"]
         },
         id: "proj-risk"
       }, {
@@ -2725,33 +3254,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name: "bak.png",
           date: "Jun 2019",
           title: "One Love (Albums Rahmastered)",
-          desc: ""
+          desc: "Coming Soon!",
+          models: ["Reem Abdalla", "Chiemezue Ijomanta", "Iyaniwura Olarewaju", "William Nnuro", "Chuka Anyene", "Abby Agyapong"]
         },
         id: "proj-albums"
-      }, {
-        cover: {
-          name: "flick.png",
-          date: "Feb 2020",
-          title: "Uncanny Vibrations",
-          desc: ""
-        },
-        id: "proj-uncanny"
-      }, {
-        cover: {
-          name: "THEONE.jpg",
-          date: "Nov 2019",
-          title: "Chioma",
-          desc: ""
-        },
-        id: "proj-chi"
-      }, {
-        cover: {
-          name: "syd629.jpg",
-          date: "Jan 2020",
-          title: "Sydney",
-          desc: ""
-        },
-        id: "proj-syd"
       }]
     }];
     /***/
@@ -2805,7 +3311,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "panel", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "panel", 1);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -2846,12 +3352,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["projects"]],
       decls: 2,
       vars: 1,
-      consts: [[1, "page"], [4, "ngFor", "ngForOf"], [3, "panel"]],
+      consts: [[4, "ngFor", "ngForOf"], [3, "panel"]],
       template: function ProjectsComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ProjectsComponent_div_1_Template, 2, 1, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ProjectsComponent_div_1_Template, 2, 1, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
