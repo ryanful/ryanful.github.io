@@ -579,7 +579,7 @@ class ImagesService {
     }
     getProjectDetails(id) {
         let found = _photo_info__WEBPACK_IMPORTED_MODULE_1__["PROJECTPANELS"][0].members.find(member => member.id === id);
-        return found === null ? null : found.cover;
+        return found === undefined ? null : found.cover;
     }
 }
 ImagesService.ɵfac = function ImagesService_Factory(t) { return new (t || ImagesService)(); };

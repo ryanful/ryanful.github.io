@@ -1174,7 +1174,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return member.id === id;
           });
 
-          return found === null ? null : found.cover;
+          return found === undefined ? null : found.cover;
         }
       }]);
 
