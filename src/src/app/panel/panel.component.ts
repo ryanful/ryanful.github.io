@@ -35,10 +35,9 @@ export class PanelComponent implements OnInit {
       .subscribe(params => {
         let id = params.get("id");
         if (id !== null) {
-          console.log("PANEEL SWITCH");
+          // console.log("PANEEL SWITCH");
           this.panel = this.imagesService.getWorkPanels().find(d => d.id === id);
         }
-
       });
   }
 
@@ -59,19 +58,22 @@ export class PanelComponent implements OnInit {
 
   checkArrows() {
     let panel = document.querySelector("div#" + this.panel.id + " div.panel-images");
-    let viewWidth = panel.clientWidth;
     let panelEnd = panel.scrollWidth - panel.clientWidth;
-    if (panel.scrollLeft === 0) { this.showLeft = false; }
-    else { this.showLeft = true; }
 
-    if (panel.scrollLeft >= panelEnd) {
-      this.showRight = false;
-    }
-    else { this.showRight = true }
+    this.showLeft = !(panel.scrollLeft === 0);
+
+    this.showRight = !(panel.scrollLeft >= panelEnd);
+    console.log("id", this.panel.id, "left", panel.scrollLeft, "scrollend", panelEnd)
   }
 
-  elementVisible(isVis: boolean) {
-    return isVis ? 'visible' : 'hidden';
+  elementVisible(chev: string) {
+    this.checkArrows();
+    if (chev === 'r') {
+      return this.showRight ? 'visible' : 'hidden';
+    }
+    else if (chev === 'l') {
+      return this.showLeft ? 'visible' : 'hidden';
+    }
   }
 
 }

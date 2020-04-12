@@ -40,6 +40,7 @@ export class GalleryComponent implements OnInit {
         this.images = photos.images;
         this.isProj = id.substr(0, 4) === 'proj';
       });
+    // document.body.scrollTop = 0;
 
     //let photos = this.imagesService.getPhotos(this.id);
     //this.path = photos.path;
@@ -73,16 +74,11 @@ export class GalleryComponent implements OnInit {
 
   checkArrows() {
     let gallery = document.querySelector("div#proj-gallery");
-    let bodyWidth = document.documentElement.clientWidth;
-    let galleryEnd = (this.images.length - 2) * .5 * bodyWidth;
+    let galleryEnd = (this.images.length - 2) * .5 * gallery.clientWidth;
 
-    if (gallery.scrollLeft < .5 * bodyWidth) { this.showLeft = false; }
-    else { this.showLeft = true; }
+    this.showLeft = !(gallery.scrollLeft === 0);
 
-    if (gallery.scrollLeft >= galleryEnd) {
-      this.showRight = false;
-    }
-    else { this.showRight = true }
+    this.showRight = !(gallery.scrollLeft >= galleryEnd);
   }
 
   elementVisible(isVis: boolean) {

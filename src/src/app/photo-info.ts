@@ -22,7 +22,8 @@ export const PHOTOGROUPS: PhotoGroup[] = [
       { name: "285.jpg", date: "", title: "", desc: "", models: [] },
       { name: "93.jpg", date: "", title: "", desc: "", models: [] },
       { name: "97.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "53.jpg", date: "", title: "", desc: "", models: [] }
+      { name: "53.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "1.jpg", date: "", title: "", desc: "", models: [] }
     ]
   },
   {
@@ -82,7 +83,16 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     title: "Sofya's Graduation",
     path: "../assets/images/work/grad/alex/",
     images: [
-      { name: "../alex295.jpg", date: "May 2019", title: "", desc: "", models: [] }
+      { name: "../alex295.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex2.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex3.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex4.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex6.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex7.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex8.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex9.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex10.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "alex1.jpg", date: "May 2019", title: "", desc: "", models: [] }
     ]
   },
   {
@@ -127,6 +137,7 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     title: "Events",
     path: "../assets/images/work/events/AE19/",
     images: [
+      { name: "ae19-8.jpg", date: "", title: "", desc: "", models: [] },
       { name: "ae19-1.jpg", date: "", title: "", desc: "", models: [] },
       { name: "ae19-3.jpg", date: "", title: "", desc: "", models: [] },
       { name: "ae19-4.jpg", date: "", title: "", desc: "", models: [] },
@@ -233,6 +244,23 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     ]
   },
   {
+    id: "iao-bday",
+    title: "Iyaniwura's 21st Bday",
+    path: "../assets/images/work/other/iao-bday/",
+    images: [
+      { name: "iao479.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao530.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao1.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao2.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao3.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao4.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao5.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao6.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao7.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "iao8.jpg", date: "", title: "", desc: "", models: [] }
+    ]
+  },
+  {
     id: "proj-risk",
     title: "Photoseries",
     path: "../assets/images/projects/proj-risk/",
@@ -292,8 +320,6 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     path: "../assets/images/projects/proj-uncanny/",
     images: [
       { name: "uncanny753-2.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "uncanny753-2.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "uncanny750-2.jpg", date: "", title: "", desc: "", models: [] },
       { name: "uncanny750-2.jpg", date: "", title: "", desc: "", models: [] },
       { name: "uncanny758.jpg", date: "", title: "", desc: "", models: [] },
       { name: "uncanny762.jpg", date: "", title: "", desc: "", models: [] },
@@ -400,6 +426,17 @@ export const WORKPANELS: Panel[] = [
       {
         cover: { name: "anj1.jpg", date: "Oct 2019", title: "Cornell Anjali Headshots", desc: "", models: [] },
         id: "hs-anj"
+      }
+    ]
+  },
+  {
+    id: "work-other",
+    title: "Other",
+    path: "../assets/images/work/other/",
+    members: [
+      {
+        cover: { name: "iao521.jpg", date: "Jun 2019", title: "Iyaniwura's 21st Bday", desc: "", models: [] },
+        id: "iao-bday"
       }
     ]
   }

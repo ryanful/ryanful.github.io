@@ -8,7 +8,6 @@ body, html{
   /* background-color: #f4f4f4; */
   background-color: rgb(12, 4, 4);
   color: #e8d8c3;
-  scroll-behavior: smooth;
 }
 
 .container{
