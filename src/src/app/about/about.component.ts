@@ -12,4 +12,11 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(dir: string) {
+    let about = document.querySelector("div.content");
+    if (dir === 'd') {
+      about.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }
