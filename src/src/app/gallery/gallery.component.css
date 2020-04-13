@@ -1,7 +1,13 @@
+.page{
+  scroll-behavior: smooth;
+  height: 90vh;
+  overflow-y: scroll;
+}
 .image img {
   margin:auto;
   max-height: 75%;
   max-width: 95%;
+  box-shadow: 0 2vh 2vh 0 rgba(0, 0, 0, 0.481); 
 }
 
 .image {
@@ -87,18 +93,28 @@ h2 {
   margin:auto;
 }
 
+.reg-controls{
+  position: sticky;
+  bottom: 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+
+
 .controls {
   display: flex;
   margin-top: -90vh;
   height: 90vh;
   width: 100%;
 }
-.expand-more:hover, .right-chevron:hover, .left-chevron:hover{
+.expand-more:hover, .expand-less:hover, .right-chevron:hover, .left-chevron:hover{
   opacity: 1;
   cursor: pointer;
 }
 
-.expand-more {
+.expand-more, .expand-less {
   font-size: 10vh;
   opacity: .5;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { ImagesService } from '../images.service';
 import { Image } from '../photogroup';
 import { ActivatedRoute } from '@angular/router';
@@ -12,6 +12,7 @@ import { PanelMember } from '../photo-info';
 export class GalleryComponent implements OnInit {
 
   @Input('name') id: string; //which gallery
+  @ViewChild('regularGallery', { static: true }) regGall: ElementRef;
   path: string;
   images: Image[];
   isProj: boolean;
@@ -20,6 +21,8 @@ export class GalleryComponent implements OnInit {
   //images controls
   showLeft = false;
   showRight = true;
+  showUp = false;
+  showDown = true;
 
   constructor(private imagesService: ImagesService, private route: ActivatedRoute) { }
 
@@ -53,32 +56,55 @@ export class GalleryComponent implements OnInit {
     return isOdd ? "#e8d8c3" : "none";
   }
 
-  scroll(dir) {
-    let gallery = document.querySelector("div#proj-gallery");
-    let bodyWidth = document.documentElement.clientWidth;
-    let moveAmt = .5 * bodyWidth;
+  scroll(dir: string) {
+    if (this.isProj) {
+      let gallery = document.querySelector("div#proj-gallery");
+      let bodyWidth = document.documentElement.clientWidth;
+      let moveAmt = .5 * bodyWidth;
 
-    if (dir === 'd') {
-      gallery.scrollIntoView({ behavior: 'smooth' });
+      if (dir === 'd') {
+        gallery.scrollIntoView({ behavior: 'smooth' });
+      }
+      else if (dir === 'l') {
+        //accounts for resizing off window with mod offset
+        gallery.scrollLeft -= gallery.scrollLeft % moveAmt + moveAmt;
+      }
+      else if (dir === 'r') {
+        gallery.scrollLeft += moveAmt - gallery.scrollLeft % moveAmt;
+      }
     }
-    else if (dir === 'l') {
-      //accounts for resizing off window with mod offset
-      gallery.scrollLeft -= gallery.scrollLeft % moveAmt + moveAmt;
+    else {
+      let regGall = document.querySelector("div.page");
+      let offset = regGall.scrollTop % regGall.clientHeight;
+      if (dir === 'rd') {
+        regGall.scrollTop += regGall.clientHeight - offset;
+      }
+      else if (dir = "u") {
+        regGall.scrollTop -= regGall.clientHeight + offset;
+      }
+
     }
-    else if (dir === 'r') {
-      gallery.scrollLeft += moveAmt - gallery.scrollLeft % moveAmt;
-    }
+
 
 
   }
 
   checkArrows() {
-    let gallery = document.querySelector("div#proj-gallery");
-    let galleryEnd = (this.images.length - 2) * .5 * gallery.clientWidth;
+    if (this.isProj) {
+      let gallery = document.querySelector("div#proj-gallery");
+      let projGalleryEnd = (this.images.length - 2) * .5 * gallery.clientWidth;
 
-    this.showLeft = !(gallery.scrollLeft === 0);
+      this.showLeft = !(gallery.scrollLeft === 0);
+      this.showRight = !(gallery.scrollLeft >= projGalleryEnd);
+    }
+    else {
+      let regGall = document.querySelector("div.page");
+      let galleryEnd = regGall.scrollHeight - regGall.clientHeight;
 
-    this.showRight = !(gallery.scrollLeft >= galleryEnd);
+      this.showUp = regGall.scrollTop !== 0;
+      this.showDown = !(regGall.scrollTop >= galleryEnd);
+    }
+
   }
 
   elementVisible(isVis: boolean) {

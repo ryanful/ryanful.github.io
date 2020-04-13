@@ -1,4 +1,4 @@
-<div class="page">
+<div class="page" (scroll)="checkArrows()">
   <div *ngIf="isProj; else regularGallery">
     <div class="details">
       <div id="detail-image">
@@ -50,6 +50,19 @@
   <ng-template #regularGallery>
     <div *ngFor="let pic of images" class="image">
       <img src="{{path + pic.name}}">
+    </div>
+    <div class="reg up">
+
+    </div>
+    <div class="reg-controls">
+      <a class="material-icons expand-less" [style.visibility]="elementVisible(showUp)" (click)="scroll('u')"
+        role="button" data-slide="next" aria-hidden="true">
+        expand_less
+      </a>
+      <a class="material-icons expand-more" [style.visibility]="elementVisible(showDown)" (click)="scroll('rd')"
+        role="button" data-slide="next" aria-hidden="true">
+        expand_more
+      </a>
     </div>
   </ng-template>
 </div>
