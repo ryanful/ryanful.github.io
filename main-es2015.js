@@ -201,6 +201,13 @@ class AppComponent {
     scrollTop(event) {
         document.body.scrollTop = 0;
         document.body.scrollLeft = 0;
+        let x = document.querySelector("nav.nav");
+        let menu = document.querySelector(".menu i");
+        if (x.className === "nav responsive") {
+            x.className = "nav";
+            menu.id = "menu";
+            menu.textContent = "menu";
+        }
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };

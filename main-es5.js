@@ -427,6 +427,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function scrollTop(event) {
           document.body.scrollTop = 0;
           document.body.scrollLeft = 0;
+          var x = document.querySelector("nav.nav");
+          var menu = document.querySelector(".menu i");
+
+          if (x.className === "nav responsive") {
+            x.className = "nav";
+            menu.id = "menu";
+            menu.textContent = "menu";
+          }
         }
       }]);
 
