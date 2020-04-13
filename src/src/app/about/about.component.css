@@ -97,9 +97,8 @@
   /* The image used*/
   /* Set a specific height */
   max-height: 40%;
-  max-width: 80%;
+  max-width: 80vw;
   /*border: 1px solid black;*/
-  background-size: 100%;
 }
 
 #about-fav img{

@@ -28,6 +28,9 @@
   .image{
     opacity: 1 !important;
   }
+  .image img {
+    max-height: 59.84vh;
+  }
 }
 h1{
   margin: 2.5vh 0;
