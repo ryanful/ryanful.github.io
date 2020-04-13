@@ -43,6 +43,7 @@
 
   /* Set a specific height */
   max-width:50%;
+  height: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
   /* width: 30%; */
@@ -53,6 +54,7 @@
 
 #detail-image img {
   height:100%;
+  width: auto;
   flex-grow: 1;
   /* width: 30%; */
 }
