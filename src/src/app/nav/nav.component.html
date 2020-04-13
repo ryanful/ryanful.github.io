@@ -1,10 +1,15 @@
 <!-- Nav bar at top of every page-->
 <div *ngIf="!onLanding()" class="container">
   <nav class="nav navtop">
-    <div class="logo">
-
-      <img src="../assets/logo/trans-notext.png" routerLink="">
-
+    <div style="display: flex;">
+      <div class="logo">
+        <img src="../assets/logo/trans-notext.png" routerLink="">
+      </div>
+      <div class="menu">
+        <i class="material-icons" id="menu" (click)="showNav()">
+          menu
+        </i>
+      </div>
     </div>
 
     <div class="nav-tabs">
@@ -12,10 +17,10 @@
       <div class="dropdown">
         <a class="tab" routerLink="work" routerLinkActive="active">work</a>
         <div class="dropdown-content">
-          <a [routerLink]="['/panel', 'work-grad']">Graduations</a>
-          <a [routerLink]="['/panel', 'work-events']">Events</a>
-          <a [routerLink]="['/panel', 'work-hs']">Headshots</a>
-          <a routerLink="/work">all</a>
+          <a class="tab" [routerLink]="['/panel', 'work-grad']" routerLinkActive="active">Graduations</a>
+          <a class="tab" [routerLink]="['/panel', 'work-events']" routerLinkActive="active">Events</a>
+          <a class="tab" [routerLink]="['/panel', 'work-hs']" routerLinkActive="active">Headshots</a>
+          <a class="tab" routerLink="/work">See More</a>
         </div>
       </div>
       <div class="dropdown">
@@ -23,14 +28,15 @@
           projects
         </a>
         <div class="dropdown-content">
-          <a [routerLink]="['/gallery', 'proj-risk']">Reem</a>
-          <a [routerLink]="['/gallery', 'proj-albums']">One Love</a>
-          <a [routerLink]="['/gallery', 'proj-uncanny']">Uncanny Vibrations</a>
-          <a [routerLink]="['/gallery', 'proj-chi']">Chioma</a>
-          <a [routerLink]="['/gallery', 'proj-syd']">Sydney</a>
+          <a class="tab" [routerLink]="['/gallery', 'proj-risk']" routerLinkActive="active">Reem</a>
+          <a class="tab" [routerLink]="['/gallery', 'proj-albums']" routerLinkActive="active">One Love</a>
+          <a class="tab" [routerLink]="['/gallery', 'proj-uncanny']" routerLinkActive="active">Uncanny Vibrations</a>
+          <a class="tab" [routerLink]="['/gallery', 'proj-chi']" routerLinkActive="active">Chioma</a>
+          <a class="tab" [routerLink]="['/gallery', 'proj-syd']" routerLinkActive="active">Sydney</a>
         </div>
       </div>
       <a class="tab" routerLink="about" routerLinkActive="active">about</a>
     </div>
+
   </nav>
 </div>

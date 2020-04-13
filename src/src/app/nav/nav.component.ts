@@ -18,4 +18,18 @@ export class NavComponent implements OnInit {
     return this.router.url === '/';
   }
 
+  showNav() {
+    let x = document.querySelector("nav.nav");
+    let menu = document.querySelector(".menu i");
+    if (x.className === "nav") {
+      x.className += " responsive";
+      menu.id = "close";
+      menu.textContent = "close";
+    } else {
+      x.className = "nav";
+      menu.id = "menu";
+      menu.textContent = "menu";
+    }
+  }
+
 }

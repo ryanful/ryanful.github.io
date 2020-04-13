@@ -1,4 +1,69 @@
 
+@media only screen and (max-width: 600px) {
+  .nav-tabs {
+    display: none !important;
+  }
+
+  .logo {
+    position: sticky !important;
+    left: 2vw !important;
+  }
+
+  .menu {
+    position: sticky !important;
+    left: 87vw !important;
+    display: flex !important;
+    height: 10vh !important;
+    width: 8vw !important;
+  }
+
+  #menu, #close {
+    margin: auto 0 !important;
+    font-size: 8vw !important;
+  }
+
+  #menu:hover, #close:hover{
+    cursor: pointer;
+  }
+
+  .nav {display: block !important;}
+  .nav.responsive {
+    display: block !important;
+    background-color: rgba(20, 3, 3, 1) !important;
+    height: 100% !important; 
+  }
+  
+  .nav.responsive .nav-tabs {
+    display: block !important;
+    width: 100vw !important;
+  }
+
+  .nav.responsive .nav-tabs .tab {
+    display: flex !important;
+    width: 100vw !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+  }
+
+  .nav.responsive .nav-tabs .dropdown {
+    display: block !important;
+  }
+
+  .nav.responsive .nav-tabs .dropdown-content {
+    display: block !important;
+    position: relative !important;
+  }
+
+  .nav.responsive .nav-tabs .dropdown-content .tab{
+    font-size: 2vh !important;
+  }
+  
+}
+
+.menu {
+  display: none;
+}
 
 .nav{
   position: fixed;
@@ -13,6 +78,10 @@
 
 .logo img{
   height: 10vh;
+}
+
+.logo img:hover{
+  cursor: pointer;
 }
 
 .nav-tabs {
