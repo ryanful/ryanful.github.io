@@ -97,7 +97,7 @@
   /* The image used*/
   /* Set a specific height */
   max-height: 40%;
-  width: auto;
+  max-width: 80%;
   /*border: 1px solid black;*/
   background-size: 100%;
 }
