@@ -29,7 +29,7 @@
     opacity: 1 !important;
   }
   .image img {
-    max-height: 59.84vh;
+    max-height: 59.84vh !important;
   }
 }
 h1{

@@ -12,11 +12,19 @@
 @media only screen and (max-width: 600px) {
   .image{
     width: 100% !important;
+    height: 80vh !important;
+    padding-bottom: 10vh !important;
+  }
+
+  .reg-controls{
+    bottom: 10vh !important;
   }
 
   #detail-image{
     display: none !important;
   }
+
+  
 }
 .image {
   display: inline-grid;

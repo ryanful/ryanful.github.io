@@ -14,7 +14,7 @@
   }
 
   #about-fav {
-    max-width: 80% !important;
+    max-width: 80vw !important;
   }
 }
 
@@ -102,6 +102,6 @@
 }
 
 #about-fav img{
-  height: 100%;
-  width: auto;
+  max-height: 100%;
+  max-width: 80vw;
 }
