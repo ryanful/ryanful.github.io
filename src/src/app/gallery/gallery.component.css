@@ -1,6 +1,23 @@
+@media only screen and (max-width: 600px) {
+  .image{
+    width: 100% !important;
+    /* height: 80vh !important;
+    padding-bottom: 10vh !important; */
+  }
+
+  .reg-controls{
+    /* bottom: 10vh !important; */
+  }
+
+  #detail-image{
+    display: none !important;
+  } 
+}
+
 .page{
+  position: absolute;
   scroll-behavior: smooth;
-  height: 90vh;
+  height: 90%;
   overflow-y: scroll;
 }
 .image img {
@@ -9,28 +26,12 @@
   max-width: 95%;
   box-shadow: 0 2vh 2vh 0 rgba(0, 0, 0, 0.481); 
 }
-@media only screen and (max-width: 600px) {
-  .image{
-    width: 100% !important;
-    height: 80vh !important;
-    padding-bottom: 10vh !important;
-  }
 
-  .reg-controls{
-    bottom: 10vh !important;
-  }
-
-  #detail-image{
-    display: none !important;
-  }
-
-  
-}
 .image {
   display: inline-grid;
   vertical-align: middle;
   width: 50%;
-  height: 90vh;
+  height: 100%;
   /* text-align: center; */
   /* padding: 3px; */
   /* margin: auto; */

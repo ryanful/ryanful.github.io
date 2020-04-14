@@ -1,21 +1,25 @@
 .panel {
-  position: relative;
+  position: sticky;
   display: inline-flex;
-  height: 90vh;
+  height: 90%;
 }
 .panel-images{
+  display: flex;
   position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   /* border: 2px solid black; */
-  height: 88%;
+  height: 77%;
   width: 90vw;
   scroll-behavior: smooth;
 }
 .panel-images a {
   color: #e6c498;
   text-decoration: none;
+  display: inline-flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .panel-text {
@@ -23,13 +27,13 @@
 }
 @media only screen and (max-width: 600px) {
   .panel{
-    height: 80vh !important;
+    /* height: 80vh !important; */
   }
   .image{
     opacity: 1 !important;
   }
   .image img {
-    max-height: 59.84vh !important;
+    /* max-height: 59.84vh !important; */
   }
 }
 h1{
@@ -45,16 +49,17 @@ p{
 }
 
 .image {
-  display: inline-flex;
-  flex-direction: column;
+  /* display: inline-flex;
+  flex-direction: column; */
   /* color: white; */
   height: 100%;
+  width: fit-content;
   margin-right: 1vw;
   opacity: .5;
 }
 .image img {
   height: 85%;
-  max-height: 67.32vh;
+  /* max-height: 67.32vh; */
   width: auto;
   /* max-height: 72vh; */
   margin: 0;

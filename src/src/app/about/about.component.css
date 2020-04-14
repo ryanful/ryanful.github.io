@@ -5,8 +5,8 @@
   }
 
   .content{
-    padding-top: 0 !important;
-    margin-top: 10vh;
+    top: 0 !important;
+    padding-bottom: 5vh;
   }
 
   #about-text {
@@ -18,15 +18,19 @@
   }
 }
 
+.page {
+  position: absolute;
+  height: 90%;
+}
+
 #about-pic {
   /* The image used*/
   /* background-image: url("images/IMG_1852.jpg"); */
   background-image: url('/../assets/images/self/self2.jpg'); 
 
   /* Set a specific height */
-  height: 90vh;
+  height: 100%;
   width: 100%;
-  float: left;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,13 +39,12 @@
 }
 
 .down {
-  position: sticky;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  top: 90vh;
-  margin:auto;
+  top: 90%;
 }
 
 .expand-more:hover{
@@ -59,8 +62,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10vh 0vh;
-  height: 80vh;
+  position: relative;
+  top: 11%;
+  height: 100%;
   width: 100vw;
 }
 
@@ -69,7 +73,7 @@
   /* Set a specific height */
   width: 80%;
   max-width: 600px;
-  max-height: 50%;
+  max-height: 60%;
   
   /*border: 1px solid black;*/
 }
