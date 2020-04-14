@@ -60,7 +60,7 @@ export class GalleryComponent implements OnInit {
     if (this.isProj) {
       let gallery = document.querySelector("div#proj-gallery");
       let bodyWidth = document.documentElement.clientWidth;
-      let moveAmt = .5 * bodyWidth;
+      let moveAmt = bodyWidth > 600 ? .5 * bodyWidth : bodyWidth;
 
       if (dir === 'd') {
         gallery.scrollIntoView({ behavior: 'smooth' });
@@ -92,7 +92,7 @@ export class GalleryComponent implements OnInit {
   checkArrows() {
     if (this.isProj) {
       let gallery = document.querySelector("div#proj-gallery");
-      let projGalleryEnd = (this.images.length - 2) * .5 * gallery.clientWidth;
+      let projGalleryEnd = gallery.scrollWidth - gallery.clientWidth;
 
       this.showLeft = !(gallery.scrollLeft === 0);
       this.showRight = !(gallery.scrollLeft >= projGalleryEnd);

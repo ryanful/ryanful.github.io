@@ -10,6 +10,11 @@ body, html{
   color: #e6c498;
 }
 
+img {
+  object-fit: contain;
+  object-position: 0;
+}
+
 .container{
   width: 100%;
 }
