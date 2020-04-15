@@ -76,4 +76,7 @@ export class PanelComponent implements OnInit {
     }
   }
 
+  rightClick() {
+    return false;
+  }
 }

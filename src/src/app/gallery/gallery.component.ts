@@ -112,5 +112,7 @@ export class GalleryComponent implements OnInit {
   }
 
 
-
+  rightClick() {
+    return false;
+  }
 }

@@ -13,7 +13,7 @@
 
         <div *ngFor="let member of panel.members" class="image">
           <a [routerLink]="['/gallery', member.id]" #image>
-            <img src="{{panel.path + member.cover.name}}" oncontextmenu="return false">
+            <img src="{{panel.path + member.cover.name}}" (contextmenu)="rightClick()">
             <div class="panel-text">
               <h3><b>{{member.cover.title}} </b> {{member.cover.date}}</h3>
               <p><u>See more!</u></p>

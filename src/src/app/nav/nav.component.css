@@ -99,10 +99,9 @@
   margin: auto 0;
 }
 
-.tab, .dropdown-content a {
+.tab {
   padding: 1vh 1vw;
   text-decoration: none;
-  
   color: #e6c498;
   font-weight: 300;
 }

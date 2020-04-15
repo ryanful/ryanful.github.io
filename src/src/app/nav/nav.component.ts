@@ -10,8 +10,7 @@ export class NavComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   onLanding() {
     console.log(this.router.url);
@@ -32,4 +31,7 @@ export class NavComponent implements OnInit {
     }
   }
 
+  rightClick() {
+    return false;
+  }
 }

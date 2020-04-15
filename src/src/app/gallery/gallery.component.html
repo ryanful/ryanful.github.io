@@ -2,7 +2,7 @@
   <div *ngIf="isProj; else regularGallery" style="height:100%;">
     <div class="details">
       <div id="detail-image">
-        <img src="/../assets/images/projects/{{details.name}}" oncontextmenu="return false">
+        <img src="/../assets/images/projects/{{details.name}}" (contextmenu)="rightClick()">
       </div>
       <div
         style="position:relative; top:10%; width: 50%; height:90%; flex-grow: 1; background-color:rgba(12, 4, 4, .8); ">
@@ -30,7 +30,7 @@
 
     <div id="proj-gallery" class="page" (scroll)="checkArrows()">
       <div *ngFor="let pic of images; let odd=odd" class="image" [style.background-color]="setBackground(false)">
-        <img src="{{path + pic.name}}" oncontextmenu="return false">
+        <img src="{{path + pic.name}}" (contextmenu)="rightClick()">
       </div>
     </div>
 
@@ -50,7 +50,7 @@
 
   <ng-template #regularGallery>
     <div *ngFor="let pic of images" class="image">
-      <img src="{{path + pic.name}}" oncontextmenu="return false;">
+      <img src="{{path + pic.name}}" (contextmenu)="rightClick()">
     </div>
 
     <div class="reg-controls">
