@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ɵConsole } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Raheel\'s Portfolio';
 
-  constructor() { }
+  constructor() {
 
-  onActivate(event: any) {
+  }
+
+  onActivate(event: any, yer) {
+    console.log("ROUTE", yer.activatedRoute);
     document.body.scrollTop = 0;
     document.body.scrollLeft = 0;
 
@@ -23,6 +26,7 @@ export class AppComponent {
         menu.textContent = "menu";
       }
     }
+
   }
 }
 

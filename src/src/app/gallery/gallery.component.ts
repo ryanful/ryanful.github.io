@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { ImagesService } from '../images.service';
 import { Image } from '../photogroup';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PanelMember } from '../photo-info';
 
 @Component({
@@ -24,7 +24,12 @@ export class GalleryComponent implements OnInit {
   showUp = false;
   showDown = true;
 
-  constructor(private imagesService: ImagesService, private route: ActivatedRoute) { }
+  constructor(private imagesService: ImagesService,
+    private route: ActivatedRoute, private router: Router) {
+    // this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+    // console.log(this.router.url);
+    // this.router.navigate([this.router.url]);
+  }
 
   ngOnInit(): void {
     this.route.paramMap

@@ -3,7 +3,7 @@
   <nav class="nav navtop">
     <div class="icons">
       <div class="logo">
-        <img src="../assets/logo/trans-notext.png" routerLink="" (contextmenu)="rightClick()">
+        <img src="../assets/logo/trans-notext.png" routerLink="" (contextmenu)="rightClick()" draggable="false">
       </div>
       <div class="menu">
         <i class="material-icons" id="menu" (click)="showNav()">
@@ -17,7 +17,8 @@
       <div class="dropdown">
         <a class="tab" routerLink="work" routerLinkActive="active">work</a>
         <div class="dropdown-content">
-          <a class="tab" [routerLink]="['/panel', 'work-grad']" routerLinkActive="active">Graduations</a>
+          <a class="tab" [routerLink]="['/panel', 'work-grad']" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Graduations</a>
           <a class="tab" [routerLink]="['/panel', 'work-events']" routerLinkActive="active">Events</a>
           <a class="tab" [routerLink]="['/panel', 'work-hs']" routerLinkActive="active">Headshots</a>
           <a class="tab" routerLink="/work">See More</a>
