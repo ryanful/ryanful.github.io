@@ -1363,13 +1363,41 @@ const PHOTOGROUPS = [
     },
     {
         id: "proj-risk",
-        title: "Photoseries",
+        title: "Photoseries - Risk",
         path: "../assets/images/projects/proj-risk/",
         images: [
             { name: "risk842.jpg", date: "Jun 2019", title: "", desc: "", models: [] },
             { name: "risk841.jpg", date: "Jun 2019", title: "", desc: "", models: [] },
             { name: "../risk832.jpg", date: "", title: "", desc: "", models: [] },
             { name: "risk825.jpg", date: "", title: "", desc: "", models: [] }
+        ]
+    },
+    {
+        id: "proj-breakwall4",
+        title: "Photoseries - Wall 4",
+        path: "../assets/images/projects/proj-breakwall4/",
+        images: [
+            { name: "../4wall1.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall2.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall3.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall4.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall5.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall6.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall7.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walldm7.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walldm1.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walldm2.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walldm3.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walldm4.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walldm5.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walldm6.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall8.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall9.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walld1.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walld2.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walld3.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4walld4.jpg", date: "", title: "", desc: "", models: [] },
+            { name: "4wall0.jpg", date: "", title: "", desc: "", models: [] }
         ]
     },
     {
@@ -1397,7 +1425,7 @@ const PHOTOGROUPS = [
     },
     {
         id: "proj-albums",
-        title: "Photoseries - Albums Rahmaster",
+        title: "Photoseries - Albums Rahmastered",
         path: "../assets/images/projects/proj-albums/",
         images: [
             { name: "onelove.png", date: "", title: "", desc: "", models: [] },
@@ -1546,6 +1574,13 @@ const PROJECTPANELS = [
                     desc: "Coming Soon!", models: ["Rainer Sainvil", "Hameedah Khadar", "Emily Romero"]
                 },
                 id: "proj-uncanny"
+            },
+            {
+                cover: {
+                    name: "4wall1.jpg", date: "Jan 2020", title: "Breaking The 4th Wall",
+                    desc: "Coming Soon!", models: ["Destiny Nwafor", "Maxine Nzegwu", "Rainer Sainvil"]
+                },
+                id: "proj-breakwall4"
             },
             {
                 cover: {
