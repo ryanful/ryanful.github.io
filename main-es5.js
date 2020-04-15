@@ -1655,7 +1655,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 9);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "gallery");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "GALLERY");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1663,7 +1663,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 11);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "work");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "WORK");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1701,7 +1701,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "a", 16);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " projects ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " PROJECTS ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -1743,7 +1743,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "a", 17);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "about");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "ABOUT");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -3238,6 +3238,47 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         models: []
       }]
     }, {
+      id: "alenabday",
+      title: "Alena's 19th Bday",
+      path: "../assets/images/work/other/alenabday/",
+      images: [{
+        name: "../alena1.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "alena2.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "alena3.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "alena4.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "alena5.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "alena6.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }]
+    }, {
       id: "proj-risk",
       title: "Photoseries",
       path: "../assets/images/projects/proj-risk/",
@@ -3631,6 +3672,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       title: "Other",
       path: "../assets/images/work/other/",
       members: [{
+        cover: {
+          name: "alena1.jpg",
+          date: "Nov 2019",
+          title: "Alena's 19th Bday",
+          desc: "",
+          models: []
+        },
+        id: "alenabday"
+      }, {
         cover: {
           name: "iao521.jpg",
           date: "Jun 2019",
