@@ -263,6 +263,19 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     ]
   },
   {
+    id: "alenabday",
+    title: "Alena's 19th Bday",
+    path: "../assets/images/work/other/alenabday/",
+    images: [
+      { name: "../alena1.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "alena2.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "alena3.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "alena4.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "alena5.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "alena6.jpg", date: "", title: "", desc: "", models: [] },
+    ]
+  },
+  {
     id: "proj-risk",
     title: "Photoseries",
     path: "../assets/images/projects/proj-risk/",
@@ -436,6 +449,10 @@ export const WORKPANELS: Panel[] = [
     title: "Other",
     path: "../assets/images/work/other/",
     members: [
+      {
+        cover: { name: "alena1.jpg", date: "Nov 2019", title: "Alena's 19th Bday", desc: "", models: [] },
+        id: "alenabday"
+      },
       {
         cover: { name: "iao521.jpg", date: "Jun 2019", title: "Iyaniwura's 21st Bday", desc: "", models: [] },
         id: "iao-bday"
