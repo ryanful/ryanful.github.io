@@ -1153,6 +1153,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GalleryComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
+          this.setUpPageWithImages();
+        }
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          this.imageSub.unsubscribe();
+        }
+      }, {
+        key: "setUpPageWithImages",
+        value: function setUpPageWithImages() {
           var _this = this;
 
           this.imageSub = this.route.paramMap.subscribe(function (params) {
@@ -1160,23 +1170,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               _this.id = params.get("id");
             }
 
-            console.log("gallery id check:", _this.id);
-
             var photos = _this.imagesService.getPhotos(_this.id);
 
             _this.details = _this.imagesService.getProjectDetails(_this.id);
             _this.path = photos.path;
             _this.images = photos.images;
             _this.isProj = _this.id.substr(0, 4) === 'proj';
-          }); // document.body.scrollTop = 0;
-          //let photos = this.imagesService.getPhotos(this.id);
-          //this.path = photos.path;
-          //this.images = photos.images;
-        }
-      }, {
-        key: "ngOnDestroy",
-        value: function ngOnDestroy() {
-          this.imageSub.unsubscribe();
+
+            if (_this.isProj) {
+              var page = document.querySelector(".gallery.page");
+
+              if (page !== null) {
+                page.scrollTo(0, 0);
+              }
+
+              var gallery = document.querySelector("#proj-gallery");
+
+              if (gallery !== null) {
+                gallery.scrollTo(0, 0);
+              }
+            }
+          });
         }
       }, {
         key: "setBackground",
@@ -1845,6 +1859,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               var menu = document.querySelector(".menu i");
 
               _this2.regNav(nav, menu);
+
+              document.documentElement.scrollTo(0, 0);
             }
           });
         }

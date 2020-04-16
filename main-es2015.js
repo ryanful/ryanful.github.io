@@ -540,25 +540,33 @@ class GalleryComponent {
         this.showDown = true;
     }
     ngOnInit() {
+        this.setUpPageWithImages();
+    }
+    ngOnDestroy() {
+        this.imageSub.unsubscribe();
+    }
+    setUpPageWithImages() {
         this.imageSub = this.route.paramMap
             .subscribe(params => {
             if (this.id !== 'portfolio') {
                 this.id = params.get("id");
             }
-            console.log("gallery id check:", this.id);
             let photos = this.imagesService.getPhotos(this.id);
             this.details = this.imagesService.getProjectDetails(this.id);
             this.path = photos.path;
             this.images = photos.images;
             this.isProj = this.id.substr(0, 4) === 'proj';
+            if (this.isProj) {
+                let page = document.querySelector(".gallery.page");
+                if (page !== null) {
+                    page.scrollTo(0, 0);
+                }
+                let gallery = document.querySelector("#proj-gallery");
+                if (gallery !== null) {
+                    gallery.scrollTo(0, 0);
+                }
+            }
         });
-        // document.body.scrollTop = 0;
-        //let photos = this.imagesService.getPhotos(this.id);
-        //this.path = photos.path;
-        //this.images = photos.images;
-    }
-    ngOnDestroy() {
-        this.imageSub.unsubscribe();
     }
     setBackground(isOdd) {
         // console.log("we tried");
@@ -883,6 +891,7 @@ class NavComponent {
                 let nav = document.querySelector("nav.nav");
                 let menu = document.querySelector(".menu i");
                 this.regNav(nav, menu);
+                document.documentElement.scrollTo(0, 0);
             }
         });
     }
