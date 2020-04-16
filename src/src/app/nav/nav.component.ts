@@ -16,6 +16,7 @@ export class NavComponent implements OnInit {
         let nav = document.querySelector("nav.nav");
         let menu = document.querySelector(".menu i");
         this.regNav(nav, menu);
+        document.documentElement.scrollTo(0, 0);
       }
 
     });

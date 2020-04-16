@@ -39,6 +39,10 @@ export class GalleryComponent implements OnInit {
         this.path = photos.path;
         this.images = photos.images;
         this.isProj = this.id.substr(0, 4) === 'proj';
+        if (this.isProj) {
+          document.querySelector(".gallery.page").scroll(0, 0);
+          document.querySelector("#proj-gallery").scroll(0, 0);
+        }
       });
     // document.body.scrollTop = 0;
 
