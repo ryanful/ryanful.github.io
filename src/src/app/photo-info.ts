@@ -11,6 +11,8 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     images: [
       { name: "dej1.jpg", date: "", title: "", desc: "", models: [] },
       { name: "josh1.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "2.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "3.jpg", date: "", title: "", desc: "", models: [] },
       { name: "rel753.jpg", date: "", title: "", desc: "", models: [] },
       { name: "rel737.jpg", date: "", title: "", desc: "", models: [] },
       { name: "rel607.jpg", date: "", title: "", desc: "", models: [] },
@@ -25,7 +27,31 @@ export const PHOTOGROUPS: PhotoGroup[] = [
       { name: "93.jpg", date: "", title: "", desc: "", models: [] },
       { name: "97.jpg", date: "", title: "", desc: "", models: [] },
       { name: "53.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "4.jpg", date: "", title: "", desc: "", models: [] },
       { name: "1.jpg", date: "", title: "", desc: "", models: [] }
+    ]
+  },
+  {
+    id: "grad-aus",
+    title: "Austen + Friend's Graduation",
+    path: "../assets/images/work/grad/aus/",
+    images: [
+      { name: "../aus1.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus2.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus3.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus4.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus5.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus6.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus7.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus8.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus9.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus10.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus11.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus12.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus13.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus14.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus15.jpg", date: "May 2019", title: "", desc: "", models: [] },
+      { name: "aus16.jpg", date: "May 2019", title: "", desc: "", models: [] }
     ]
   },
   {
@@ -200,6 +226,31 @@ export const PHOTOGROUPS: PhotoGroup[] = [
       { name: "pepnc242.jpg", date: "", title: "", desc: "", models: [] },
       { name: "pepnc52.jpg", date: "", title: "", desc: "", models: [] },
       { name: "pepnc81.jpg", date: "", title: "", desc: "", models: [] }
+    ]
+  },
+  {
+    id: "event-afrik18",
+    title: "Events - Afrik! 2018",
+    path: "../assets/images/work/events/afrik18/",
+    images: [
+      { name: "../afrik.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik1.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik2.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik3.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik4.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik5.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik6.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik7.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik8.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik9.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik10.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik11.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik12.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik13.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik16.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik17.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik14.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "afrik15.jpg", date: "", title: "", desc: "", models: [] }
     ]
   },
   {
@@ -408,6 +459,10 @@ export const WORKPANELS: Panel[] = [
     path: "../assets/images/work/grad/",
     members: [
       {
+        cover: { name: "aus1.jpg", date: "May 2019", title: "Austen + Friends", desc: "", models: [] },
+        id: "grad-aus"
+      },
+      {
         cover: { name: "ab141.jpg", date: "May 2019", title: "Abraham", desc: "", models: [] },
         id: "grad-ab"
       },
@@ -452,6 +507,10 @@ export const WORKPANELS: Panel[] = [
       {
         cover: { name: "pepnc992.jpg", date: "May 2018", title: "Peprah Naming Ceremony", desc: "", models: [] },
         id: "event-pep"
+      },
+      {
+        cover: { name: "afrik.jpg", date: "March 2018", title: "Afrik!", desc: "", models: [] },
+        id: "event-afrik18"
       }
     ]
   },
