@@ -17,7 +17,7 @@ export class GalleryComponent implements OnInit {
   images: Image[];
   isProj: boolean;
   details: Image;
-
+  private imageSub: any;
   //images controls
   showLeft = false;
   showRight = true;
@@ -25,34 +25,30 @@ export class GalleryComponent implements OnInit {
   showDown = true;
 
   constructor(private imagesService: ImagesService,
-    private route: ActivatedRoute, private router: Router) {
-    // this.router.routeReuseStrategy.shouldReuseRoute = () => false;
-    // console.log(this.router.url);
-    // this.router.navigate([this.router.url]);
-  }
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.paramMap
+    this.imageSub = this.route.paramMap
       .subscribe(params => {
-        let id: string;
-        if (this.id === undefined) {
-          id = params.get("id");
+        if (this.id !== 'portfolio') {
+          this.id = params.get("id");
         }
-        else {
-          id = this.id;
-        }
-        console.log("gallery id check:", id, this.id);
-        let photos = this.imagesService.getPhotos(id);
-        this.details = this.imagesService.getProjectDetails(id)
+        console.log("gallery id check:", this.id);
+        let photos = this.imagesService.getPhotos(this.id);
+        this.details = this.imagesService.getProjectDetails(this.id)
         this.path = photos.path;
         this.images = photos.images;
-        this.isProj = id.substr(0, 4) === 'proj';
+        this.isProj = this.id.substr(0, 4) === 'proj';
       });
     // document.body.scrollTop = 0;
 
     //let photos = this.imagesService.getPhotos(this.id);
     //this.path = photos.path;
     //this.images = photos.images;
+  }
+
+  ngOnDestroy() {
+    this.imageSub.unsubscribe();
   }
 
   setBackground(isOdd) {

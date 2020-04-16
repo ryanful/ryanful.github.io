@@ -6,7 +6,7 @@
         <img src="../assets/logo/trans-notext.png" routerLink="" (contextmenu)="rightClick()" draggable="false">
       </div>
       <div class="menu">
-        <i class="material-icons" id="menu" (click)="showNav()">
+        <i class="material-icons" id="menu" (click)="toggleNav()">
           menu
         </i>
       </div>
@@ -17,11 +17,11 @@
       <div class="dropdown">
         <a class="tab" routerLink="work" routerLinkActive="active">WORK</a>
         <div class="dropdown-content">
-          <a class="tab" [routerLink]="['/panel', 'work-grad']" routerLinkActive="active"
+          <a #droptabs class="tab" [routerLink]="['/panel', 'work-grad']" routerLinkActive="active"
             [routerLinkActiveOptions]="{exact:true}">Graduations</a>
-          <a class="tab" [routerLink]="['/panel', 'work-events']" routerLinkActive="active">Events</a>
-          <a class="tab" [routerLink]="['/panel', 'work-hs']" routerLinkActive="active">Headshots</a>
-          <a class="tab" routerLink="/work">See More</a>
+          <a #droptabs class="tab" [routerLink]="['/panel', 'work-events']" routerLinkActive="active">Events</a>
+          <a #droptabs class="tab" [routerLink]="['/panel', 'work-hs']" routerLinkActive="active">Headshots</a>
+          <a #droptabs class="tab" routerLink="/work" routerLinkActive="active">See All</a>
         </div>
       </div>
       <div class="dropdown">
@@ -29,11 +29,15 @@
           PROJECTS
         </a>
         <div class="dropdown-content">
-          <a class="tab" [routerLink]="['/gallery', 'proj-risk']" routerLinkActive="active">Reem</a>
-          <a class="tab" [routerLink]="['/gallery', 'proj-albums']" routerLinkActive="active">One Love</a>
-          <a class="tab" [routerLink]="['/gallery', 'proj-uncanny']" routerLinkActive="active">Uncanny Vibrations</a>
-          <a class="tab" [routerLink]="['/gallery', 'proj-chi']" routerLinkActive="active">Chioma</a>
-          <a class="tab" [routerLink]="['/gallery', 'proj-syd']" routerLinkActive="active">Sydney</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-breakwall4']" routerLinkActive="active">Breaking the
+            4th
+            Wall</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-risk']" routerLinkActive="active">Reem</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-uncanny']" routerLinkActive="active">Uncanny
+            Vibrations</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-albums']" routerLinkActive="active">One Love</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-chi']" routerLinkActive="active">Chioma</a>
+          <a #droptabs class="tab" routerLink="/projects" routerLinkActive="active">See All</a>
         </div>
       </div>
       <a class="tab" routerLink="about" routerLinkActive="active">ABOUT</a>

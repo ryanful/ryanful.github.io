@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -10,14 +10,33 @@ export class NavComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.router.events.subscribe(e => {
+      if (e instanceof NavigationEnd) {
+        let nav = document.querySelector("nav.nav");
+        let menu = document.querySelector(".menu i");
+        this.regNav(nav, menu);
+      }
+
+    });
+  }
+
+
 
   onLanding() {
     console.log(this.router.url);
     return this.router.url === '/';
   }
 
-  showNav() {
+  regNav(nav, menu) {
+    if (nav !== null) { nav.className = "nav"; }
+    if (menu !== null) {
+      menu.id = "menu";
+      menu.textContent = "menu";
+    }
+  }
+
+  toggleNav() {
     let x = document.querySelector("nav.nav");
     let menu = document.querySelector(".menu i");
     if (x.className === "nav") {
@@ -25,6 +44,7 @@ export class NavComponent implements OnInit {
       menu.id = "close";
       menu.textContent = "close";
     } else {
+      //regNav(x, menu);
       x.className = "nav";
       menu.id = "menu";
       menu.textContent = "menu";

@@ -280,10 +280,12 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     title: "Photoseries - Risk",
     path: "../assets/images/projects/proj-risk/",
     images: [
+      { name: "../risk.png", date: "Jun 2019", title: "", desc: "", models: [] },
       { name: "risk842.jpg", date: "Jun 2019", title: "", desc: "", models: [] },
       { name: "risk841.jpg", date: "Jun 2019", title: "", desc: "", models: [] },
-      { name: "../risk832.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "risk825.jpg", date: "", title: "", desc: "", models: [] }
+      { name: "risk825.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "risk2.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "../risk832.jpg", date: "", title: "", desc: "", models: [] }
     ]
   },
   {
@@ -529,8 +531,12 @@ export const PROJECTPANELS: Panel[] = [
       },
       {
         cover: {
-          name: "risk832.jpg", date: "Jun 2019", title: "Reem",
-          desc: "Coming Soon!", models: ["Reem Abdalla"]
+          name: "risk832.jpg", date: "Jun 2019", title: "Risk",
+          desc: `This is inspired by the song playing in the video: 'Risk' ` +
+            `by Fkj x Bas. The calm, soothing nature of the production matched ` +
+            `the image perfectly. It's full circle -- Reem and I first bonded over ` +
+            `our mutual love for Bas at that time (he's still one of my favorite ` +
+            `artists today)!`, models: ["Reem Abdalla"]
         },
         id: "proj-risk"
       },
