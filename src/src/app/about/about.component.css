@@ -95,6 +95,8 @@
 
 #about-text a {
   color: #e6c498;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 #about-fav {
@@ -108,4 +110,8 @@
 #about-fav img{
   max-height: 100%;
   max-width: 80vw;
+}
+
+.resume-link{
+  font-size: 5vh;
 }
