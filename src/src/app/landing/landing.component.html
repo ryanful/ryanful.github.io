@@ -1,15 +1,18 @@
 <div class="intro">
   <div class="intro-nav">
-    <img src="../assets/logo/trans-notext.png" (contextmenu)="rightClick()">
+    <div class="work" routerLink="work"><span>WORK</span></div>
+    <div class="port" routerLink="portfolio"><span>GALLERY</span></div>
+    <div class="proj" routerLink="projects"><span>PROJECTS</span></div>
 
-    <div style="height:100%; margin:auto;">
-      <div><a routerLink="work">MY WORK</a></div>
-      <!-- <div><a routerLink="work">BOOK ME</a></div> -->
-      <div><a routerLink="portfolio">GALLERY</a></div>
-      <div><a routerLink="projects">PROJECTS</a></div>
-    </div>
+
   </div>
-  <div class="intro-img">
+  <div class="intro-img" routerLink="about">
+
+    <img src="../assets/logo/favicon.png" (contextmenu)="rightClick()">
+    <span>ABOUT</span>
+
+    <!-- <div><a routerLink="work">BOOK ME</a></div> -->
+
     <!-- <img src="images/OON4498.jpg"> -->
     <!-- <img src="projects/chioma/THEONE.jpg"> -->
     <!-- <img src="projects/uncannyvibrationss/_OON4753.jpg"> -->

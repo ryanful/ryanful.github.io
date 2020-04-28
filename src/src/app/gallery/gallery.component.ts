@@ -120,4 +120,8 @@ export class GalleryComponent implements OnInit {
   rightClick() {
     return false;
   }
+
+  isLandscape(height, width) {
+    return height / width >= 4 / 3;
+  }
 }
