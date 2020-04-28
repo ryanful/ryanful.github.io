@@ -40,10 +40,6 @@
     left: 10%;
   }
 
-  .intro-img span {
-    left: 15%;
-  }
-
 }
 
 .intro{
@@ -79,7 +75,7 @@
   opacity: .8;
 }
 .intro-img img {
-  height: 25%;
+  height: 20%;
   /* background-color: red; */
 }
 
@@ -114,8 +110,4 @@
 .proj {
   background-image: url("/../assets/images/projects/THEONE.jpg");
   left: 3%;
-}
-
-.intro-img span {
-  left: 5%;
 }
