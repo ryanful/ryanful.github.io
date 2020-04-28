@@ -99,7 +99,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["about"]],
       decls: 45,
       vars: 0,
-      consts: [[1, "about", "page"], ["id", "about-pic"], [1, "down"], ["role", "button", "data-slide", "next", "aria-hidden", "true", 1, "material-icons", "expand-more", 3, "click"], [1, "content"], ["id", "about-fav"], ["src", "../assets/images/self/self1.jpg", "draggable", "false", 2, "border-radius", "5%", 3, "contextmenu"], ["id", "about-text"], ["href", "https://instagram.com/abeikuyanful", "target", "_blank"], [1, "fa", "fa-instagram"], ["href", "https://www.github.com/ryanful", "target", "_blank"], [1, "fa", "fa-github"], ["href", "https://www.linkedin.com/in/ryanful/", "target", "_blank"], [1, "fa", "fa-linkedin-square"], ["href", "../assets/RaheelYanful-Resume.pdf", "target", "_blank"], [1, "fa", "fa-file-text"]],
+      consts: [[1, "about", "page"], ["id", "about-pic"], [1, "down"], ["role", "button", "data-slide", "next", "aria-hidden", "true", 1, "material-icons", "expand-more", 3, "click"], [1, "content"], ["id", "about-fav"], ["src", "../assets/images/self/self1.jpg", "draggable", "false", 2, "border-radius", "5%", 3, "contextmenu"], ["id", "about-text"], ["href", "https://instagram.com/abeikuyanful", "target", "_blank"], [1, "fa", "fa-instagram"], ["href", "https://www.github.com/ryanful", "target", "_blank"], [1, "fa", "fa-github"], ["href", "https://www.linkedin.com/in/ryanful/", "target", "_blank"], [1, "fa", "fa-linkedin-square"], ["href", "../assets/RaheelsResume.pdf", "target", "_blank"], [1, "fa", "fa-file-text"], ["href", "../assets/RaheelYanful-Resume.pdf", "target", "_blank"]],
       template: function AboutComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -226,7 +226,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "a", 14);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "a", 16);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "i", 15);
 
@@ -2001,7 +2001,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-nav"]],
       decls: 1,
       vars: 1,
-      consts: [["class", "container", 4, "ngIf"], [1, "container"], [1, "nav", "navtop"], [1, "icons"], [1, "logo"], ["src", "../assets/logo/trans-notext.png", "routerLink", "", "draggable", "false", 3, "contextmenu"], [1, "menu"], ["id", "menu", 1, "material-icons", 3, "click"], [1, "nav-tabs"], ["routerLink", "portfolio", "routerLinkActive", "active", 1, "tab"], [1, "dropdown"], ["routerLink", "work", "routerLinkActive", "active", 1, "tab"], [1, "dropdown-content"], ["routerLinkActive", "active", 1, "tab", 3, "routerLink", "routerLinkActiveOptions"], ["droptabs", ""], ["routerLinkActive", "active", 1, "tab", 3, "routerLink"], ["routerLink", "/work", "routerLinkActive", "active", 1, "tab"], ["routerLink", "projects", "routerLinkActive", "active", 1, "tab"], ["routerLink", "/projects", "routerLinkActive", "active", 1, "tab"], ["routerLink", "about", "routerLinkActive", "active", 1, "tab"], [1, "socials"], ["href", "https://instagram.com/abeikuyanful", "target", "_blank"], [1, "fa", "fa-instagram"], ["href", "https://www.github.com/ryanful", "target", "_blank"], [1, "fa", "fa-github"], ["href", "https://www.linkedin.com/in/ryanful/", "target", "_blank"], [1, "fa", "fa-linkedin-square"], ["href", "../assets/RaheelYanful-Resume.pdf", "target", "_blank"], [1, "fa", "fa-file-text"]],
+      consts: [["class", "container", 4, "ngIf"], [1, "container"], [1, "nav", "navtop"], [1, "icons"], [1, "logo"], ["src", "../assets/logo/trans-notext.png", "routerLink", "", "draggable", "false", 3, "contextmenu"], [1, "menu"], ["id", "menu", 1, "material-icons", 3, "click"], [1, "nav-tabs"], ["routerLink", "portfolio", "routerLinkActive", "active", 1, "tab"], [1, "dropdown"], ["routerLink", "work", "routerLinkActive", "active", 1, "tab"], [1, "dropdown-content"], ["routerLinkActive", "active", 1, "tab", 3, "routerLink", "routerLinkActiveOptions"], ["droptabs", ""], ["routerLinkActive", "active", 1, "tab", 3, "routerLink"], ["routerLink", "/work", "routerLinkActive", "active", 1, "tab"], ["routerLink", "projects", "routerLinkActive", "active", 1, "tab"], ["routerLink", "/projects", "routerLinkActive", "active", 1, "tab"], ["routerLink", "about", "routerLinkActive", "active", 1, "tab"], [1, "socials"], ["href", "https://instagram.com/abeikuyanful", "target", "_blank"], [1, "fa", "fa-instagram"], ["href", "https://www.github.com/ryanful", "target", "_blank"], [1, "fa", "fa-github"], ["href", "https://www.linkedin.com/in/ryanful/", "target", "_blank"], [1, "fa", "fa-linkedin-square"], ["href", "../assets/RaheelsResume.pdf", "target", "_blank"], [1, "fa", "fa-file-text"]],
       template: function NavComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NavComponent_div_0_Template, 61, 18, "div", 0);
