@@ -69,7 +69,8 @@
     justify-content: center;
     width: 100vw !important;
     right: 0 !important;
-    bottom: 5%;
+    top: 10%;
+    position: relative !important;
   }
   
 }
