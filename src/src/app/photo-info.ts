@@ -166,12 +166,15 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     path: "../assets/images/work/events/AE19/",
     images: [
       { name: "ae19-8.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "ae19-11.jpg", date: "", title: "", desc: "", models: [] },
       { name: "ae19-1.jpg", date: "", title: "", desc: "", models: [] },
       { name: "ae19-3.jpg", date: "", title: "", desc: "", models: [] },
       { name: "ae19-4.jpg", date: "", title: "", desc: "", models: [] },
       { name: "ae19-5.jpg", date: "", title: "", desc: "", models: [] },
       { name: "ae19-6.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "ae19-7.jpg", date: "", title: "", desc: "", models: [] }
+      { name: "ae19-7.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "ae19-9.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "ae19-10.jpg", date: "", title: "", desc: "", models: [] }
     ]
   },
   {
@@ -180,14 +183,26 @@ export const PHOTOGROUPS: PhotoGroup[] = [
     path: "../assets/images/work/events/urmcbbq/",
     images: [
       { name: "urmcbbq2.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "urmcbbq3.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq22.jpg", date: "", title: "", desc: "", models: [] },
       { name: "urmcbbq4.jpg", date: "", title: "", desc: "", models: [] },
       { name: "urmcbbq5.jpg", date: "", title: "", desc: "", models: [] },
       { name: "urmcbbq6.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "urmcbbq7.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq16.jpg", date: "", title: "", desc: "", models: [] },
       { name: "urmcbbq8.jpg", date: "", title: "", desc: "", models: [] },
       { name: "urmcbbq9.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "urmcbbq10.jpg", date: "", title: "", desc: "", models: [] }
+      { name: "urmcbbq10.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq11.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq12.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq13.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq14.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq15.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq7.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq3.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq18.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq19.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq20.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq21.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "urmcbbq17.jpg", date: "", title: "", desc: "", models: [] }
     ]
   },
   {
@@ -200,10 +215,15 @@ export const PHOTOGROUPS: PhotoGroup[] = [
       { name: "bloth19-4.jpg", date: "", title: "", desc: "", models: [] },
       { name: "bloth19-5.jpg", date: "", title: "", desc: "", models: [] },
       { name: "bloth19-6.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "bloth19-15.jpg", date: "", title: "", desc: "", models: [] },
       { name: "bloth19-7.jpg", date: "", title: "", desc: "", models: [] },
       { name: "bloth19-8.jpg", date: "", title: "", desc: "", models: [] },
       { name: "bloth19-9.jpg", date: "", title: "", desc: "", models: [] },
-      { name: "bloth19-10.jpg", date: "", title: "", desc: "", models: [] }
+      { name: "bloth19-10.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "bloth19-12.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "bloth19-13.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "bloth19-14.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "bloth19-16.jpg", date: "", title: "", desc: "", models: [] }
     ]
   },
   {
@@ -336,6 +356,11 @@ export const PHOTOGROUPS: PhotoGroup[] = [
       { name: "risk841.jpg", date: "Jun 2019", title: "", desc: "", models: [] },
       { name: "risk825.jpg", date: "", title: "", desc: "", models: [] },
       { name: "risk2.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "risk3.jpg", date: "Jun 2019", title: "", desc: "", models: [] },
+      { name: "risk4.jpg", date: "Jun 2019", title: "", desc: "", models: [] },
+      { name: "risk5.jpg", date: "", title: "", desc: "", models: [] },
+      { name: "risk6.jpg", date: "", title: "", desc: "", models: [] },
+      // { name: "risk7.jpg", date: "", title: "", desc: "", models: [] },
       { name: "../risk832.jpg", date: "", title: "", desc: "", models: [] }
     ]
   },

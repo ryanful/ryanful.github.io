@@ -59,6 +59,15 @@
   scroll-behavior: smooth;
 }
 
+#proj-gallery .image{
+  width: auto;
+}
+
+#proj-gallery .image img{
+  max-height: 99%;
+  max-width: 99%;
+}
+
 .details{
   height: 100%;
   width: 100vw;

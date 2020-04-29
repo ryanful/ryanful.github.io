@@ -55,10 +55,12 @@ export class GalleryComponent implements OnInit {
       });
   }
 
-  setBackground(isOdd) {
+  setBackground(index) {
     // console.log("we tried");
     // document.querySelector("div.image").setAttribute("background-color", "#e8d8c3");
-    return isOdd ? "#e8d8c3" : "none";
+    let colors = ["rgb(24, 6, 6)", "rgb(40, 16, 16)", "none"];
+    let ind = index * 2 % 3;
+    return colors[ind];
   }
 
   scroll(dir: string) {

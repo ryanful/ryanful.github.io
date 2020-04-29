@@ -40,7 +40,7 @@
     </div>
 
     <div id="proj-gallery" class="page" (scroll)="checkArrows()">
-      <div *ngFor="let pic of images; let odd=odd" class="image" [style.background-color]="setBackground(false)">
+      <div *ngFor="let pic of images; let i = index" class="image" [style.background-color]="setBackground(i)">
         <img src="{{path + pic.name}}" (contextmenu)="rightClick()" draggable="false">
       </div>
     </div>
