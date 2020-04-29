@@ -4056,6 +4056,89 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         models: []
       }]
     }, {
+      id: "proj-bsides",
+      title: "Photoseries - Albums Rahmastered Bsides",
+      path: "../assets/images/projects/proj-bsides/",
+      images: [{
+        name: "../bside.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides1.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides2.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides3.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides6.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides7.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides12.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides8.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides9.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides10.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides11.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides4.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }, {
+        name: "bsides5.jpg",
+        date: "",
+        title: "",
+        desc: "",
+        models: []
+      }]
+    }, {
       id: "proj-albums",
       title: "Photoseries - Albums Rahmastered",
       path: "../assets/images/projects/proj-albums/",
@@ -4401,6 +4484,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       title: "Photoseries",
       path: "../assets/images/projects/",
       members: [{
+        cover: {
+          name: "bside.jpg",
+          date: "Apr 2020",
+          title: "Albums Rahmastered Bsides",
+          desc: "Coming Soon!",
+          models: ["William Nnuro", "Iyaniwura Olarewaju", "Reem Abdalla", "Mez Ijomanta"]
+        },
+        id: "proj-bsides"
+      }, {
         cover: {
           name: "flick.png",
           date: "Feb 2020",
