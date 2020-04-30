@@ -60,10 +60,13 @@
 }
 
 #proj-gallery .image{
-  width: auto;
+  display: inline-flex;
+  width: max-content;
+  /* min-width: 40%; */
 }
 
 #proj-gallery .image img{
+  height: 99%;
   max-height: 99%;
   max-width: 99%;
 }
