@@ -1,9 +1,10 @@
 .panel {
   display: inline-flex;
-  height: 90%;
+  height: 87%;
+  top: 5%;
 }
 .panel-images{
-  display: flex;
+  /* display: flex; */
   position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -47,6 +48,7 @@ p{
   /* display: inline-flex;
   flex-direction: column; */
   /* color: white; */
+  display: inline-block;
   height: 95%;
   width: fit-content;
   margin-right: 1vw;

@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@media only screen and (max-width: 600px) {
+  .page{
+    top:8% !important;
+  }
+}
+
 body, html{
   height:100%;
   margin:0;
@@ -22,7 +28,7 @@ img {
 .page {
   position: relative;
   width: 100%;
-  top: 10%;
+  /* top: 10%; */
 }
 
 h1{

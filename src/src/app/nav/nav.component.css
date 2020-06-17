@@ -1,5 +1,8 @@
 
 @media only screen and (max-width: 600px) {
+  .nav {
+    top: 0 !important;
+  }
   .nav-tabs {
     display: none !important;
   }
@@ -17,8 +20,8 @@
     position: sticky !important;
     left: 87vw !important;
     display: flex !important;
-    height: 10vh !important;
-    width: 8vw !important;
+    height: 100% !important;
+    width: 7vw !important;
   }
 
   #menu, #close {
@@ -36,7 +39,7 @@
     background-color: rgba(20, 3, 3, 1) !important;
     height: 100% !important; 
   }
-  .nav.responsive .icons{height: 10% !important;}
+  .nav.responsive .icons{height: 8% !important;}
 
   .nav.responsive .nav-tabs {
     display: block !important;
@@ -77,10 +80,12 @@
 
 .nav{
   position: fixed;
+  bottom: 0;
   display: flex;
   z-index: 1;
   width: 100%;
-  height: 10%;
+  height: 8%;
+  /* font-family: monospace; */
   background-color: rgba(20, 3, 3, 0.5);
   /* background-color: black; */
   border: 1px solid black;
@@ -116,7 +121,8 @@
   padding: 1vh 1vw;
   text-decoration: none;
   color: #e6c498;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 80%;
 }
 
 .tab:hover, .dropdown-content a:hover {
@@ -139,6 +145,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
+  bottom: 120%;
   min-width: 160px;
   padding-top: 1vh;
   z-index: 1;

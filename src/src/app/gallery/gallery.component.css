@@ -28,7 +28,7 @@
 .page{
   position: absolute;
   scroll-behavior: smooth;
-  height: 90%;
+  height: 92%;
   overflow-y: scroll;
 }
 .image img {
@@ -146,19 +146,20 @@ h2 {
 }
 
 .reg-controls{
-  position: sticky;
-  bottom: 0vh;
+  position: fixed;
+  bottom: 8%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin:auto;
+  width: 100%;
 }
 
 
 .controls {
   display: flex;
   position: relative;
-  bottom: 90%;
+  bottom: 100%;
   /* margin-top: -90vh; */
   height: 100%;
   width: 0%;
