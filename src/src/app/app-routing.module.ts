@@ -9,15 +9,14 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { PanelComponent } from './panel/panel.component';
 
 const routes: Routes = [
-  { path: '', component: LandingComponent },
-  { path: 'work', component: WorkComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'portfolio', component: GalleryPageComponent },
-  { path: 'gallery/:id', component: GalleryComponent },
-  { path: 'panel/:id', component: PanelComponent },
-  { path: 'resume', redirectTo: '../assets/RaheelYanful-Resume.pdf' },
-  { path: '**', redirectTo: '' }
+  { path: 'photo-port-v1', component: LandingComponent },
+  { path: 'photo-port-v1/work', component: WorkComponent },
+  { path: 'photo-port-v1/projects', component: ProjectsComponent },
+  { path: 'photo-port-v1/about', component: AboutComponent },
+  { path: 'photo-port-v1/portfolio', component: GalleryPageComponent },
+  { path: 'photo-port-v1/gallery/:id', component: GalleryComponent },
+  { path: 'photo-port-v1/panel/:id', component: PanelComponent },
+  { path: 'photo-port-v1/resume', redirectTo: '../assets/RaheelYanful-Resume.pdf' }
 ];
 
 @NgModule({

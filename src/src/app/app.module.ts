@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +12,8 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImagesService } from './images.service';
 import { PanelComponent } from './panel/panel.component';
+
+const providers = [ImagesService]
 
 @NgModule({
   declarations: [
@@ -29,7 +31,17 @@ import { PanelComponent } from './panel/panel.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ImagesService],
+  providers: providers,
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+@NgModule({})
+export class PhotoSiteV1Module {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: AppModule,
+      providers: providers
+    }
+  }
+}
