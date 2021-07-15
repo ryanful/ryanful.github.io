@@ -1,0 +1,178 @@
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    top: 0 !important;
+  }
+  .nav-tabs {
+    display: none !important;
+  }
+
+  .socials {
+    display: none !important;
+  }
+
+  .logo {
+    position: sticky !important;
+    left: 2vw !important;
+  }
+
+  .menu {
+    position: sticky !important;
+    left: 87vw !important;
+    display: flex !important;
+    height: 100% !important;
+    width: 7vw !important;
+  }
+
+  #menu, #close {
+    margin: auto 0 !important;
+    font-size: 8vw !important;
+  }
+
+  #menu:hover, #close:hover{
+    cursor: pointer;
+  }
+
+  .nav {display: block !important;}
+  .nav.responsive {
+    display: block !important;
+    background-color: rgba(20, 3, 3, 1) !important;
+    height: 100% !important; 
+  }
+  .nav.responsive .icons{height: 8% !important;}
+
+  .nav.responsive .nav-tabs {
+    display: block !important;
+    width: 100vw !important;
+  }
+
+  .nav.responsive .nav-tabs .tab {
+    display: flex !important;
+    width: 100vw !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+  }
+
+  .nav.responsive .nav-tabs .dropdown {
+    display: block !important;
+  }
+
+  .nav.responsive .nav-tabs .dropdown-content {
+    display: block !important;
+    position: relative !important;
+  }
+
+  .nav.responsive .nav-tabs .dropdown-content .tab{
+    font-size: 2vh !important;
+  }
+
+  .nav.responsive .socials {
+    display: flex !important;
+    justify-content: center;
+    width: 100vw !important;
+    right: 0 !important;
+    top: 10%;
+    position: relative !important;
+  }
+  
+}
+
+.nav{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  height: 8%;
+  /* font-family: monospace; */
+  background-color: rgb(12,4,4);
+  /* background-color: black; */
+  border: 1px solid black;
+}
+
+.icons {
+  display: flex; 
+  height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo img{
+  height: 100%;
+  width: auto;
+}
+
+.logo img:hover{
+  cursor: pointer;
+}
+
+.nav-tabs {
+  margin: auto 0;
+}
+
+.tab {
+  padding: 1vh 1vw;
+  text-decoration: none;
+  color: #e6c498;
+  font-weight: 500;
+  font-size: 80%;
+}
+
+.tab:hover, .dropdown-content a:hover {
+  font-weight: bold;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: 120%;
+  min-width: 160px;
+  padding-top: 1vh;
+  z-index: 1;
+  background-color:rgba(20, 3, 3, 0.5);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color:rgb(12, 4, 4);} */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {font-weight: bold;}
+
+
+.socials {
+  position: absolute;
+  right: 2%;
+}
+.socials a {
+  text-decoration: none;
+  color: #e6c498;
+  padding: 0 1vw;
+}

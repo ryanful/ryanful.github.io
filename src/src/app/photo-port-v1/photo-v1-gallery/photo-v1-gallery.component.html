@@ -1,0 +1,78 @@
+<div class="portV1 gallery page" (scroll)="checkArrows()">
+  <div *ngIf="isProj; else regularGallery" style="height:100%;">
+    <div class="details">
+      <div *ngIf="id!=='proj-risk' && id!=='proj-albums'; else detailVid" id="detail-image">
+        <img src="/../assets/images/projects/{{details.name}}" (contextmenu)="rightClick()" draggable="false">
+      </div>
+      <ng-template #detailVid>
+        <div id="detailVid">
+          <video *ngIf="id==='proj-risk'" width="100%" controls>
+            <source src="/../assets/images/projects/RiskFtReem.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <iframe *ngIf="id==='proj-albums'" width="100%" src="https://www.youtube.com/embed/7RtT98Rmbaw"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </ng-template>
+      <div id="detail-text">
+        <div id="text">
+          <h1>{{details.title}}</h1>
+          <h2>Models:</h2>
+          <p *ngFor="let model of details.models">+ {{model}} +</p>
+          <br><br>
+          <h2>Story:</h2>
+          <!-- <h2> <a href="" target="_blank"></a> | <a href="" target="_blank"></a></h2> -->
+          <p>{{details.desc}} <br><br></p>
+
+          <p class="link"><a (click)="scroll('d')">Click on me to see the full series!</a></p>
+        </div>
+
+        <div class="down">
+          <a class="material-icons expand-more" (click)="scroll('d')" role="button" data-slide="next"
+            aria-hidden="true">
+            expand_more
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="proj-gallery" class="page" (scroll)="checkArrows()">
+      <div *ngFor="let pic of images; let i = index" class="image" [style.background-color]="setBackground(i)">
+        <img src="{{path + pic.name}}" (contextmenu)="rightClick()" draggable="false">
+      </div>
+    </div>
+
+    <div class="controls">
+      <i [style.visibility]="elementVisible(showLeft)" class="material-icons left-chevron" (click)="scroll('l')"
+        role="button" data-slide="next" aria-hidden="true">
+        chevron_left
+      </i>
+      <span class="filler"></span>
+      <i [style.visibility]="elementVisible(showRight)" class="material-icons right-chevron" (click)="scroll('r')"
+        role="button" data-slide="next" aria-hidden="true">
+        chevron_right
+      </i>
+    </div>
+
+  </div>
+
+  <ng-template #regularGallery>
+    <div *ngFor="let pic of images" class="image">
+      <img src="{{path + pic.name}}" (contextmenu)="rightClick()" draggable="false">
+    </div>
+
+    <div class="reg-controls">
+      <a class="material-icons expand-less" [style.visibility]="elementVisible(showUp)" (click)="scroll('u')"
+        role="button" data-slide="next" aria-hidden="true">
+        expand_less
+      </a>
+      <a class="material-icons expand-more" [style.visibility]="elementVisible(showDown)" (click)="scroll('rd')"
+        role="button" data-slide="next" aria-hidden="true">
+        expand_more
+      </a>
+    </div>
+  </ng-template>
+</div>

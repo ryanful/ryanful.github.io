@@ -1,0 +1,115 @@
+@import '../photo-port-v1/photo-port-v1.component.css';
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .intro {
+    /* background-image: url("/../assets/images/gallery/MG_dej1.jpg") !important; */
+  }
+
+  .intro-nav{
+    flex-direction: column !important;
+    height: 75% !important;
+  }
+
+  .intro-img{
+    height: 25% !important;
+    opacity: 1 !important;
+    justify-content: initial !important;
+  }
+
+  .work, .proj, .port {
+    height: 33.333% !important;
+    width: 100% !important;
+    justify-content: initial !important;
+    left: 0% !important;
+    opacity: 1 !important;
+    background-image: none;
+  }
+
+  .work{
+    background-image: url("/../assets/images/work/other/iao-bday/iao3.jpg") !important;
+  }
+
+  .port{
+    background-image: url("/../assets/images/projects/risk.png") !important;
+  }
+
+  .proj{
+    background-image: url("/../assets/images/projects/4wall1.jpg") !important;
+  }
+ 
+  span, img {
+    position: relative;
+    left: 10%;
+  }
+
+}
+
+.intro{
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  font-size: 5vh;
+  line-height: 5.5vh;
+  font-weight: 300;
+  /* color:  #fffc99; */
+  /* background-image: url("images/movement/_MG_0782.jpg"); */
+  /* background-image: url("images/OON4498.jpg"); */
+  /* background-image: url("images/_OON4517.jpg"); */
+  /* background-image: url("/../assets/images/projects/proj-breakwall4/4wall2.jpg"); */
+  background-size: cover;
+}
+
+
+.intro-nav {
+  display: flex;
+  /* justify-content: center; */
+  margin: auto;
+  width: 100%;
+  height: 70%;
+  /* background-color: goldenrod; */
+}
+
+.intro-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  opacity: .8;
+}
+.intro-img img {
+  height: 20%;
+  /* background-color: red; */
+}
+
+.work:hover, .proj:hover, .port:hover, .intro-img:hover {
+  cursor: pointer;
+  opacity: 1;
+  font-weight: bold; 
+  box-shadow: 0 1vh 1vh 0 rgba(0,0,0,.2);  
+}
+
+.work, .proj, .port {
+  position: relative;
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  opacity: .8;
+}
+
+.work {
+  background-image: url("/../assets/images/work/events/afrik.jpg");
+  left: 1%;
+}
+
+.port {
+  background-image: url("/../assets/images/gallery/MG_1.jpg");
+  left: 2%;
+}
+
+.proj {
+  background-image: url("/../assets/images/projects/proj-breakwall4/4walldm6.jpg");
+  left: 3%;
+}

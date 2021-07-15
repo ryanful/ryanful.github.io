@@ -1,22 +1,50 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LandingComponent } from './landing/landing.component';
-import { WorkComponent } from './work/work.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { AboutComponent } from './about/about.component';
-import { GalleryPageComponent } from './gallery-page/gallery-page.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { PanelComponent } from './panel/panel.component';
+
+import { MainLandingComponent } from './main-landing/main-landing/main-landing.component';
+
+import { PhotoPortV1Component } from './photo-port-v1/photo-port-v1/photo-port-v1.component';
+import { PhotoV1LandingComponent } from './photo-port-v1/photo-v1-landing/photo-v1-landing.component';
+import { PhotoV1WorkComponent } from './photo-port-v1/photo-v1-work/photo-v1-work.component';
+import { PhotoV1ProjectsComponent } from './photo-port-v1/photo-v1-projects/photo-v1-projects.component';
+import { PhotoV1AboutComponent } from './photo-port-v1/photo-v1-about/photo-v1-about.component';
+import { PhotoV1GalleryPageComponent } from './photo-port-v1/photo-v1-gallery-page/photo-v1-gallery-page.component';
+import { PhotoV1GalleryComponent } from './photo-port-v1/photo-v1-gallery/photo-v1-gallery.component';
+import { PhotoV1PanelComponent } from './photo-port-v1/photo-v1-panel/photo-v1-panel.component';
+
+import { PhotobookComponent } from './photobook/photobook/photobook.component';
+import { PhotobookLandingComponent } from './photobook/photobook-landing/photobook-landing.component';
+import { PhotobookAboutComponent } from './photobook/photobook-about/photobook-about.component';
 
 const routes: Routes = [
-  { path: 'photo-port-v1', component: LandingComponent },
-  { path: 'photo-port-v1/work', component: WorkComponent },
-  { path: 'photo-port-v1/projects', component: ProjectsComponent },
-  { path: 'photo-port-v1/about', component: AboutComponent },
-  { path: 'photo-port-v1/portfolio', component: GalleryPageComponent },
-  { path: 'photo-port-v1/gallery/:id', component: GalleryComponent },
-  { path: 'photo-port-v1/panel/:id', component: PanelComponent },
-  { path: 'photo-port-v1/resume', redirectTo: '../assets/RaheelYanful-Resume.pdf' }
+  { path: '', component: MainLandingComponent },
+  {
+    path: 'photobook', component: PhotobookComponent,
+    children: [
+      { path: '', component: PhotobookLandingComponent },
+      { path: 'work', component: PhotoV1WorkComponent },
+      { path: 'projects', component: PhotoV1ProjectsComponent },
+      { path: 'about', component: PhotobookAboutComponent },
+      { path: 'portfolio', component: PhotoV1GalleryPageComponent },
+      { path: 'gallery/:id', component: PhotoV1GalleryComponent },
+      { path: 'panel/:id', component: PhotoV1PanelComponent },
+      { path: 'resume', redirectTo: '../assets/RaheelYanful-Resume.pdf' }
+    ]
+  },
+  {
+    path: 'photo-port-v1', component: PhotoPortV1Component,
+    children: [
+      { path: '', component: PhotoV1LandingComponent },
+      { path: 'work', component: PhotoV1WorkComponent },
+      { path: 'projects', component: PhotoV1ProjectsComponent },
+      { path: 'about', component: PhotoV1AboutComponent },
+      { path: 'portfolio', component: PhotoV1GalleryPageComponent },
+      { path: 'gallery/:id', component: PhotoV1GalleryComponent },
+      { path: 'panel/:id', component: PhotoV1PanelComponent },
+      { path: 'resume', redirectTo: '../assets/RaheelYanful-Resume.pdf' }
+    ]
+  },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

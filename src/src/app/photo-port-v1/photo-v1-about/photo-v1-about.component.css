@@ -1,0 +1,120 @@
+
+@media only screen and (max-width: 800px) {
+  #about-pic {
+    display: none !important;
+  }
+
+  .content{
+    top: 0 !important;
+    padding-bottom: 5vh;
+  }
+
+  #about-text {
+    width: 80% !important;
+  }
+
+  #about-fav {
+    max-width: 80vw !important;
+  }
+}
+
+.page {
+  position: absolute;
+  height: 92%;
+}
+
+#about-pic {
+  /* The image used*/
+  /* background-image: url("images/IMG_1852.jpg"); */
+  background-image: url('/../assets/images/self/self2.jpg'); 
+
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.down {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 90%;
+}
+
+.expand-more:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.expand-more {
+  font-size: 10vh;
+  opacity: .5;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* top: 11%; */
+  padding: 5vh 0vh;
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(12,4,4);
+}
+
+#about-text {
+  /* The image used*/
+  /* Set a specific height */
+  width: 80%;
+  max-width: 600px;
+  max-height: 60%;
+  
+  /*border: 1px solid black;*/
+}
+
+#about-text p {
+  text-align: justify;
+}
+
+#about-text h1, h2 {
+  text-align: center;
+}
+
+#about-text h1{
+  margin-bottom: .5vh;
+}
+#about-text h2{
+  margin-top: .5vh;
+}
+
+#about-text a {
+  color: #e6c498;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#about-fav {
+  /* The image used*/
+  /* Set a specific height */
+  max-height: 40%;
+  max-width: 80vw;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+
+#about-fav img{
+  max-height: 100%;
+  max-width: 80vw;
+}
+
+.resume-link{
+  font-size: 5vh;
+}

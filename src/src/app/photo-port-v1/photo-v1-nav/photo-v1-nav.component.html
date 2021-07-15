@@ -1,0 +1,63 @@
+<!-- Nav bar at top of every page-->
+<div *ngIf="!onLanding()" class="container">
+  <nav class="nav navtop">
+    <div class="icons">
+      <div class="logo">
+        <img src="../assets/logo/trans-notext.png" routerLink="" (contextmenu)="rightClick()" draggable="false">
+      </div>
+      <div class="menu">
+        <i class="material-icons" id="menu" (click)="toggleNav()">
+          menu
+        </i>
+      </div>
+    </div>
+
+    <div class="nav-tabs">
+      <a class="tab" routerLink="portfolio" routerLinkActive="active">GALLERY</a>
+      <div class="dropdown">
+        <a class="tab" routerLink="work" routerLinkActive="active">WORK</a>
+        <div class="dropdown-content">
+          <a #droptabs class="tab" [routerLink]="['/panel', 'work-grad']" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">Graduations</a>
+          <a #droptabs class="tab" [routerLink]="['/panel', 'work-events']" routerLinkActive="active">Events</a>
+          <a #droptabs class="tab" [routerLink]="['/panel', 'work-hs']" routerLinkActive="active">Headshots</a>
+          <a #droptabs class="tab" routerLink="/work" routerLinkActive="active">See All</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="tab" routerLink="projects" routerLinkActive="active">
+          PROJECTS
+        </a>
+        <div class="dropdown-content">
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-bsides']" routerLinkActive="active">Albums
+            Rahmastered Bsides</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-breakwall4']" routerLinkActive="active">Breaking the
+            4th
+            Wall</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-risk']" routerLinkActive="active">Risk</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-uncanny']" routerLinkActive="active">Uncanny
+            Vibrations</a>
+          <a #droptabs class="tab" [routerLink]="['/gallery', 'proj-albums']" routerLinkActive="active">One Love</a>
+          <a #droptabs class="tab" routerLink="/projects" routerLinkActive="active">See All</a>
+        </div>
+      </div>
+      <a class="tab" routerLink="about" routerLinkActive="active">ABOUT</a>
+    </div>
+
+    <div class="socials">
+      <h2> <a href="https://instagram.com/abeikuyanful" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.github.com/ryanful" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ryanful/" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a href='../assets/RaheelsResume.pdf' target="_blank">
+          <i class="fa fa-file-text"></i>
+        </a>
+      </h2>
+    </div>
+  </nav>
+</div>
