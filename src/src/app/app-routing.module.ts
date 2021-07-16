@@ -16,6 +16,7 @@ import { PhotobookComponent } from './photobook/photobook/photobook.component';
 import { PhotobookLandingComponent } from './photobook/photobook-landing/photobook-landing.component';
 import { PhotobookAboutComponent } from './photobook/photobook-about/photobook-about.component';
 import { PhotobookTOCComponent } from './photobook/photobook-toc/photobook-toc.component';
+import { PhotobookPortfolioComponent } from './photobook/photobook-portfolio/photobook-portfolio.component';
 
 const routes: Routes = [
   { path: '', component: MainLandingComponent },
@@ -27,7 +28,7 @@ const routes: Routes = [
       { path: 'work', component: PhotoV1WorkComponent },
       { path: 'projects', component: PhotoV1ProjectsComponent },
       { path: 'about', component: PhotobookAboutComponent },
-      { path: 'portfolio', component: PhotoV1GalleryPageComponent },
+      { path: 'portfolio', component: PhotobookPortfolioComponent },
       { path: 'gallery/:id', component: PhotoV1GalleryComponent },
       { path: 'panel/:id', component: PhotoV1PanelComponent },
       { path: 'resume', redirectTo: '../assets/RaheelYanful-Resume.pdf' }

@@ -29,6 +29,7 @@ import { PhotobookNavComponent } from './photobook/photobook-nav/photobook-nav.c
 import { PhotobookAboutComponent } from './photobook/photobook-about/photobook-about.component';
 import { PhotobookTOCComponent } from './photobook/photobook-toc/photobook-toc.component';
 import { PhotobookHeaderComponent } from './photobook/photobook-header/photobook-header.component';
+import { PhotobookPortfolioComponent } from './photobook/photobook-portfolio/photobook-portfolio.component';
 
 const providers = [ImagesService]
 
@@ -58,7 +59,8 @@ const providers = [ImagesService]
     PhotobookNavComponent,
     PhotobookAboutComponent,
     PhotobookTOCComponent,
-    PhotobookHeaderComponent
+    PhotobookHeaderComponent,
+    PhotobookPortfolioComponent
   ],
   imports: [
     BrowserModule,
