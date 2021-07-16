@@ -15,6 +15,7 @@ import { PhotoV1PanelComponent } from './photo-port-v1/photo-v1-panel/photo-v1-p
 import { PhotobookComponent } from './photobook/photobook/photobook.component';
 import { PhotobookLandingComponent } from './photobook/photobook-landing/photobook-landing.component';
 import { PhotobookAboutComponent } from './photobook/photobook-about/photobook-about.component';
+import { PhotobookTOCComponent } from './photobook/photobook-toc/photobook-toc.component';
 
 const routes: Routes = [
   { path: '', component: MainLandingComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
     path: 'photobook', component: PhotobookComponent,
     children: [
       { path: '', component: PhotobookLandingComponent },
+      { path: 'table-of-contents', component: PhotobookTOCComponent },
       { path: 'work', component: PhotoV1WorkComponent },
       { path: 'projects', component: PhotoV1ProjectsComponent },
       { path: 'about', component: PhotobookAboutComponent },
