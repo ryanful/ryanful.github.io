@@ -1,24 +1,28 @@
 <!-- Nav bar at top of every page-->
 <!-- <div *ngIf="!onLanding()" class="container"> -->
 <nav class="nav navtop">
-  <div class="icons">
-    <div class="logo">
-      <img src="../assets/logo/trans-notext.png" routerLink="" draggable="false">
-    </div>
-    <!-- <div class="menu">
+  <!-- <div class="icons">
+    <div class="menu">
         <i class="material-icons" id="menu" (click)="toggleNav()">
           menu
         </i>
-      </div> -->
-  </div>
+      </div>
+  </div> -->
 
   <div class="nav-tabs">
     <a class="tab" routerLink="portfolio" routerLinkActive="active">gallery</a>
     <a class="tab" routerLink="projects" routerLinkActive="active">creative projects</a>
-
     <a class="tab" routerLink="client work" routerLinkActive="active">
       client work
     </a>
+  </div>
+
+  <div class="logo" routerLink="">
+    <span>Abeiku's</span>
+    <span> Photobook</span>
+  </div>
+
+  <div class="nav-tabs">
     <a class="tab" routerLink="about" routerLinkActive="active">about me</a>
     <a class="tab" routerLink="about" routerLinkActive="active">contact me</a>
   </div>

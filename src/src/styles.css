@@ -1,3 +1,18 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: rgb(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  object-fit: contain;
+  object-position: 0;
+}
+
+
+/* --------- PHOTO PORTFOLIO V1 Styling Below --------- */
+
 /* You can add global styles to this file, and also import other style files */
 @media only screen and (max-width: 600px) {
   .page{
@@ -8,45 +23,40 @@
 body, html{
   height:100%;
   margin:0;
-  font-family: "Lato",sans-serif;
   overflow: auto;
   overflow-x: hidden;
   /* background-color: #f4f4f4; */
-  background-color: rgb(12,4,4);
-  color: #e6c498;
 }
 
-img {
-  object-fit: contain;
-  object-position: 0;
-}
-
-.container{
+.container.portV1 {
   width: 100%;
 }
 
-.page {
+.page.portV1 {
   position: relative;
   width: 100%;
+  background-color: rgb(12,4,4);
+  color: #e6c498;
+  font-family: "Lato",sans-serif;
   /* top: 10%; */
 }
 
-h1{
+.portV1 h1{
   font-weight: 600;
   font-size: 5vh;
   line-height: 4.5vh;
 }
-h2{
+.portV1 h2{
   font-size: 3vh;
   line-height: 3.5vh;
   /* color:  #f7f6d8; */
   font-weight: 100;
 }
-h3{
+.portV1 h3{
   font-size: 2.5vh;
   font-weight: 100;
 }
-p{
+.portV1 p{
   font-size: 2vh;
   line-height: 3vh;
   font-weight: 300;
