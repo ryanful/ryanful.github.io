@@ -17,6 +17,7 @@ import { PhotobookLandingComponent } from './photobook/photobook-landing/photobo
 import { PhotobookAboutComponent } from './photobook/photobook-about/photobook-about.component';
 import { PhotobookTOCComponent } from './photobook/photobook-toc/photobook-toc.component';
 import { PhotobookPortfolioComponent } from './photobook/photobook-portfolio/photobook-portfolio.component';
+import { PhotobookProjectsComponent } from './photobook/photobook-projects/photobook-projects.component';
 
 const routes: Routes = [
   { path: '', component: MainLandingComponent },
@@ -26,7 +27,7 @@ const routes: Routes = [
       { path: '', component: PhotobookLandingComponent },
       { path: 'table-of-contents', component: PhotobookTOCComponent },
       { path: 'work', component: PhotoV1WorkComponent },
-      { path: 'projects', component: PhotoV1ProjectsComponent },
+      { path: 'projects', component: PhotobookProjectsComponent },
       { path: 'about', component: PhotobookAboutComponent },
       { path: 'portfolio', component: PhotobookPortfolioComponent },
       { path: 'gallery/:id', component: PhotoV1GalleryComponent },

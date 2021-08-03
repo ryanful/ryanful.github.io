@@ -1,0 +1,29 @@
+.page {
+  display: flex;
+  /* align-items: center; */
+  height: 80vh;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 0 2vw;
+  background-color: #efefef;
+}
+
+.scrollable {
+  width: 75%;
+  height: 100%;
+  padding: 0vh 5vw;
+  background: linear-gradient(to right,#FFAD94, #FFCF88);
+  overflow-x: scroll;
+}
+
+.project{
+  height: 100%;
+}
+
+.scrollable img {
+  height: 70%;
+  margin: 0 2px;
+  border-radius: 1vh;
+}

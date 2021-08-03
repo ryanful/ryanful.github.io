@@ -1,0 +1,26 @@
+<app-photobook-header title="Creative Projects"></app-photobook-header>
+
+<div class="page">
+  <div class="sidebar">
+    <h1>Creative Projects</h1>
+
+    <ul>
+      <li>Reem</li>
+      <li>Albums Rahmastered</li>
+    </ul>
+  </div>
+
+  <div class="scrollable">
+    <div class="project">
+      <a [routerLink]="['']" #image>
+        <img src="../../../assets/images/projects/risk832.jpg" draggable="false">
+        <div class="desc">
+          <h3><b>Reem</b></h3>
+          <p>June 2019</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<app-photobook-nav></app-photobook-nav>

@@ -30,6 +30,7 @@ import { PhotobookAboutComponent } from './photobook/photobook-about/photobook-a
 import { PhotobookTOCComponent } from './photobook/photobook-toc/photobook-toc.component';
 import { PhotobookHeaderComponent } from './photobook/photobook-header/photobook-header.component';
 import { PhotobookPortfolioComponent } from './photobook/photobook-portfolio/photobook-portfolio.component';
+import { PhotobookProjectsComponent } from './photobook/photobook-projects/photobook-projects.component';
 
 const providers = [ImagesService]
 
@@ -60,7 +61,8 @@ const providers = [ImagesService]
     PhotobookAboutComponent,
     PhotobookTOCComponent,
     PhotobookHeaderComponent,
-    PhotobookPortfolioComponent
+    PhotobookPortfolioComponent,
+    PhotobookProjectsComponent
   ],
   imports: [
     BrowserModule,
