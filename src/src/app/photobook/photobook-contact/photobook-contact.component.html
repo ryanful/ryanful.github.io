@@ -1,0 +1,36 @@
+<app-photobook-header title="Contact Me"></app-photobook-header>
+<div class="content">
+  <div class="left"></div>
+  <div class="right">
+    <div class="container">
+      Please use the form below on this page to contact me.
+
+      <form (ngSubmit)="submit()">
+        <div class="info">
+          <!-- name -->
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="name" [(ngModel)]="name" placeholder="Name">
+          </div>
+
+          <!-- email -->
+          <div class="field">
+            <label>Email</label>
+            <input type="text" name="email" [(ngModel)]="email" placeholder="Email">
+          </div>
+        </div>
+
+        <!-- subject & message -->
+        <div class="message field">
+          <label>Message</label>
+          <textarea type="text" name="message" [(ngModel)]="message" placeholder="Message"></textarea>
+        </div>
+
+        <!-- submit button -->
+        <button type="submit">Send</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+<app-photobook-nav></app-photobook-nav>

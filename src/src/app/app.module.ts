@@ -31,6 +31,8 @@ import { PhotobookTOCComponent } from './photobook/photobook-toc/photobook-toc.c
 import { PhotobookHeaderComponent } from './photobook/photobook-header/photobook-header.component';
 import { PhotobookPortfolioComponent } from './photobook/photobook-portfolio/photobook-portfolio.component';
 import { PhotobookProjectsComponent } from './photobook/photobook-projects/photobook-projects.component';
+import { PhotobookContactComponent } from './photobook/photobook-contact/photobook-contact.component';
+import { FormsModule } from '@angular/forms';
 
 const providers = [ImagesService]
 
@@ -62,11 +64,13 @@ const providers = [ImagesService]
     PhotobookTOCComponent,
     PhotobookHeaderComponent,
     PhotobookPortfolioComponent,
-    PhotobookProjectsComponent
+    PhotobookProjectsComponent,
+    PhotobookContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: providers,
   bootstrap: [AppComponent]

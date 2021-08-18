@@ -1,0 +1,28 @@
+.content {
+  display: flex;
+  /* width: 100vw; */
+  height: 80vh;
+}
+
+.left {
+  width: 3%;
+  background: linear-gradient(to right,#FFAD94, #FFCF88);
+}
+
+.right {
+  width: 97%;
+  background-color: #efefef;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 11%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 0;
+}
